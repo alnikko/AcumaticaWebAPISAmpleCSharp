@@ -4,3 +4,9 @@ C:\Users\alnikko.espina\Documents\Visual Studio 2008\Projects\AcumaticaWebServic
 C:\Users\alnikko.espina\Documents\Visual Studio 2008\Projects\AcumaticaWebServiceSample\AcumaticaWebServiceSample\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\alnikko.espina\Documents\Visual Studio 2008\Projects\AcumaticaWebServiceSample\AcumaticaWebServiceSample\obj\Debug\AcumaticaWebServiceSample.exe
 C:\Users\alnikko.espina\Documents\Visual Studio 2008\Projects\AcumaticaWebServiceSample\AcumaticaWebServiceSample\obj\Debug\AcumaticaWebServiceSample.pdb
+C:\Users\alnikko.espina\Source\Repos\AcumaticaWebAPISAmpleCSharp\AcumaticaWebServiceSample\bin\Debug\AcumaticaWebServiceSample.exe.config
+C:\Users\alnikko.espina\Source\Repos\AcumaticaWebAPISAmpleCSharp\AcumaticaWebServiceSample\obj\Debug\AcumaticaWebServiceSample.exe
+C:\Users\alnikko.espina\Source\Repos\AcumaticaWebAPISAmpleCSharp\AcumaticaWebServiceSample\obj\Debug\AcumaticaWebServiceSample.pdb
+C:\Users\alnikko.espina\Source\Repos\AcumaticaWebAPISAmpleCSharp\AcumaticaWebServiceSample\obj\Debug\AcumaticaWebServiceSample.csprojResolveAssemblyReference.cache
+C:\Users\alnikko.espina\Source\Repos\AcumaticaWebAPISAmpleCSharp\AcumaticaWebServiceSample\bin\Debug\AcumaticaWebServiceSample.exe
+C:\Users\alnikko.espina\Source\Repos\AcumaticaWebAPISAmpleCSharp\AcumaticaWebServiceSample\bin\Debug\AcumaticaWebServiceSample.pdb
