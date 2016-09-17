@@ -42,6 +42,34 @@ namespace AcumaticaWebServiceSample.TEST {
         
         private System.Threading.SendOrPostCallback SetSchemaModeOperationCompleted;
         
+        private System.Threading.SendOrPostCallback AR301000ClearOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback AR301000GetProcessStatusOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback AR301000GetSchemaOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback AR301000SetSchemaOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback AR301000ImportOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback AR301000ExportOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback AR301000SubmitOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback AR302000ClearOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback AR302000GetProcessStatusOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback AR302000GetSchemaOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback AR302000SetSchemaOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback AR302000ImportOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback AR302000ExportOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback AR302000SubmitOperationCompleted;
+        
         private System.Threading.SendOrPostCallback AR303000ClearOperationCompleted;
         
         private System.Threading.SendOrPostCallback AR303000GetProcessStatusOperationCompleted;
@@ -69,6 +97,34 @@ namespace AcumaticaWebServiceSample.TEST {
         private System.Threading.SendOrPostCallback SO301000ExportOperationCompleted;
         
         private System.Threading.SendOrPostCallback SO301000SubmitOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback SO302000ClearOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback SO302000GetProcessStatusOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback SO302000GetSchemaOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback SO302000SetSchemaOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback SO302000ImportOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback SO302000ExportOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback SO302000SubmitOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback SO303000ClearOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback SO303000GetProcessStatusOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback SO303000GetSchemaOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback SO303000SetSchemaOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback SO303000ImportOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback SO303000ExportOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback SO303000SubmitOperationCompleted;
         
         private bool useDefaultCredentialsSetExplicitly;
         
@@ -127,6 +183,48 @@ namespace AcumaticaWebServiceSample.TEST {
         public event SetSchemaModeCompletedEventHandler SetSchemaModeCompleted;
         
         /// <remarks/>
+        public event AR301000ClearCompletedEventHandler AR301000ClearCompleted;
+        
+        /// <remarks/>
+        public event AR301000GetProcessStatusCompletedEventHandler AR301000GetProcessStatusCompleted;
+        
+        /// <remarks/>
+        public event AR301000GetSchemaCompletedEventHandler AR301000GetSchemaCompleted;
+        
+        /// <remarks/>
+        public event AR301000SetSchemaCompletedEventHandler AR301000SetSchemaCompleted;
+        
+        /// <remarks/>
+        public event AR301000ImportCompletedEventHandler AR301000ImportCompleted;
+        
+        /// <remarks/>
+        public event AR301000ExportCompletedEventHandler AR301000ExportCompleted;
+        
+        /// <remarks/>
+        public event AR301000SubmitCompletedEventHandler AR301000SubmitCompleted;
+        
+        /// <remarks/>
+        public event AR302000ClearCompletedEventHandler AR302000ClearCompleted;
+        
+        /// <remarks/>
+        public event AR302000GetProcessStatusCompletedEventHandler AR302000GetProcessStatusCompleted;
+        
+        /// <remarks/>
+        public event AR302000GetSchemaCompletedEventHandler AR302000GetSchemaCompleted;
+        
+        /// <remarks/>
+        public event AR302000SetSchemaCompletedEventHandler AR302000SetSchemaCompleted;
+        
+        /// <remarks/>
+        public event AR302000ImportCompletedEventHandler AR302000ImportCompleted;
+        
+        /// <remarks/>
+        public event AR302000ExportCompletedEventHandler AR302000ExportCompleted;
+        
+        /// <remarks/>
+        public event AR302000SubmitCompletedEventHandler AR302000SubmitCompleted;
+        
+        /// <remarks/>
         public event AR303000ClearCompletedEventHandler AR303000ClearCompleted;
         
         /// <remarks/>
@@ -167,6 +265,48 @@ namespace AcumaticaWebServiceSample.TEST {
         
         /// <remarks/>
         public event SO301000SubmitCompletedEventHandler SO301000SubmitCompleted;
+        
+        /// <remarks/>
+        public event SO302000ClearCompletedEventHandler SO302000ClearCompleted;
+        
+        /// <remarks/>
+        public event SO302000GetProcessStatusCompletedEventHandler SO302000GetProcessStatusCompleted;
+        
+        /// <remarks/>
+        public event SO302000GetSchemaCompletedEventHandler SO302000GetSchemaCompleted;
+        
+        /// <remarks/>
+        public event SO302000SetSchemaCompletedEventHandler SO302000SetSchemaCompleted;
+        
+        /// <remarks/>
+        public event SO302000ImportCompletedEventHandler SO302000ImportCompleted;
+        
+        /// <remarks/>
+        public event SO302000ExportCompletedEventHandler SO302000ExportCompleted;
+        
+        /// <remarks/>
+        public event SO302000SubmitCompletedEventHandler SO302000SubmitCompleted;
+        
+        /// <remarks/>
+        public event SO303000ClearCompletedEventHandler SO303000ClearCompleted;
+        
+        /// <remarks/>
+        public event SO303000GetProcessStatusCompletedEventHandler SO303000GetProcessStatusCompleted;
+        
+        /// <remarks/>
+        public event SO303000GetSchemaCompletedEventHandler SO303000GetSchemaCompleted;
+        
+        /// <remarks/>
+        public event SO303000SetSchemaCompletedEventHandler SO303000SetSchemaCompleted;
+        
+        /// <remarks/>
+        public event SO303000ImportCompletedEventHandler SO303000ImportCompleted;
+        
+        /// <remarks/>
+        public event SO303000ExportCompletedEventHandler SO303000ExportCompleted;
+        
+        /// <remarks/>
+        public event SO303000SubmitCompletedEventHandler SO303000SubmitCompleted;
         
         /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://www.acumatica.com/generic/GetScenario", RequestNamespace="http://www.acumatica.com/generic/", ResponseNamespace="http://www.acumatica.com/generic/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
@@ -335,6 +475,450 @@ namespace AcumaticaWebServiceSample.TEST {
             if ((this.SetSchemaModeCompleted != null)) {
                 System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
                 this.SetSchemaModeCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://www.acumatica.com/generic/AR301000/Clear", RequestNamespace="http://www.acumatica.com/generic/", ResponseNamespace="http://www.acumatica.com/generic/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void AR301000Clear() {
+            this.Invoke("AR301000Clear", new object[0]);
+        }
+        
+        /// <remarks/>
+        public void AR301000ClearAsync() {
+            this.AR301000ClearAsync(null);
+        }
+        
+        /// <remarks/>
+        public void AR301000ClearAsync(object userState) {
+            if ((this.AR301000ClearOperationCompleted == null)) {
+                this.AR301000ClearOperationCompleted = new System.Threading.SendOrPostCallback(this.OnAR301000ClearOperationCompleted);
+            }
+            this.InvokeAsync("AR301000Clear", new object[0], this.AR301000ClearOperationCompleted, userState);
+        }
+        
+        private void OnAR301000ClearOperationCompleted(object arg) {
+            if ((this.AR301000ClearCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.AR301000ClearCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://www.acumatica.com/generic/AR301000/GetProcessStatus", RequestNamespace="http://www.acumatica.com/generic/", ResponseNamespace="http://www.acumatica.com/generic/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [return: System.Xml.Serialization.XmlElementAttribute("GetProcessStatusResult")]
+        public ProcessResult AR301000GetProcessStatus() {
+            object[] results = this.Invoke("AR301000GetProcessStatus", new object[0]);
+            return ((ProcessResult)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void AR301000GetProcessStatusAsync() {
+            this.AR301000GetProcessStatusAsync(null);
+        }
+        
+        /// <remarks/>
+        public void AR301000GetProcessStatusAsync(object userState) {
+            if ((this.AR301000GetProcessStatusOperationCompleted == null)) {
+                this.AR301000GetProcessStatusOperationCompleted = new System.Threading.SendOrPostCallback(this.OnAR301000GetProcessStatusOperationCompleted);
+            }
+            this.InvokeAsync("AR301000GetProcessStatus", new object[0], this.AR301000GetProcessStatusOperationCompleted, userState);
+        }
+        
+        private void OnAR301000GetProcessStatusOperationCompleted(object arg) {
+            if ((this.AR301000GetProcessStatusCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.AR301000GetProcessStatusCompleted(this, new AR301000GetProcessStatusCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://www.acumatica.com/generic/AR301000/GetSchema", RequestNamespace="http://www.acumatica.com/generic/", ResponseNamespace="http://www.acumatica.com/generic/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [return: System.Xml.Serialization.XmlElementAttribute("GetSchemaResult")]
+        public AR301000Content AR301000GetSchema() {
+            object[] results = this.Invoke("AR301000GetSchema", new object[0]);
+            return ((AR301000Content)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void AR301000GetSchemaAsync() {
+            this.AR301000GetSchemaAsync(null);
+        }
+        
+        /// <remarks/>
+        public void AR301000GetSchemaAsync(object userState) {
+            if ((this.AR301000GetSchemaOperationCompleted == null)) {
+                this.AR301000GetSchemaOperationCompleted = new System.Threading.SendOrPostCallback(this.OnAR301000GetSchemaOperationCompleted);
+            }
+            this.InvokeAsync("AR301000GetSchema", new object[0], this.AR301000GetSchemaOperationCompleted, userState);
+        }
+        
+        private void OnAR301000GetSchemaOperationCompleted(object arg) {
+            if ((this.AR301000GetSchemaCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.AR301000GetSchemaCompleted(this, new AR301000GetSchemaCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://www.acumatica.com/generic/AR301000/SetSchema", RequestNamespace="http://www.acumatica.com/generic/", ResponseNamespace="http://www.acumatica.com/generic/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void AR301000SetSchema(AR301000Content schema) {
+            this.Invoke("AR301000SetSchema", new object[] {
+                        schema});
+        }
+        
+        /// <remarks/>
+        public void AR301000SetSchemaAsync(AR301000Content schema) {
+            this.AR301000SetSchemaAsync(schema, null);
+        }
+        
+        /// <remarks/>
+        public void AR301000SetSchemaAsync(AR301000Content schema, object userState) {
+            if ((this.AR301000SetSchemaOperationCompleted == null)) {
+                this.AR301000SetSchemaOperationCompleted = new System.Threading.SendOrPostCallback(this.OnAR301000SetSchemaOperationCompleted);
+            }
+            this.InvokeAsync("AR301000SetSchema", new object[] {
+                        schema}, this.AR301000SetSchemaOperationCompleted, userState);
+        }
+        
+        private void OnAR301000SetSchemaOperationCompleted(object arg) {
+            if ((this.AR301000SetSchemaCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.AR301000SetSchemaCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://www.acumatica.com/generic/AR301000/Import", RequestNamespace="http://www.acumatica.com/generic/", ResponseNamespace="http://www.acumatica.com/generic/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [return: System.Xml.Serialization.XmlArrayAttribute("ImportResult")]
+        [return: System.Xml.Serialization.XmlArrayItemAttribute("ImportResult")]
+        public AR301000ImportResult[] AR301000Import(Command[] commands, Filter[] filters, [System.Xml.Serialization.XmlArrayItemAttribute("ArrayOfString")] [System.Xml.Serialization.XmlArrayItemAttribute(NestingLevel=1)] string[][] data, bool includedHeaders, bool breakOnError, bool breakOnIncorrectTarget) {
+            object[] results = this.Invoke("AR301000Import", new object[] {
+                        commands,
+                        filters,
+                        data,
+                        includedHeaders,
+                        breakOnError,
+                        breakOnIncorrectTarget});
+            return ((AR301000ImportResult[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public void AR301000ImportAsync(Command[] commands, Filter[] filters, string[][] data, bool includedHeaders, bool breakOnError, bool breakOnIncorrectTarget) {
+            this.AR301000ImportAsync(commands, filters, data, includedHeaders, breakOnError, breakOnIncorrectTarget, null);
+        }
+        
+        /// <remarks/>
+        public void AR301000ImportAsync(Command[] commands, Filter[] filters, string[][] data, bool includedHeaders, bool breakOnError, bool breakOnIncorrectTarget, object userState) {
+            if ((this.AR301000ImportOperationCompleted == null)) {
+                this.AR301000ImportOperationCompleted = new System.Threading.SendOrPostCallback(this.OnAR301000ImportOperationCompleted);
+            }
+            this.InvokeAsync("AR301000Import", new object[] {
+                        commands,
+                        filters,
+                        data,
+                        includedHeaders,
+                        breakOnError,
+                        breakOnIncorrectTarget}, this.AR301000ImportOperationCompleted, userState);
+        }
+        
+        private void OnAR301000ImportOperationCompleted(object arg) {
+            if ((this.AR301000ImportCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.AR301000ImportCompleted(this, new AR301000ImportCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://www.acumatica.com/generic/AR301000/Export", RequestNamespace="http://www.acumatica.com/generic/", ResponseNamespace="http://www.acumatica.com/generic/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [return: System.Xml.Serialization.XmlArrayAttribute("ExportResult")]
+        [return: System.Xml.Serialization.XmlArrayItemAttribute("ArrayOfString")]
+        [return: System.Xml.Serialization.XmlArrayItemAttribute(NestingLevel=1)]
+        public string[][] AR301000Export(Command[] commands, Filter[] filters, int topCount, bool includeHeaders, bool breakOnError) {
+            object[] results = this.Invoke("AR301000Export", new object[] {
+                        commands,
+                        filters,
+                        topCount,
+                        includeHeaders,
+                        breakOnError});
+            return ((string[][])(results[0]));
+        }
+        
+        /// <remarks/>
+        public void AR301000ExportAsync(Command[] commands, Filter[] filters, int topCount, bool includeHeaders, bool breakOnError) {
+            this.AR301000ExportAsync(commands, filters, topCount, includeHeaders, breakOnError, null);
+        }
+        
+        /// <remarks/>
+        public void AR301000ExportAsync(Command[] commands, Filter[] filters, int topCount, bool includeHeaders, bool breakOnError, object userState) {
+            if ((this.AR301000ExportOperationCompleted == null)) {
+                this.AR301000ExportOperationCompleted = new System.Threading.SendOrPostCallback(this.OnAR301000ExportOperationCompleted);
+            }
+            this.InvokeAsync("AR301000Export", new object[] {
+                        commands,
+                        filters,
+                        topCount,
+                        includeHeaders,
+                        breakOnError}, this.AR301000ExportOperationCompleted, userState);
+        }
+        
+        private void OnAR301000ExportOperationCompleted(object arg) {
+            if ((this.AR301000ExportCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.AR301000ExportCompleted(this, new AR301000ExportCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://www.acumatica.com/generic/AR301000/Submit", RequestNamespace="http://www.acumatica.com/generic/", ResponseNamespace="http://www.acumatica.com/generic/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [return: System.Xml.Serialization.XmlArrayAttribute("SubmitResult")]
+        [return: System.Xml.Serialization.XmlArrayItemAttribute("Content")]
+        public AR301000Content[] AR301000Submit(Command[] commands) {
+            object[] results = this.Invoke("AR301000Submit", new object[] {
+                        commands});
+            return ((AR301000Content[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public void AR301000SubmitAsync(Command[] commands) {
+            this.AR301000SubmitAsync(commands, null);
+        }
+        
+        /// <remarks/>
+        public void AR301000SubmitAsync(Command[] commands, object userState) {
+            if ((this.AR301000SubmitOperationCompleted == null)) {
+                this.AR301000SubmitOperationCompleted = new System.Threading.SendOrPostCallback(this.OnAR301000SubmitOperationCompleted);
+            }
+            this.InvokeAsync("AR301000Submit", new object[] {
+                        commands}, this.AR301000SubmitOperationCompleted, userState);
+        }
+        
+        private void OnAR301000SubmitOperationCompleted(object arg) {
+            if ((this.AR301000SubmitCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.AR301000SubmitCompleted(this, new AR301000SubmitCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://www.acumatica.com/generic/AR302000/Clear", RequestNamespace="http://www.acumatica.com/generic/", ResponseNamespace="http://www.acumatica.com/generic/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void AR302000Clear() {
+            this.Invoke("AR302000Clear", new object[0]);
+        }
+        
+        /// <remarks/>
+        public void AR302000ClearAsync() {
+            this.AR302000ClearAsync(null);
+        }
+        
+        /// <remarks/>
+        public void AR302000ClearAsync(object userState) {
+            if ((this.AR302000ClearOperationCompleted == null)) {
+                this.AR302000ClearOperationCompleted = new System.Threading.SendOrPostCallback(this.OnAR302000ClearOperationCompleted);
+            }
+            this.InvokeAsync("AR302000Clear", new object[0], this.AR302000ClearOperationCompleted, userState);
+        }
+        
+        private void OnAR302000ClearOperationCompleted(object arg) {
+            if ((this.AR302000ClearCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.AR302000ClearCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://www.acumatica.com/generic/AR302000/GetProcessStatus", RequestNamespace="http://www.acumatica.com/generic/", ResponseNamespace="http://www.acumatica.com/generic/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [return: System.Xml.Serialization.XmlElementAttribute("GetProcessStatusResult")]
+        public ProcessResult AR302000GetProcessStatus() {
+            object[] results = this.Invoke("AR302000GetProcessStatus", new object[0]);
+            return ((ProcessResult)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void AR302000GetProcessStatusAsync() {
+            this.AR302000GetProcessStatusAsync(null);
+        }
+        
+        /// <remarks/>
+        public void AR302000GetProcessStatusAsync(object userState) {
+            if ((this.AR302000GetProcessStatusOperationCompleted == null)) {
+                this.AR302000GetProcessStatusOperationCompleted = new System.Threading.SendOrPostCallback(this.OnAR302000GetProcessStatusOperationCompleted);
+            }
+            this.InvokeAsync("AR302000GetProcessStatus", new object[0], this.AR302000GetProcessStatusOperationCompleted, userState);
+        }
+        
+        private void OnAR302000GetProcessStatusOperationCompleted(object arg) {
+            if ((this.AR302000GetProcessStatusCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.AR302000GetProcessStatusCompleted(this, new AR302000GetProcessStatusCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://www.acumatica.com/generic/AR302000/GetSchema", RequestNamespace="http://www.acumatica.com/generic/", ResponseNamespace="http://www.acumatica.com/generic/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [return: System.Xml.Serialization.XmlElementAttribute("GetSchemaResult")]
+        public AR302000Content AR302000GetSchema() {
+            object[] results = this.Invoke("AR302000GetSchema", new object[0]);
+            return ((AR302000Content)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void AR302000GetSchemaAsync() {
+            this.AR302000GetSchemaAsync(null);
+        }
+        
+        /// <remarks/>
+        public void AR302000GetSchemaAsync(object userState) {
+            if ((this.AR302000GetSchemaOperationCompleted == null)) {
+                this.AR302000GetSchemaOperationCompleted = new System.Threading.SendOrPostCallback(this.OnAR302000GetSchemaOperationCompleted);
+            }
+            this.InvokeAsync("AR302000GetSchema", new object[0], this.AR302000GetSchemaOperationCompleted, userState);
+        }
+        
+        private void OnAR302000GetSchemaOperationCompleted(object arg) {
+            if ((this.AR302000GetSchemaCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.AR302000GetSchemaCompleted(this, new AR302000GetSchemaCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://www.acumatica.com/generic/AR302000/SetSchema", RequestNamespace="http://www.acumatica.com/generic/", ResponseNamespace="http://www.acumatica.com/generic/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void AR302000SetSchema(AR302000Content schema) {
+            this.Invoke("AR302000SetSchema", new object[] {
+                        schema});
+        }
+        
+        /// <remarks/>
+        public void AR302000SetSchemaAsync(AR302000Content schema) {
+            this.AR302000SetSchemaAsync(schema, null);
+        }
+        
+        /// <remarks/>
+        public void AR302000SetSchemaAsync(AR302000Content schema, object userState) {
+            if ((this.AR302000SetSchemaOperationCompleted == null)) {
+                this.AR302000SetSchemaOperationCompleted = new System.Threading.SendOrPostCallback(this.OnAR302000SetSchemaOperationCompleted);
+            }
+            this.InvokeAsync("AR302000SetSchema", new object[] {
+                        schema}, this.AR302000SetSchemaOperationCompleted, userState);
+        }
+        
+        private void OnAR302000SetSchemaOperationCompleted(object arg) {
+            if ((this.AR302000SetSchemaCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.AR302000SetSchemaCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://www.acumatica.com/generic/AR302000/Import", RequestNamespace="http://www.acumatica.com/generic/", ResponseNamespace="http://www.acumatica.com/generic/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [return: System.Xml.Serialization.XmlArrayAttribute("ImportResult")]
+        [return: System.Xml.Serialization.XmlArrayItemAttribute("ImportResult")]
+        public AR302000ImportResult[] AR302000Import(Command[] commands, Filter[] filters, [System.Xml.Serialization.XmlArrayItemAttribute("ArrayOfString")] [System.Xml.Serialization.XmlArrayItemAttribute(NestingLevel=1)] string[][] data, bool includedHeaders, bool breakOnError, bool breakOnIncorrectTarget) {
+            object[] results = this.Invoke("AR302000Import", new object[] {
+                        commands,
+                        filters,
+                        data,
+                        includedHeaders,
+                        breakOnError,
+                        breakOnIncorrectTarget});
+            return ((AR302000ImportResult[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public void AR302000ImportAsync(Command[] commands, Filter[] filters, string[][] data, bool includedHeaders, bool breakOnError, bool breakOnIncorrectTarget) {
+            this.AR302000ImportAsync(commands, filters, data, includedHeaders, breakOnError, breakOnIncorrectTarget, null);
+        }
+        
+        /// <remarks/>
+        public void AR302000ImportAsync(Command[] commands, Filter[] filters, string[][] data, bool includedHeaders, bool breakOnError, bool breakOnIncorrectTarget, object userState) {
+            if ((this.AR302000ImportOperationCompleted == null)) {
+                this.AR302000ImportOperationCompleted = new System.Threading.SendOrPostCallback(this.OnAR302000ImportOperationCompleted);
+            }
+            this.InvokeAsync("AR302000Import", new object[] {
+                        commands,
+                        filters,
+                        data,
+                        includedHeaders,
+                        breakOnError,
+                        breakOnIncorrectTarget}, this.AR302000ImportOperationCompleted, userState);
+        }
+        
+        private void OnAR302000ImportOperationCompleted(object arg) {
+            if ((this.AR302000ImportCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.AR302000ImportCompleted(this, new AR302000ImportCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://www.acumatica.com/generic/AR302000/Export", RequestNamespace="http://www.acumatica.com/generic/", ResponseNamespace="http://www.acumatica.com/generic/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [return: System.Xml.Serialization.XmlArrayAttribute("ExportResult")]
+        [return: System.Xml.Serialization.XmlArrayItemAttribute("ArrayOfString")]
+        [return: System.Xml.Serialization.XmlArrayItemAttribute(NestingLevel=1)]
+        public string[][] AR302000Export(Command[] commands, Filter[] filters, int topCount, bool includeHeaders, bool breakOnError) {
+            object[] results = this.Invoke("AR302000Export", new object[] {
+                        commands,
+                        filters,
+                        topCount,
+                        includeHeaders,
+                        breakOnError});
+            return ((string[][])(results[0]));
+        }
+        
+        /// <remarks/>
+        public void AR302000ExportAsync(Command[] commands, Filter[] filters, int topCount, bool includeHeaders, bool breakOnError) {
+            this.AR302000ExportAsync(commands, filters, topCount, includeHeaders, breakOnError, null);
+        }
+        
+        /// <remarks/>
+        public void AR302000ExportAsync(Command[] commands, Filter[] filters, int topCount, bool includeHeaders, bool breakOnError, object userState) {
+            if ((this.AR302000ExportOperationCompleted == null)) {
+                this.AR302000ExportOperationCompleted = new System.Threading.SendOrPostCallback(this.OnAR302000ExportOperationCompleted);
+            }
+            this.InvokeAsync("AR302000Export", new object[] {
+                        commands,
+                        filters,
+                        topCount,
+                        includeHeaders,
+                        breakOnError}, this.AR302000ExportOperationCompleted, userState);
+        }
+        
+        private void OnAR302000ExportOperationCompleted(object arg) {
+            if ((this.AR302000ExportCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.AR302000ExportCompleted(this, new AR302000ExportCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://www.acumatica.com/generic/AR302000/Submit", RequestNamespace="http://www.acumatica.com/generic/", ResponseNamespace="http://www.acumatica.com/generic/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [return: System.Xml.Serialization.XmlArrayAttribute("SubmitResult")]
+        [return: System.Xml.Serialization.XmlArrayItemAttribute("Content")]
+        public AR302000Content[] AR302000Submit(Command[] commands) {
+            object[] results = this.Invoke("AR302000Submit", new object[] {
+                        commands});
+            return ((AR302000Content[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public void AR302000SubmitAsync(Command[] commands) {
+            this.AR302000SubmitAsync(commands, null);
+        }
+        
+        /// <remarks/>
+        public void AR302000SubmitAsync(Command[] commands, object userState) {
+            if ((this.AR302000SubmitOperationCompleted == null)) {
+                this.AR302000SubmitOperationCompleted = new System.Threading.SendOrPostCallback(this.OnAR302000SubmitOperationCompleted);
+            }
+            this.InvokeAsync("AR302000Submit", new object[] {
+                        commands}, this.AR302000SubmitOperationCompleted, userState);
+        }
+        
+        private void OnAR302000SubmitOperationCompleted(object arg) {
+            if ((this.AR302000SubmitCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.AR302000SubmitCompleted(this, new AR302000SubmitCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
             }
         }
         
@@ -783,6 +1367,450 @@ namespace AcumaticaWebServiceSample.TEST {
         }
         
         /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://www.acumatica.com/generic/SO302000/Clear", RequestNamespace="http://www.acumatica.com/generic/", ResponseNamespace="http://www.acumatica.com/generic/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void SO302000Clear() {
+            this.Invoke("SO302000Clear", new object[0]);
+        }
+        
+        /// <remarks/>
+        public void SO302000ClearAsync() {
+            this.SO302000ClearAsync(null);
+        }
+        
+        /// <remarks/>
+        public void SO302000ClearAsync(object userState) {
+            if ((this.SO302000ClearOperationCompleted == null)) {
+                this.SO302000ClearOperationCompleted = new System.Threading.SendOrPostCallback(this.OnSO302000ClearOperationCompleted);
+            }
+            this.InvokeAsync("SO302000Clear", new object[0], this.SO302000ClearOperationCompleted, userState);
+        }
+        
+        private void OnSO302000ClearOperationCompleted(object arg) {
+            if ((this.SO302000ClearCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.SO302000ClearCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://www.acumatica.com/generic/SO302000/GetProcessStatus", RequestNamespace="http://www.acumatica.com/generic/", ResponseNamespace="http://www.acumatica.com/generic/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [return: System.Xml.Serialization.XmlElementAttribute("GetProcessStatusResult")]
+        public ProcessResult SO302000GetProcessStatus() {
+            object[] results = this.Invoke("SO302000GetProcessStatus", new object[0]);
+            return ((ProcessResult)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void SO302000GetProcessStatusAsync() {
+            this.SO302000GetProcessStatusAsync(null);
+        }
+        
+        /// <remarks/>
+        public void SO302000GetProcessStatusAsync(object userState) {
+            if ((this.SO302000GetProcessStatusOperationCompleted == null)) {
+                this.SO302000GetProcessStatusOperationCompleted = new System.Threading.SendOrPostCallback(this.OnSO302000GetProcessStatusOperationCompleted);
+            }
+            this.InvokeAsync("SO302000GetProcessStatus", new object[0], this.SO302000GetProcessStatusOperationCompleted, userState);
+        }
+        
+        private void OnSO302000GetProcessStatusOperationCompleted(object arg) {
+            if ((this.SO302000GetProcessStatusCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.SO302000GetProcessStatusCompleted(this, new SO302000GetProcessStatusCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://www.acumatica.com/generic/SO302000/GetSchema", RequestNamespace="http://www.acumatica.com/generic/", ResponseNamespace="http://www.acumatica.com/generic/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [return: System.Xml.Serialization.XmlElementAttribute("GetSchemaResult")]
+        public SO302000Content SO302000GetSchema() {
+            object[] results = this.Invoke("SO302000GetSchema", new object[0]);
+            return ((SO302000Content)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void SO302000GetSchemaAsync() {
+            this.SO302000GetSchemaAsync(null);
+        }
+        
+        /// <remarks/>
+        public void SO302000GetSchemaAsync(object userState) {
+            if ((this.SO302000GetSchemaOperationCompleted == null)) {
+                this.SO302000GetSchemaOperationCompleted = new System.Threading.SendOrPostCallback(this.OnSO302000GetSchemaOperationCompleted);
+            }
+            this.InvokeAsync("SO302000GetSchema", new object[0], this.SO302000GetSchemaOperationCompleted, userState);
+        }
+        
+        private void OnSO302000GetSchemaOperationCompleted(object arg) {
+            if ((this.SO302000GetSchemaCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.SO302000GetSchemaCompleted(this, new SO302000GetSchemaCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://www.acumatica.com/generic/SO302000/SetSchema", RequestNamespace="http://www.acumatica.com/generic/", ResponseNamespace="http://www.acumatica.com/generic/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void SO302000SetSchema(SO302000Content schema) {
+            this.Invoke("SO302000SetSchema", new object[] {
+                        schema});
+        }
+        
+        /// <remarks/>
+        public void SO302000SetSchemaAsync(SO302000Content schema) {
+            this.SO302000SetSchemaAsync(schema, null);
+        }
+        
+        /// <remarks/>
+        public void SO302000SetSchemaAsync(SO302000Content schema, object userState) {
+            if ((this.SO302000SetSchemaOperationCompleted == null)) {
+                this.SO302000SetSchemaOperationCompleted = new System.Threading.SendOrPostCallback(this.OnSO302000SetSchemaOperationCompleted);
+            }
+            this.InvokeAsync("SO302000SetSchema", new object[] {
+                        schema}, this.SO302000SetSchemaOperationCompleted, userState);
+        }
+        
+        private void OnSO302000SetSchemaOperationCompleted(object arg) {
+            if ((this.SO302000SetSchemaCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.SO302000SetSchemaCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://www.acumatica.com/generic/SO302000/Import", RequestNamespace="http://www.acumatica.com/generic/", ResponseNamespace="http://www.acumatica.com/generic/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [return: System.Xml.Serialization.XmlArrayAttribute("ImportResult")]
+        [return: System.Xml.Serialization.XmlArrayItemAttribute("ImportResult")]
+        public SO302000ImportResult[] SO302000Import(Command[] commands, Filter[] filters, [System.Xml.Serialization.XmlArrayItemAttribute("ArrayOfString")] [System.Xml.Serialization.XmlArrayItemAttribute(NestingLevel=1)] string[][] data, bool includedHeaders, bool breakOnError, bool breakOnIncorrectTarget) {
+            object[] results = this.Invoke("SO302000Import", new object[] {
+                        commands,
+                        filters,
+                        data,
+                        includedHeaders,
+                        breakOnError,
+                        breakOnIncorrectTarget});
+            return ((SO302000ImportResult[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public void SO302000ImportAsync(Command[] commands, Filter[] filters, string[][] data, bool includedHeaders, bool breakOnError, bool breakOnIncorrectTarget) {
+            this.SO302000ImportAsync(commands, filters, data, includedHeaders, breakOnError, breakOnIncorrectTarget, null);
+        }
+        
+        /// <remarks/>
+        public void SO302000ImportAsync(Command[] commands, Filter[] filters, string[][] data, bool includedHeaders, bool breakOnError, bool breakOnIncorrectTarget, object userState) {
+            if ((this.SO302000ImportOperationCompleted == null)) {
+                this.SO302000ImportOperationCompleted = new System.Threading.SendOrPostCallback(this.OnSO302000ImportOperationCompleted);
+            }
+            this.InvokeAsync("SO302000Import", new object[] {
+                        commands,
+                        filters,
+                        data,
+                        includedHeaders,
+                        breakOnError,
+                        breakOnIncorrectTarget}, this.SO302000ImportOperationCompleted, userState);
+        }
+        
+        private void OnSO302000ImportOperationCompleted(object arg) {
+            if ((this.SO302000ImportCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.SO302000ImportCompleted(this, new SO302000ImportCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://www.acumatica.com/generic/SO302000/Export", RequestNamespace="http://www.acumatica.com/generic/", ResponseNamespace="http://www.acumatica.com/generic/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [return: System.Xml.Serialization.XmlArrayAttribute("ExportResult")]
+        [return: System.Xml.Serialization.XmlArrayItemAttribute("ArrayOfString")]
+        [return: System.Xml.Serialization.XmlArrayItemAttribute(NestingLevel=1)]
+        public string[][] SO302000Export(Command[] commands, Filter[] filters, int topCount, bool includeHeaders, bool breakOnError) {
+            object[] results = this.Invoke("SO302000Export", new object[] {
+                        commands,
+                        filters,
+                        topCount,
+                        includeHeaders,
+                        breakOnError});
+            return ((string[][])(results[0]));
+        }
+        
+        /// <remarks/>
+        public void SO302000ExportAsync(Command[] commands, Filter[] filters, int topCount, bool includeHeaders, bool breakOnError) {
+            this.SO302000ExportAsync(commands, filters, topCount, includeHeaders, breakOnError, null);
+        }
+        
+        /// <remarks/>
+        public void SO302000ExportAsync(Command[] commands, Filter[] filters, int topCount, bool includeHeaders, bool breakOnError, object userState) {
+            if ((this.SO302000ExportOperationCompleted == null)) {
+                this.SO302000ExportOperationCompleted = new System.Threading.SendOrPostCallback(this.OnSO302000ExportOperationCompleted);
+            }
+            this.InvokeAsync("SO302000Export", new object[] {
+                        commands,
+                        filters,
+                        topCount,
+                        includeHeaders,
+                        breakOnError}, this.SO302000ExportOperationCompleted, userState);
+        }
+        
+        private void OnSO302000ExportOperationCompleted(object arg) {
+            if ((this.SO302000ExportCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.SO302000ExportCompleted(this, new SO302000ExportCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://www.acumatica.com/generic/SO302000/Submit", RequestNamespace="http://www.acumatica.com/generic/", ResponseNamespace="http://www.acumatica.com/generic/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [return: System.Xml.Serialization.XmlArrayAttribute("SubmitResult")]
+        [return: System.Xml.Serialization.XmlArrayItemAttribute("Content")]
+        public SO302000Content[] SO302000Submit(Command[] commands) {
+            object[] results = this.Invoke("SO302000Submit", new object[] {
+                        commands});
+            return ((SO302000Content[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public void SO302000SubmitAsync(Command[] commands) {
+            this.SO302000SubmitAsync(commands, null);
+        }
+        
+        /// <remarks/>
+        public void SO302000SubmitAsync(Command[] commands, object userState) {
+            if ((this.SO302000SubmitOperationCompleted == null)) {
+                this.SO302000SubmitOperationCompleted = new System.Threading.SendOrPostCallback(this.OnSO302000SubmitOperationCompleted);
+            }
+            this.InvokeAsync("SO302000Submit", new object[] {
+                        commands}, this.SO302000SubmitOperationCompleted, userState);
+        }
+        
+        private void OnSO302000SubmitOperationCompleted(object arg) {
+            if ((this.SO302000SubmitCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.SO302000SubmitCompleted(this, new SO302000SubmitCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://www.acumatica.com/generic/SO303000/Clear", RequestNamespace="http://www.acumatica.com/generic/", ResponseNamespace="http://www.acumatica.com/generic/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void SO303000Clear() {
+            this.Invoke("SO303000Clear", new object[0]);
+        }
+        
+        /// <remarks/>
+        public void SO303000ClearAsync() {
+            this.SO303000ClearAsync(null);
+        }
+        
+        /// <remarks/>
+        public void SO303000ClearAsync(object userState) {
+            if ((this.SO303000ClearOperationCompleted == null)) {
+                this.SO303000ClearOperationCompleted = new System.Threading.SendOrPostCallback(this.OnSO303000ClearOperationCompleted);
+            }
+            this.InvokeAsync("SO303000Clear", new object[0], this.SO303000ClearOperationCompleted, userState);
+        }
+        
+        private void OnSO303000ClearOperationCompleted(object arg) {
+            if ((this.SO303000ClearCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.SO303000ClearCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://www.acumatica.com/generic/SO303000/GetProcessStatus", RequestNamespace="http://www.acumatica.com/generic/", ResponseNamespace="http://www.acumatica.com/generic/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [return: System.Xml.Serialization.XmlElementAttribute("GetProcessStatusResult")]
+        public ProcessResult SO303000GetProcessStatus() {
+            object[] results = this.Invoke("SO303000GetProcessStatus", new object[0]);
+            return ((ProcessResult)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void SO303000GetProcessStatusAsync() {
+            this.SO303000GetProcessStatusAsync(null);
+        }
+        
+        /// <remarks/>
+        public void SO303000GetProcessStatusAsync(object userState) {
+            if ((this.SO303000GetProcessStatusOperationCompleted == null)) {
+                this.SO303000GetProcessStatusOperationCompleted = new System.Threading.SendOrPostCallback(this.OnSO303000GetProcessStatusOperationCompleted);
+            }
+            this.InvokeAsync("SO303000GetProcessStatus", new object[0], this.SO303000GetProcessStatusOperationCompleted, userState);
+        }
+        
+        private void OnSO303000GetProcessStatusOperationCompleted(object arg) {
+            if ((this.SO303000GetProcessStatusCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.SO303000GetProcessStatusCompleted(this, new SO303000GetProcessStatusCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://www.acumatica.com/generic/SO303000/GetSchema", RequestNamespace="http://www.acumatica.com/generic/", ResponseNamespace="http://www.acumatica.com/generic/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [return: System.Xml.Serialization.XmlElementAttribute("GetSchemaResult")]
+        public SO303000Content SO303000GetSchema() {
+            object[] results = this.Invoke("SO303000GetSchema", new object[0]);
+            return ((SO303000Content)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void SO303000GetSchemaAsync() {
+            this.SO303000GetSchemaAsync(null);
+        }
+        
+        /// <remarks/>
+        public void SO303000GetSchemaAsync(object userState) {
+            if ((this.SO303000GetSchemaOperationCompleted == null)) {
+                this.SO303000GetSchemaOperationCompleted = new System.Threading.SendOrPostCallback(this.OnSO303000GetSchemaOperationCompleted);
+            }
+            this.InvokeAsync("SO303000GetSchema", new object[0], this.SO303000GetSchemaOperationCompleted, userState);
+        }
+        
+        private void OnSO303000GetSchemaOperationCompleted(object arg) {
+            if ((this.SO303000GetSchemaCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.SO303000GetSchemaCompleted(this, new SO303000GetSchemaCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://www.acumatica.com/generic/SO303000/SetSchema", RequestNamespace="http://www.acumatica.com/generic/", ResponseNamespace="http://www.acumatica.com/generic/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void SO303000SetSchema(SO303000Content schema) {
+            this.Invoke("SO303000SetSchema", new object[] {
+                        schema});
+        }
+        
+        /// <remarks/>
+        public void SO303000SetSchemaAsync(SO303000Content schema) {
+            this.SO303000SetSchemaAsync(schema, null);
+        }
+        
+        /// <remarks/>
+        public void SO303000SetSchemaAsync(SO303000Content schema, object userState) {
+            if ((this.SO303000SetSchemaOperationCompleted == null)) {
+                this.SO303000SetSchemaOperationCompleted = new System.Threading.SendOrPostCallback(this.OnSO303000SetSchemaOperationCompleted);
+            }
+            this.InvokeAsync("SO303000SetSchema", new object[] {
+                        schema}, this.SO303000SetSchemaOperationCompleted, userState);
+        }
+        
+        private void OnSO303000SetSchemaOperationCompleted(object arg) {
+            if ((this.SO303000SetSchemaCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.SO303000SetSchemaCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://www.acumatica.com/generic/SO303000/Import", RequestNamespace="http://www.acumatica.com/generic/", ResponseNamespace="http://www.acumatica.com/generic/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [return: System.Xml.Serialization.XmlArrayAttribute("ImportResult")]
+        [return: System.Xml.Serialization.XmlArrayItemAttribute("ImportResult")]
+        public SO303000ImportResult[] SO303000Import(Command[] commands, Filter[] filters, [System.Xml.Serialization.XmlArrayItemAttribute("ArrayOfString")] [System.Xml.Serialization.XmlArrayItemAttribute(NestingLevel=1)] string[][] data, bool includedHeaders, bool breakOnError, bool breakOnIncorrectTarget) {
+            object[] results = this.Invoke("SO303000Import", new object[] {
+                        commands,
+                        filters,
+                        data,
+                        includedHeaders,
+                        breakOnError,
+                        breakOnIncorrectTarget});
+            return ((SO303000ImportResult[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public void SO303000ImportAsync(Command[] commands, Filter[] filters, string[][] data, bool includedHeaders, bool breakOnError, bool breakOnIncorrectTarget) {
+            this.SO303000ImportAsync(commands, filters, data, includedHeaders, breakOnError, breakOnIncorrectTarget, null);
+        }
+        
+        /// <remarks/>
+        public void SO303000ImportAsync(Command[] commands, Filter[] filters, string[][] data, bool includedHeaders, bool breakOnError, bool breakOnIncorrectTarget, object userState) {
+            if ((this.SO303000ImportOperationCompleted == null)) {
+                this.SO303000ImportOperationCompleted = new System.Threading.SendOrPostCallback(this.OnSO303000ImportOperationCompleted);
+            }
+            this.InvokeAsync("SO303000Import", new object[] {
+                        commands,
+                        filters,
+                        data,
+                        includedHeaders,
+                        breakOnError,
+                        breakOnIncorrectTarget}, this.SO303000ImportOperationCompleted, userState);
+        }
+        
+        private void OnSO303000ImportOperationCompleted(object arg) {
+            if ((this.SO303000ImportCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.SO303000ImportCompleted(this, new SO303000ImportCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://www.acumatica.com/generic/SO303000/Export", RequestNamespace="http://www.acumatica.com/generic/", ResponseNamespace="http://www.acumatica.com/generic/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [return: System.Xml.Serialization.XmlArrayAttribute("ExportResult")]
+        [return: System.Xml.Serialization.XmlArrayItemAttribute("ArrayOfString")]
+        [return: System.Xml.Serialization.XmlArrayItemAttribute(NestingLevel=1)]
+        public string[][] SO303000Export(Command[] commands, Filter[] filters, int topCount, bool includeHeaders, bool breakOnError) {
+            object[] results = this.Invoke("SO303000Export", new object[] {
+                        commands,
+                        filters,
+                        topCount,
+                        includeHeaders,
+                        breakOnError});
+            return ((string[][])(results[0]));
+        }
+        
+        /// <remarks/>
+        public void SO303000ExportAsync(Command[] commands, Filter[] filters, int topCount, bool includeHeaders, bool breakOnError) {
+            this.SO303000ExportAsync(commands, filters, topCount, includeHeaders, breakOnError, null);
+        }
+        
+        /// <remarks/>
+        public void SO303000ExportAsync(Command[] commands, Filter[] filters, int topCount, bool includeHeaders, bool breakOnError, object userState) {
+            if ((this.SO303000ExportOperationCompleted == null)) {
+                this.SO303000ExportOperationCompleted = new System.Threading.SendOrPostCallback(this.OnSO303000ExportOperationCompleted);
+            }
+            this.InvokeAsync("SO303000Export", new object[] {
+                        commands,
+                        filters,
+                        topCount,
+                        includeHeaders,
+                        breakOnError}, this.SO303000ExportOperationCompleted, userState);
+        }
+        
+        private void OnSO303000ExportOperationCompleted(object arg) {
+            if ((this.SO303000ExportCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.SO303000ExportCompleted(this, new SO303000ExportCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://www.acumatica.com/generic/SO303000/Submit", RequestNamespace="http://www.acumatica.com/generic/", ResponseNamespace="http://www.acumatica.com/generic/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [return: System.Xml.Serialization.XmlArrayAttribute("SubmitResult")]
+        [return: System.Xml.Serialization.XmlArrayItemAttribute("Content")]
+        public SO303000Content[] SO303000Submit(Command[] commands) {
+            object[] results = this.Invoke("SO303000Submit", new object[] {
+                        commands});
+            return ((SO303000Content[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public void SO303000SubmitAsync(Command[] commands) {
+            this.SO303000SubmitAsync(commands, null);
+        }
+        
+        /// <remarks/>
+        public void SO303000SubmitAsync(Command[] commands, object userState) {
+            if ((this.SO303000SubmitOperationCompleted == null)) {
+                this.SO303000SubmitOperationCompleted = new System.Threading.SendOrPostCallback(this.OnSO303000SubmitOperationCompleted);
+            }
+            this.InvokeAsync("SO303000Submit", new object[] {
+                        commands}, this.SO303000SubmitOperationCompleted, userState);
+        }
+        
+        private void OnSO303000SubmitOperationCompleted(object arg) {
+            if ((this.SO303000SubmitCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.SO303000SubmitCompleted(this, new SO303000SubmitCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
         public new void CancelAsync(object userState) {
             base.CancelAsync(userState);
         }
@@ -1068,6 +2096,9184 @@ namespace AcumaticaWebServiceSample.TEST {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO303000ImportResult {
+        
+        private bool processedField;
+        
+        private string errorField;
+        
+        private SO303000PrimaryKey keysField;
+        
+        /// <remarks/>
+        public bool Processed {
+            get {
+                return this.processedField;
+            }
+            set {
+                this.processedField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Error {
+            get {
+                return this.errorField;
+            }
+            set {
+                this.errorField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO303000PrimaryKey Keys {
+            get {
+                return this.keysField;
+            }
+            set {
+                this.keysField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO303000PrimaryKey {
+        
+        private Value typeField;
+        
+        private Value referenceNbrField;
+        
+        /// <remarks/>
+        public Value Type {
+            get {
+                return this.typeField;
+            }
+            set {
+                this.typeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Value ReferenceNbr {
+            get {
+                return this.referenceNbrField;
+            }
+            set {
+                this.referenceNbrField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class Value : Field {
+        
+        private string messageField;
+        
+        private bool isErrorField;
+        
+        public Value() {
+            this.isErrorField = false;
+        }
+        
+        /// <remarks/>
+        public string Message {
+            get {
+                return this.messageField;
+            }
+            set {
+                this.messageField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.ComponentModel.DefaultValueAttribute(false)]
+        public bool IsError {
+            get {
+                return this.isErrorField;
+            }
+            set {
+                this.isErrorField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Attachment))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Value))]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class Field : Command {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class Attachment : Field {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO303000PaymentInformationCreditCardProcessingInfoServiceCommands {
+        
+        private Key keyTranNbrField;
+        
+        private NewRow newRowField;
+        
+        private RowNumber rowNumberField;
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        /// <remarks/>
+        public Key KeyTranNbr {
+            get {
+                return this.keyTranNbrField;
+            }
+            set {
+                this.keyTranNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public NewRow NewRow {
+            get {
+                return this.newRowField;
+            }
+            set {
+                this.newRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public RowNumber RowNumber {
+            get {
+                return this.rowNumberField;
+            }
+            set {
+                this.rowNumberField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class Key : Command {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class NewRow : Command {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class RowNumber : Command {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class DeleteRow : Command {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class Answer : Command {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO303000PaymentInformationCreditCardProcessingInfo {
+        
+        private string displayNameField;
+        
+        private Field tranNbrField;
+        
+        private Field procCenterField;
+        
+        private Field tranTypeField;
+        
+        private Field tranStatusField;
+        
+        private Field tranAmountField;
+        
+        private Field referencedTranNbrField;
+        
+        private Field procCenterTranNbrField;
+        
+        private Field procCenterAuthNbrField;
+        
+        private Field pCResponseReasonField;
+        
+        private Field tranTimeField;
+        
+        private Field procStatusField;
+        
+        private Field cVVVerificationField;
+        
+        private Field errorSourceField;
+        
+        private Field errorTextField;
+        
+        private SO303000PaymentInformationCreditCardProcessingInfoServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field TranNbr {
+            get {
+                return this.tranNbrField;
+            }
+            set {
+                this.tranNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ProcCenter {
+            get {
+                return this.procCenterField;
+            }
+            set {
+                this.procCenterField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field TranType {
+            get {
+                return this.tranTypeField;
+            }
+            set {
+                this.tranTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field TranStatus {
+            get {
+                return this.tranStatusField;
+            }
+            set {
+                this.tranStatusField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field TranAmount {
+            get {
+                return this.tranAmountField;
+            }
+            set {
+                this.tranAmountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ReferencedTranNbr {
+            get {
+                return this.referencedTranNbrField;
+            }
+            set {
+                this.referencedTranNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ProcCenterTranNbr {
+            get {
+                return this.procCenterTranNbrField;
+            }
+            set {
+                this.procCenterTranNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ProcCenterAuthNbr {
+            get {
+                return this.procCenterAuthNbrField;
+            }
+            set {
+                this.procCenterAuthNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field PCResponseReason {
+            get {
+                return this.pCResponseReasonField;
+            }
+            set {
+                this.pCResponseReasonField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field TranTime {
+            get {
+                return this.tranTimeField;
+            }
+            set {
+                this.tranTimeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ProcStatus {
+            get {
+                return this.procStatusField;
+            }
+            set {
+                this.procStatusField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field CVVVerification {
+            get {
+                return this.cVVVerificationField;
+            }
+            set {
+                this.cVVVerificationField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ErrorSource {
+            get {
+                return this.errorSourceField;
+            }
+            set {
+                this.errorSourceField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ErrorText {
+            get {
+                return this.errorTextField;
+            }
+            set {
+                this.errorTextField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO303000PaymentInformationCreditCardProcessingInfoServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO303000FreightDetailsServiceCommands {
+        
+        private Key keyShipmentNbrField;
+        
+        private NewRow newRowField;
+        
+        private RowNumber rowNumberField;
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        private Attachment attachmentField;
+        
+        /// <remarks/>
+        public Key KeyShipmentNbr {
+            get {
+                return this.keyShipmentNbrField;
+            }
+            set {
+                this.keyShipmentNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public NewRow NewRow {
+            get {
+                return this.newRowField;
+            }
+            set {
+                this.newRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public RowNumber RowNumber {
+            get {
+                return this.rowNumberField;
+            }
+            set {
+                this.rowNumberField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Attachment Attachment {
+            get {
+                return this.attachmentField;
+            }
+            set {
+                this.attachmentField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO303000FreightDetails {
+        
+        private string displayNameField;
+        
+        private Field shipmentNbrField;
+        
+        private Field shippingTermsField;
+        
+        private Field shippingZoneIDField;
+        
+        private Field shipViaField;
+        
+        private Field weightField;
+        
+        private Field volumeField;
+        
+        private Field lineTotalField;
+        
+        private Field freightCostField;
+        
+        private Field freightAmtField;
+        
+        private Field premiumFreightAmtField;
+        
+        private Field totalFreightAmtField;
+        
+        private Field accountField;
+        
+        private Field descriptionField;
+        
+        private Field subField;
+        
+        private Field projectTaskField;
+        
+        private Field taxCategoryField;
+        
+        private Field noteTextField;
+        
+        private SO303000FreightDetailsServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ShipmentNbr {
+            get {
+                return this.shipmentNbrField;
+            }
+            set {
+                this.shipmentNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ShippingTerms {
+            get {
+                return this.shippingTermsField;
+            }
+            set {
+                this.shippingTermsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ShippingZoneID {
+            get {
+                return this.shippingZoneIDField;
+            }
+            set {
+                this.shippingZoneIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ShipVia {
+            get {
+                return this.shipViaField;
+            }
+            set {
+                this.shipViaField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Weight {
+            get {
+                return this.weightField;
+            }
+            set {
+                this.weightField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Volume {
+            get {
+                return this.volumeField;
+            }
+            set {
+                this.volumeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field LineTotal {
+            get {
+                return this.lineTotalField;
+            }
+            set {
+                this.lineTotalField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field FreightCost {
+            get {
+                return this.freightCostField;
+            }
+            set {
+                this.freightCostField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field FreightAmt {
+            get {
+                return this.freightAmtField;
+            }
+            set {
+                this.freightAmtField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field PremiumFreightAmt {
+            get {
+                return this.premiumFreightAmtField;
+            }
+            set {
+                this.premiumFreightAmtField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field TotalFreightAmt {
+            get {
+                return this.totalFreightAmtField;
+            }
+            set {
+                this.totalFreightAmtField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Account {
+            get {
+                return this.accountField;
+            }
+            set {
+                this.accountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Description {
+            get {
+                return this.descriptionField;
+            }
+            set {
+                this.descriptionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Sub {
+            get {
+                return this.subField;
+            }
+            set {
+                this.subField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ProjectTask {
+            get {
+                return this.projectTaskField;
+            }
+            set {
+                this.projectTaskField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field TaxCategory {
+            get {
+                return this.taxCategoryField;
+            }
+            set {
+                this.taxCategoryField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field NoteText {
+            get {
+                return this.noteTextField;
+            }
+            set {
+                this.noteTextField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO303000FreightDetailsServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO303000DiscountDetailsServiceCommands {
+        
+        private Key keyOrderTypeField;
+        
+        private Key keyOrderNbrField;
+        
+        private NewRow newRowField;
+        
+        private RowNumber rowNumberField;
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        /// <remarks/>
+        public Key KeyOrderType {
+            get {
+                return this.keyOrderTypeField;
+            }
+            set {
+                this.keyOrderTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Key KeyOrderNbr {
+            get {
+                return this.keyOrderNbrField;
+            }
+            set {
+                this.keyOrderNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public NewRow NewRow {
+            get {
+                return this.newRowField;
+            }
+            set {
+                this.newRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public RowNumber RowNumber {
+            get {
+                return this.rowNumberField;
+            }
+            set {
+                this.rowNumberField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO303000DiscountDetails {
+        
+        private string displayNameField;
+        
+        private Field skipDiscountField;
+        
+        private Field orderTypeField;
+        
+        private Field orderNbrField;
+        
+        private Field discountCodeField;
+        
+        private Field sequenceIDField;
+        
+        private Field typeField;
+        
+        private Field manualDiscountField;
+        
+        private Field discountableAmtField;
+        
+        private Field discountableQtyField;
+        
+        private Field discountAmtField;
+        
+        private Field discountField;
+        
+        private Field freeItemField;
+        
+        private Field freeItemQtyField;
+        
+        private SO303000DiscountDetailsServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field SkipDiscount {
+            get {
+                return this.skipDiscountField;
+            }
+            set {
+                this.skipDiscountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field OrderType {
+            get {
+                return this.orderTypeField;
+            }
+            set {
+                this.orderTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field OrderNbr {
+            get {
+                return this.orderNbrField;
+            }
+            set {
+                this.orderNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field DiscountCode {
+            get {
+                return this.discountCodeField;
+            }
+            set {
+                this.discountCodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field SequenceID {
+            get {
+                return this.sequenceIDField;
+            }
+            set {
+                this.sequenceIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Type {
+            get {
+                return this.typeField;
+            }
+            set {
+                this.typeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ManualDiscount {
+            get {
+                return this.manualDiscountField;
+            }
+            set {
+                this.manualDiscountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field DiscountableAmt {
+            get {
+                return this.discountableAmtField;
+            }
+            set {
+                this.discountableAmtField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field DiscountableQty {
+            get {
+                return this.discountableQtyField;
+            }
+            set {
+                this.discountableQtyField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field DiscountAmt {
+            get {
+                return this.discountAmtField;
+            }
+            set {
+                this.discountAmtField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Discount {
+            get {
+                return this.discountField;
+            }
+            set {
+                this.discountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field FreeItem {
+            get {
+                return this.freeItemField;
+            }
+            set {
+                this.freeItemField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field FreeItemQty {
+            get {
+                return this.freeItemQtyField;
+            }
+            set {
+                this.freeItemQtyField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO303000DiscountDetailsServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO303000AddOrderServiceCommands {
+        
+        private Key keyOrderTypeField;
+        
+        private Key keyOrderNbrField;
+        
+        private Key keyShipmentNbrField;
+        
+        private NewRow newRowField;
+        
+        private RowNumber rowNumberField;
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        /// <remarks/>
+        public Key KeyOrderType {
+            get {
+                return this.keyOrderTypeField;
+            }
+            set {
+                this.keyOrderTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Key KeyOrderNbr {
+            get {
+                return this.keyOrderNbrField;
+            }
+            set {
+                this.keyOrderNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Key KeyShipmentNbr {
+            get {
+                return this.keyShipmentNbrField;
+            }
+            set {
+                this.keyShipmentNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public NewRow NewRow {
+            get {
+                return this.newRowField;
+            }
+            set {
+                this.newRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public RowNumber RowNumber {
+            get {
+                return this.rowNumberField;
+            }
+            set {
+                this.rowNumberField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO303000AddOrder {
+        
+        private string displayNameField;
+        
+        private Field selectedField;
+        
+        private Field orderTypeField;
+        
+        private Field orderNbrField;
+        
+        private Field shipmentNbrField;
+        
+        private Field customerField;
+        
+        private Field locationField;
+        
+        private Field shipmentDateField;
+        
+        private Field shippedQtyField;
+        
+        private SO303000AddOrderServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Selected {
+            get {
+                return this.selectedField;
+            }
+            set {
+                this.selectedField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field OrderType {
+            get {
+                return this.orderTypeField;
+            }
+            set {
+                this.orderTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field OrderNbr {
+            get {
+                return this.orderNbrField;
+            }
+            set {
+                this.orderNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ShipmentNbr {
+            get {
+                return this.shipmentNbrField;
+            }
+            set {
+                this.shipmentNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Customer {
+            get {
+                return this.customerField;
+            }
+            set {
+                this.customerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Location {
+            get {
+                return this.locationField;
+            }
+            set {
+                this.locationField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ShipmentDate {
+            get {
+                return this.shipmentDateField;
+            }
+            set {
+                this.shipmentDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ShippedQty {
+            get {
+                return this.shippedQtyField;
+            }
+            set {
+                this.shippedQtyField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO303000AddOrderServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO303000TotalsServiceCommands {
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        private Attachment attachmentField;
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Attachment Attachment {
+            get {
+                return this.attachmentField;
+            }
+            set {
+                this.attachmentField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO303000Totals {
+        
+        private string displayNameField;
+        
+        private Field lineTotalField;
+        
+        private Field miscTotalField;
+        
+        private Field discountTotalField;
+        
+        private Field taxTotalField;
+        
+        private Field freightField;
+        
+        private Field premiumFreightField;
+        
+        private Field paymentTotalField;
+        
+        private Field capturedAmountField;
+        
+        private SO303000TotalsServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field LineTotal {
+            get {
+                return this.lineTotalField;
+            }
+            set {
+                this.lineTotalField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field MiscTotal {
+            get {
+                return this.miscTotalField;
+            }
+            set {
+                this.miscTotalField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field DiscountTotal {
+            get {
+                return this.discountTotalField;
+            }
+            set {
+                this.discountTotalField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field TaxTotal {
+            get {
+                return this.taxTotalField;
+            }
+            set {
+                this.taxTotalField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Freight {
+            get {
+                return this.freightField;
+            }
+            set {
+                this.freightField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field PremiumFreight {
+            get {
+                return this.premiumFreightField;
+            }
+            set {
+                this.premiumFreightField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field PaymentTotal {
+            get {
+                return this.paymentTotalField;
+            }
+            set {
+                this.paymentTotalField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field CapturedAmount {
+            get {
+                return this.capturedAmountField;
+            }
+            set {
+                this.capturedAmountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO303000TotalsServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO303000PaymentInformationServiceCommands {
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        private Attachment attachmentField;
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Attachment Attachment {
+            get {
+                return this.attachmentField;
+            }
+            set {
+                this.attachmentField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO303000PaymentInformation {
+        
+        private string displayNameField;
+        
+        private Field paymentMethodField;
+        
+        private Field cardAccountNoField;
+        
+        private Field cardAccountNoCardAccountNoField;
+        
+        private Field cashAccountField;
+        
+        private Field paymentRefField;
+        
+        private Field clearDateField;
+        
+        private Field clearedField;
+        
+        private Field processingStatusField;
+        
+        private Field paymentTotalField;
+        
+        private Field amountToCaptureField;
+        
+        private Field capturedAmountField;
+        
+        private Field origPCRefNbrField;
+        
+        private SO303000PaymentInformationServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field PaymentMethod {
+            get {
+                return this.paymentMethodField;
+            }
+            set {
+                this.paymentMethodField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field CardAccountNo {
+            get {
+                return this.cardAccountNoField;
+            }
+            set {
+                this.cardAccountNoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field CardAccountNoCardAccountNo {
+            get {
+                return this.cardAccountNoCardAccountNoField;
+            }
+            set {
+                this.cardAccountNoCardAccountNoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field CashAccount {
+            get {
+                return this.cashAccountField;
+            }
+            set {
+                this.cashAccountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field PaymentRef {
+            get {
+                return this.paymentRefField;
+            }
+            set {
+                this.paymentRefField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ClearDate {
+            get {
+                return this.clearDateField;
+            }
+            set {
+                this.clearDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Cleared {
+            get {
+                return this.clearedField;
+            }
+            set {
+                this.clearedField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ProcessingStatus {
+            get {
+                return this.processingStatusField;
+            }
+            set {
+                this.processingStatusField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field PaymentTotal {
+            get {
+                return this.paymentTotalField;
+            }
+            set {
+                this.paymentTotalField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field AmountToCapture {
+            get {
+                return this.amountToCaptureField;
+            }
+            set {
+                this.amountToCaptureField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field CapturedAmount {
+            get {
+                return this.capturedAmountField;
+            }
+            set {
+                this.capturedAmountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field OrigPCRefNbr {
+            get {
+                return this.origPCRefNbrField;
+            }
+            set {
+                this.origPCRefNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO303000PaymentInformationServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO303000ROTRUTDetailsRUTAndROTTotalsServiceCommands {
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        private Attachment attachmentField;
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Attachment Attachment {
+            get {
+                return this.attachmentField;
+            }
+            set {
+                this.attachmentField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO303000ROTRUTDetailsRUTAndROTTotals {
+        
+        private string displayNameField;
+        
+        private Field deductionField;
+        
+        private Field totalDeductibleAmountField;
+        
+        private Field otherCostField;
+        
+        private Field materialCostField;
+        
+        private Field workPriceField;
+        
+        private Field distributedAmountField;
+        
+        private Field undistributedAmountField;
+        
+        private SO303000ROTRUTDetailsRUTAndROTTotalsServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Deduction {
+            get {
+                return this.deductionField;
+            }
+            set {
+                this.deductionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field TotalDeductibleAmount {
+            get {
+                return this.totalDeductibleAmountField;
+            }
+            set {
+                this.totalDeductibleAmountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field OtherCost {
+            get {
+                return this.otherCostField;
+            }
+            set {
+                this.otherCostField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field MaterialCost {
+            get {
+                return this.materialCostField;
+            }
+            set {
+                this.materialCostField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field WorkPrice {
+            get {
+                return this.workPriceField;
+            }
+            set {
+                this.workPriceField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field DistributedAmount {
+            get {
+                return this.distributedAmountField;
+            }
+            set {
+                this.distributedAmountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field UndistributedAmount {
+            get {
+                return this.undistributedAmountField;
+            }
+            set {
+                this.undistributedAmountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO303000ROTRUTDetailsRUTAndROTTotalsServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO303000ROTRUTDetailsRUTAndROTSettingsServiceCommands {
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        private Attachment attachmentField;
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Attachment Attachment {
+            get {
+                return this.attachmentField;
+            }
+            set {
+                this.attachmentField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO303000ROTRUTDetailsRUTAndROTSettings {
+        
+        private string displayNameField;
+        
+        private Field distributeAutomaticallyField;
+        
+        private Field deductionTypeField;
+        
+        private Field apartmentField;
+        
+        private Field realEstateField;
+        
+        private Field organizationNbrField;
+        
+        private SO303000ROTRUTDetailsRUTAndROTSettingsServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field DistributeAutomatically {
+            get {
+                return this.distributeAutomaticallyField;
+            }
+            set {
+                this.distributeAutomaticallyField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field DeductionType {
+            get {
+                return this.deductionTypeField;
+            }
+            set {
+                this.deductionTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Apartment {
+            get {
+                return this.apartmentField;
+            }
+            set {
+                this.apartmentField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field RealEstate {
+            get {
+                return this.realEstateField;
+            }
+            set {
+                this.realEstateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field OrganizationNbr {
+            get {
+                return this.organizationNbrField;
+            }
+            set {
+                this.organizationNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO303000ROTRUTDetailsRUTAndROTSettingsServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO303000CommissionsServiceCommands {
+        
+        private Key keySalespersonIDField;
+        
+        private NewRow newRowField;
+        
+        private RowNumber rowNumberField;
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        /// <remarks/>
+        public Key KeySalespersonID {
+            get {
+                return this.keySalespersonIDField;
+            }
+            set {
+                this.keySalespersonIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public NewRow NewRow {
+            get {
+                return this.newRowField;
+            }
+            set {
+                this.newRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public RowNumber RowNumber {
+            get {
+                return this.rowNumberField;
+            }
+            set {
+                this.rowNumberField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO303000Commissions {
+        
+        private string displayNameField;
+        
+        private Field salespersonIDField;
+        
+        private Field commissionField;
+        
+        private Field commissionAmtField;
+        
+        private Field commissionableAmountField;
+        
+        private SO303000CommissionsServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field SalespersonID {
+            get {
+                return this.salespersonIDField;
+            }
+            set {
+                this.salespersonIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Commission {
+            get {
+                return this.commissionField;
+            }
+            set {
+                this.commissionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field CommissionAmt {
+            get {
+                return this.commissionAmtField;
+            }
+            set {
+                this.commissionAmtField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field CommissionableAmount {
+            get {
+                return this.commissionableAmountField;
+            }
+            set {
+                this.commissionableAmountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO303000CommissionsServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO303000RecalculatePricesServiceCommands {
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        private Attachment attachmentField;
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Attachment Attachment {
+            get {
+                return this.attachmentField;
+            }
+            set {
+                this.attachmentField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO303000RecalculatePrices {
+        
+        private string displayNameField;
+        
+        private Field recalcTargetField;
+        
+        private Field recalcUnitPricesField;
+        
+        private Field overrideManualPricesField;
+        
+        private Field recalcDiscountsField;
+        
+        private Field overrideManualDiscountsField;
+        
+        private SO303000RecalculatePricesServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field RecalcTarget {
+            get {
+                return this.recalcTargetField;
+            }
+            set {
+                this.recalcTargetField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field RecalcUnitPrices {
+            get {
+                return this.recalcUnitPricesField;
+            }
+            set {
+                this.recalcUnitPricesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field OverrideManualPrices {
+            get {
+                return this.overrideManualPricesField;
+            }
+            set {
+                this.overrideManualPricesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field RecalcDiscounts {
+            get {
+                return this.recalcDiscountsField;
+            }
+            set {
+                this.recalcDiscountsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field OverrideManualDiscounts {
+            get {
+                return this.overrideManualDiscountsField;
+            }
+            set {
+                this.overrideManualDiscountsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO303000RecalculatePricesServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO303000BillingAddressBillToInfoOverrideContactServiceCommands {
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        private Attachment attachmentField;
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Attachment Attachment {
+            get {
+                return this.attachmentField;
+            }
+            set {
+                this.attachmentField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO303000BillingAddressBillToInfoOverrideContact {
+        
+        private string displayNameField;
+        
+        private Field overrideContactField;
+        
+        private Field businessNameField;
+        
+        private Field attentionField;
+        
+        private Field phone1Field;
+        
+        private Field emailField;
+        
+        private SO303000BillingAddressBillToInfoOverrideContactServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field OverrideContact {
+            get {
+                return this.overrideContactField;
+            }
+            set {
+                this.overrideContactField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field BusinessName {
+            get {
+                return this.businessNameField;
+            }
+            set {
+                this.businessNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Attention {
+            get {
+                return this.attentionField;
+            }
+            set {
+                this.attentionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Phone1 {
+            get {
+                return this.phone1Field;
+            }
+            set {
+                this.phone1Field = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Email {
+            get {
+                return this.emailField;
+            }
+            set {
+                this.emailField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO303000BillingAddressBillToInfoOverrideContactServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO303000BillingAddressBillToInfoServiceCommands {
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        private Attachment attachmentField;
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Attachment Attachment {
+            get {
+                return this.attachmentField;
+            }
+            set {
+                this.attachmentField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO303000BillingAddressBillToInfo {
+        
+        private string displayNameField;
+        
+        private Field overrideAddressField;
+        
+        private Field addressLine1Field;
+        
+        private Field addressLine2Field;
+        
+        private Field cityField;
+        
+        private Field countryField;
+        
+        private Field stateField;
+        
+        private Field postalCodeField;
+        
+        private SO303000BillingAddressBillToInfoServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field OverrideAddress {
+            get {
+                return this.overrideAddressField;
+            }
+            set {
+                this.overrideAddressField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field AddressLine1 {
+            get {
+                return this.addressLine1Field;
+            }
+            set {
+                this.addressLine1Field = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field AddressLine2 {
+            get {
+                return this.addressLine2Field;
+            }
+            set {
+                this.addressLine2Field = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field City {
+            get {
+                return this.cityField;
+            }
+            set {
+                this.cityField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Country {
+            get {
+                return this.countryField;
+            }
+            set {
+                this.countryField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field State {
+            get {
+                return this.stateField;
+            }
+            set {
+                this.stateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field PostalCode {
+            get {
+                return this.postalCodeField;
+            }
+            set {
+                this.postalCodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO303000BillingAddressBillToInfoServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO303000InvoiceSummaryRateSelectionCurrencyUnitEquivalentsServiceCommands {
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        private Attachment attachmentField;
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Attachment Attachment {
+            get {
+                return this.attachmentField;
+            }
+            set {
+                this.attachmentField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO303000InvoiceSummaryRateSelectionCurrencyUnitEquivalents {
+        
+        private string displayNameField;
+        
+        private Field currencyIDField;
+        
+        private Field baseCurrencyIDField;
+        
+        private Field currRateField;
+        
+        private Field reciprocalRateField;
+        
+        private SO303000InvoiceSummaryRateSelectionCurrencyUnitEquivalentsServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field CurrencyID {
+            get {
+                return this.currencyIDField;
+            }
+            set {
+                this.currencyIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field BaseCurrencyID {
+            get {
+                return this.baseCurrencyIDField;
+            }
+            set {
+                this.baseCurrencyIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field CurrRate {
+            get {
+                return this.currRateField;
+            }
+            set {
+                this.currRateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ReciprocalRate {
+            get {
+                return this.reciprocalRateField;
+            }
+            set {
+                this.reciprocalRateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO303000InvoiceSummaryRateSelectionCurrencyUnitEquivalentsServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO303000InvoiceSummaryRateSelectionServiceCommands {
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        private Attachment attachmentField;
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Attachment Attachment {
+            get {
+                return this.attachmentField;
+            }
+            set {
+                this.attachmentField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO303000InvoiceSummaryRateSelection {
+        
+        private string displayNameField;
+        
+        private Field currRateTypeIDField;
+        
+        private Field effectiveDateField;
+        
+        private SO303000InvoiceSummaryRateSelectionServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field CurrRateTypeID {
+            get {
+                return this.currRateTypeIDField;
+            }
+            set {
+                this.currRateTypeIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field EffectiveDate {
+            get {
+                return this.effectiveDateField;
+            }
+            set {
+                this.effectiveDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO303000InvoiceSummaryRateSelectionServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO303000ApplicationsServiceCommands {
+        
+        private Key keyDocTypeField;
+        
+        private Key keyReferenceNbrAdjgRefNbrField;
+        
+        private NewRow newRowField;
+        
+        private RowNumber rowNumberField;
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        private Attachment attachmentField;
+        
+        /// <remarks/>
+        public Key KeyDocType {
+            get {
+                return this.keyDocTypeField;
+            }
+            set {
+                this.keyDocTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Key KeyReferenceNbrAdjgRefNbr {
+            get {
+                return this.keyReferenceNbrAdjgRefNbrField;
+            }
+            set {
+                this.keyReferenceNbrAdjgRefNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public NewRow NewRow {
+            get {
+                return this.newRowField;
+            }
+            set {
+                this.newRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public RowNumber RowNumber {
+            get {
+                return this.rowNumberField;
+            }
+            set {
+                this.rowNumberField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Attachment Attachment {
+            get {
+                return this.attachmentField;
+            }
+            set {
+                this.attachmentField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO303000Applications {
+        
+        private string displayNameField;
+        
+        private Field docTypeField;
+        
+        private Field referenceNbrAdjgRefNbrField;
+        
+        private Field amountPaidField;
+        
+        private Field cashDiscountTakenField;
+        
+        private Field paymentDateField;
+        
+        private Field balanceField;
+        
+        private Field descriptionField;
+        
+        private Field currencyField;
+        
+        private Field paymentPeriodField;
+        
+        private Field paymentRefField;
+        
+        private Field customerField;
+        
+        private Field adjustmentNbrField;
+        
+        private Field statusField;
+        
+        private Field noteTextField;
+        
+        private SO303000ApplicationsServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field DocType {
+            get {
+                return this.docTypeField;
+            }
+            set {
+                this.docTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ReferenceNbrAdjgRefNbr {
+            get {
+                return this.referenceNbrAdjgRefNbrField;
+            }
+            set {
+                this.referenceNbrAdjgRefNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field AmountPaid {
+            get {
+                return this.amountPaidField;
+            }
+            set {
+                this.amountPaidField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field CashDiscountTaken {
+            get {
+                return this.cashDiscountTakenField;
+            }
+            set {
+                this.cashDiscountTakenField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field PaymentDate {
+            get {
+                return this.paymentDateField;
+            }
+            set {
+                this.paymentDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Balance {
+            get {
+                return this.balanceField;
+            }
+            set {
+                this.balanceField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Description {
+            get {
+                return this.descriptionField;
+            }
+            set {
+                this.descriptionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Currency {
+            get {
+                return this.currencyField;
+            }
+            set {
+                this.currencyField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field PaymentPeriod {
+            get {
+                return this.paymentPeriodField;
+            }
+            set {
+                this.paymentPeriodField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field PaymentRef {
+            get {
+                return this.paymentRefField;
+            }
+            set {
+                this.paymentRefField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Customer {
+            get {
+                return this.customerField;
+            }
+            set {
+                this.customerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field AdjustmentNbr {
+            get {
+                return this.adjustmentNbrField;
+            }
+            set {
+                this.adjustmentNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Status {
+            get {
+                return this.statusField;
+            }
+            set {
+                this.statusField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field NoteText {
+            get {
+                return this.noteTextField;
+            }
+            set {
+                this.noteTextField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO303000ApplicationsServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO303000TaxDetailsServiceCommands {
+        
+        private Key keyTaxIDField;
+        
+        private NewRow newRowField;
+        
+        private RowNumber rowNumberField;
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        /// <remarks/>
+        public Key KeyTaxID {
+            get {
+                return this.keyTaxIDField;
+            }
+            set {
+                this.keyTaxIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public NewRow NewRow {
+            get {
+                return this.newRowField;
+            }
+            set {
+                this.newRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public RowNumber RowNumber {
+            get {
+                return this.rowNumberField;
+            }
+            set {
+                this.rowNumberField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO303000TaxDetails {
+        
+        private string displayNameField;
+        
+        private Field taxIDField;
+        
+        private Field taxRateField;
+        
+        private Field taxableAmountField;
+        
+        private Field taxAmountField;
+        
+        private Field taxTypeField;
+        
+        private Field pendingVATField;
+        
+        private Field reverseVATField;
+        
+        private Field includeInVATExemptTotalField;
+        
+        private Field statisticalVATField;
+        
+        private SO303000TaxDetailsServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field TaxID {
+            get {
+                return this.taxIDField;
+            }
+            set {
+                this.taxIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field TaxRate {
+            get {
+                return this.taxRateField;
+            }
+            set {
+                this.taxRateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field TaxableAmount {
+            get {
+                return this.taxableAmountField;
+            }
+            set {
+                this.taxableAmountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field TaxAmount {
+            get {
+                return this.taxAmountField;
+            }
+            set {
+                this.taxAmountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field TaxType {
+            get {
+                return this.taxTypeField;
+            }
+            set {
+                this.taxTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field PendingVAT {
+            get {
+                return this.pendingVATField;
+            }
+            set {
+                this.pendingVATField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ReverseVAT {
+            get {
+                return this.reverseVATField;
+            }
+            set {
+                this.reverseVATField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field IncludeInVATExemptTotal {
+            get {
+                return this.includeInVATExemptTotalField;
+            }
+            set {
+                this.includeInVATExemptTotalField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field StatisticalVAT {
+            get {
+                return this.statisticalVATField;
+            }
+            set {
+                this.statisticalVATField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO303000TaxDetailsServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO303000DocumentDetailsServiceCommands {
+        
+        private NewRow newRowField;
+        
+        private RowNumber rowNumberField;
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        private Attachment attachmentField;
+        
+        /// <remarks/>
+        public NewRow NewRow {
+            get {
+                return this.newRowField;
+            }
+            set {
+                this.newRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public RowNumber RowNumber {
+            get {
+                return this.rowNumberField;
+            }
+            set {
+                this.rowNumberField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Attachment Attachment {
+            get {
+                return this.attachmentField;
+            }
+            set {
+                this.attachmentField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO303000DocumentDetails {
+        
+        private string displayNameField;
+        
+        private Field branchField;
+        
+        private Field tranTypeField;
+        
+        private Field referenceNbrField;
+        
+        private Field lineNbrField;
+        
+        private Field lineTypeField;
+        
+        private Field shipmentNbrField;
+        
+        private Field orderTypeField;
+        
+        private Field orderNbrField;
+        
+        private Field inventoryIDField;
+        
+        private Field transactionDescrField;
+        
+        private Field quantityField;
+        
+        private Field uOMField;
+        
+        private Field unitPriceField;
+        
+        private Field manualPriceField;
+        
+        private Field discountPercentField;
+        
+        private Field discountAmountField;
+        
+        private Field manualDiscountField;
+        
+        private Field discountCodeField;
+        
+        private Field discountSequenceField;
+        
+        private Field amountField;
+        
+        private Field accountField;
+        
+        private Field descriptionField;
+        
+        private Field subaccountField;
+        
+        private Field projectTaskField;
+        
+        private Field salespersonIDField;
+        
+        private Field deferralCodeField;
+        
+        private Field termStartDateField;
+        
+        private Field termEndDateField;
+        
+        private Field originalDeferralScheduleField;
+        
+        private Field taxCategoryField;
+        
+        private Field commissionableField;
+        
+        private Field orderLineNbrField;
+        
+        private Field noteTextField;
+        
+        private SO303000DocumentDetailsServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Branch {
+            get {
+                return this.branchField;
+            }
+            set {
+                this.branchField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field TranType {
+            get {
+                return this.tranTypeField;
+            }
+            set {
+                this.tranTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ReferenceNbr {
+            get {
+                return this.referenceNbrField;
+            }
+            set {
+                this.referenceNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field LineNbr {
+            get {
+                return this.lineNbrField;
+            }
+            set {
+                this.lineNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field LineType {
+            get {
+                return this.lineTypeField;
+            }
+            set {
+                this.lineTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ShipmentNbr {
+            get {
+                return this.shipmentNbrField;
+            }
+            set {
+                this.shipmentNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field OrderType {
+            get {
+                return this.orderTypeField;
+            }
+            set {
+                this.orderTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field OrderNbr {
+            get {
+                return this.orderNbrField;
+            }
+            set {
+                this.orderNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field InventoryID {
+            get {
+                return this.inventoryIDField;
+            }
+            set {
+                this.inventoryIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field TransactionDescr {
+            get {
+                return this.transactionDescrField;
+            }
+            set {
+                this.transactionDescrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Quantity {
+            get {
+                return this.quantityField;
+            }
+            set {
+                this.quantityField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field UOM {
+            get {
+                return this.uOMField;
+            }
+            set {
+                this.uOMField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field UnitPrice {
+            get {
+                return this.unitPriceField;
+            }
+            set {
+                this.unitPriceField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ManualPrice {
+            get {
+                return this.manualPriceField;
+            }
+            set {
+                this.manualPriceField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field DiscountPercent {
+            get {
+                return this.discountPercentField;
+            }
+            set {
+                this.discountPercentField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field DiscountAmount {
+            get {
+                return this.discountAmountField;
+            }
+            set {
+                this.discountAmountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ManualDiscount {
+            get {
+                return this.manualDiscountField;
+            }
+            set {
+                this.manualDiscountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field DiscountCode {
+            get {
+                return this.discountCodeField;
+            }
+            set {
+                this.discountCodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field DiscountSequence {
+            get {
+                return this.discountSequenceField;
+            }
+            set {
+                this.discountSequenceField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Amount {
+            get {
+                return this.amountField;
+            }
+            set {
+                this.amountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Account {
+            get {
+                return this.accountField;
+            }
+            set {
+                this.accountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Description {
+            get {
+                return this.descriptionField;
+            }
+            set {
+                this.descriptionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Subaccount {
+            get {
+                return this.subaccountField;
+            }
+            set {
+                this.subaccountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ProjectTask {
+            get {
+                return this.projectTaskField;
+            }
+            set {
+                this.projectTaskField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field SalespersonID {
+            get {
+                return this.salespersonIDField;
+            }
+            set {
+                this.salespersonIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field DeferralCode {
+            get {
+                return this.deferralCodeField;
+            }
+            set {
+                this.deferralCodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field TermStartDate {
+            get {
+                return this.termStartDateField;
+            }
+            set {
+                this.termStartDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field TermEndDate {
+            get {
+                return this.termEndDateField;
+            }
+            set {
+                this.termEndDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field OriginalDeferralSchedule {
+            get {
+                return this.originalDeferralScheduleField;
+            }
+            set {
+                this.originalDeferralScheduleField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field TaxCategory {
+            get {
+                return this.taxCategoryField;
+            }
+            set {
+                this.taxCategoryField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Commissionable {
+            get {
+                return this.commissionableField;
+            }
+            set {
+                this.commissionableField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field OrderLineNbr {
+            get {
+                return this.orderLineNbrField;
+            }
+            set {
+                this.orderLineNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field NoteText {
+            get {
+                return this.noteTextField;
+            }
+            set {
+                this.noteTextField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO303000DocumentDetailsServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO303000TotalsCashDiscountInfoServiceCommands {
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        private Attachment attachmentField;
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Attachment Attachment {
+            get {
+                return this.attachmentField;
+            }
+            set {
+                this.attachmentField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO303000TotalsCashDiscountInfo {
+        
+        private string displayNameField;
+        
+        private Field discountedDocTotalField;
+        
+        private Field discountedTaxableTotalField;
+        
+        private Field taxOnDiscountedPriceField;
+        
+        private SO303000TotalsCashDiscountInfoServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field DiscountedDocTotal {
+            get {
+                return this.discountedDocTotalField;
+            }
+            set {
+                this.discountedDocTotalField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field DiscountedTaxableTotal {
+            get {
+                return this.discountedTaxableTotalField;
+            }
+            set {
+                this.discountedTaxableTotalField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field TaxOnDiscountedPrice {
+            get {
+                return this.taxOnDiscountedPriceField;
+            }
+            set {
+                this.taxOnDiscountedPriceField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO303000TotalsCashDiscountInfoServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO303000FinancialDetailsServiceCommands {
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        private Attachment attachmentField;
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Attachment Attachment {
+            get {
+                return this.attachmentField;
+            }
+            set {
+                this.attachmentField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO303000FinancialDetails {
+        
+        private string displayNameField;
+        
+        private Field batchNbrField;
+        
+        private Field branchField;
+        
+        private Field aRAccountField;
+        
+        private Field aRSubaccountField;
+        
+        private Field customerTaxZoneField;
+        
+        private Field customerUsageTypeField;
+        
+        private Field donTPrintField;
+        
+        private Field printedField;
+        
+        private Field donTEmailField;
+        
+        private Field emailedField;
+        
+        private Field workgroupField;
+        
+        private Field ownerField;
+        
+        private SO303000FinancialDetailsServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field BatchNbr {
+            get {
+                return this.batchNbrField;
+            }
+            set {
+                this.batchNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Branch {
+            get {
+                return this.branchField;
+            }
+            set {
+                this.branchField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ARAccount {
+            get {
+                return this.aRAccountField;
+            }
+            set {
+                this.aRAccountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ARSubaccount {
+            get {
+                return this.aRSubaccountField;
+            }
+            set {
+                this.aRSubaccountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field CustomerTaxZone {
+            get {
+                return this.customerTaxZoneField;
+            }
+            set {
+                this.customerTaxZoneField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field CustomerUsageType {
+            get {
+                return this.customerUsageTypeField;
+            }
+            set {
+                this.customerUsageTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field DonTPrint {
+            get {
+                return this.donTPrintField;
+            }
+            set {
+                this.donTPrintField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Printed {
+            get {
+                return this.printedField;
+            }
+            set {
+                this.printedField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field DonTEmail {
+            get {
+                return this.donTEmailField;
+            }
+            set {
+                this.donTEmailField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Emailed {
+            get {
+                return this.emailedField;
+            }
+            set {
+                this.emailedField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Workgroup {
+            get {
+                return this.workgroupField;
+            }
+            set {
+                this.workgroupField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Owner {
+            get {
+                return this.ownerField;
+            }
+            set {
+                this.ownerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO303000FinancialDetailsServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO303000CommissionsDefaultSalespersonServiceCommands {
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        private Attachment attachmentField;
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Attachment Attachment {
+            get {
+                return this.attachmentField;
+            }
+            set {
+                this.attachmentField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO303000CommissionsDefaultSalesperson {
+        
+        private string displayNameField;
+        
+        private Field defaultSalespersonField;
+        
+        private Field totalCommissionableField;
+        
+        private Field commissionAmtField;
+        
+        private SO303000CommissionsDefaultSalespersonServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field DefaultSalesperson {
+            get {
+                return this.defaultSalespersonField;
+            }
+            set {
+                this.defaultSalespersonField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field TotalCommissionable {
+            get {
+                return this.totalCommissionableField;
+            }
+            set {
+                this.totalCommissionableField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field CommissionAmt {
+            get {
+                return this.commissionAmtField;
+            }
+            set {
+                this.commissionAmtField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO303000CommissionsDefaultSalespersonServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO303000InvoiceSummaryServiceCommands {
+        
+        private Key keyTypeField;
+        
+        private EveryValue everyTypeField;
+        
+        private Key keyReferenceNbrField;
+        
+        private EveryValue everyReferenceNbrField;
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        private Attachment attachmentField;
+        
+        /// <remarks/>
+        public Key KeyType {
+            get {
+                return this.keyTypeField;
+            }
+            set {
+                this.keyTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public EveryValue EveryType {
+            get {
+                return this.everyTypeField;
+            }
+            set {
+                this.everyTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Key KeyReferenceNbr {
+            get {
+                return this.keyReferenceNbrField;
+            }
+            set {
+                this.keyReferenceNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public EveryValue EveryReferenceNbr {
+            get {
+                return this.everyReferenceNbrField;
+            }
+            set {
+                this.everyReferenceNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Attachment Attachment {
+            get {
+                return this.attachmentField;
+            }
+            set {
+                this.attachmentField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class EveryValue : Command {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO303000InvoiceSummary {
+        
+        private string displayNameField;
+        
+        private Field typeField;
+        
+        private Field referenceNbrField;
+        
+        private Field statusField;
+        
+        private Field holdField;
+        
+        private Field creditHoldField;
+        
+        private Field dateField;
+        
+        private Field postPeriodField;
+        
+        private Field customerOrderField;
+        
+        private Field customerField;
+        
+        private Field locationField;
+        
+        private Field currencyField;
+        
+        private Field curyViewStateField;
+        
+        private Field termsField;
+        
+        private Field dueDateField;
+        
+        private Field cashDiscountDateField;
+        
+        private Field projectField;
+        
+        private Field descriptionField;
+        
+        private Field vATExemptTotalField;
+        
+        private Field vATTaxableTotalField;
+        
+        private Field balanceField;
+        
+        private Field amountField;
+        
+        private Field cashDiscountField;
+        
+        private Field rOTAndRUTDeductibleDocumentField;
+        
+        private Field noteTextField;
+        
+        private SO303000InvoiceSummaryServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Type {
+            get {
+                return this.typeField;
+            }
+            set {
+                this.typeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ReferenceNbr {
+            get {
+                return this.referenceNbrField;
+            }
+            set {
+                this.referenceNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Status {
+            get {
+                return this.statusField;
+            }
+            set {
+                this.statusField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Hold {
+            get {
+                return this.holdField;
+            }
+            set {
+                this.holdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field CreditHold {
+            get {
+                return this.creditHoldField;
+            }
+            set {
+                this.creditHoldField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Date {
+            get {
+                return this.dateField;
+            }
+            set {
+                this.dateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field PostPeriod {
+            get {
+                return this.postPeriodField;
+            }
+            set {
+                this.postPeriodField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field CustomerOrder {
+            get {
+                return this.customerOrderField;
+            }
+            set {
+                this.customerOrderField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Customer {
+            get {
+                return this.customerField;
+            }
+            set {
+                this.customerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Location {
+            get {
+                return this.locationField;
+            }
+            set {
+                this.locationField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Currency {
+            get {
+                return this.currencyField;
+            }
+            set {
+                this.currencyField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field CuryViewState {
+            get {
+                return this.curyViewStateField;
+            }
+            set {
+                this.curyViewStateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Terms {
+            get {
+                return this.termsField;
+            }
+            set {
+                this.termsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field DueDate {
+            get {
+                return this.dueDateField;
+            }
+            set {
+                this.dueDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field CashDiscountDate {
+            get {
+                return this.cashDiscountDateField;
+            }
+            set {
+                this.cashDiscountDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Project {
+            get {
+                return this.projectField;
+            }
+            set {
+                this.projectField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Description {
+            get {
+                return this.descriptionField;
+            }
+            set {
+                this.descriptionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field VATExemptTotal {
+            get {
+                return this.vATExemptTotalField;
+            }
+            set {
+                this.vATExemptTotalField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field VATTaxableTotal {
+            get {
+                return this.vATTaxableTotalField;
+            }
+            set {
+                this.vATTaxableTotalField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Balance {
+            get {
+                return this.balanceField;
+            }
+            set {
+                this.balanceField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Amount {
+            get {
+                return this.amountField;
+            }
+            set {
+                this.amountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field CashDiscount {
+            get {
+                return this.cashDiscountField;
+            }
+            set {
+                this.cashDiscountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ROTAndRUTDeductibleDocument {
+            get {
+                return this.rOTAndRUTDeductibleDocumentField;
+            }
+            set {
+                this.rOTAndRUTDeductibleDocumentField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field NoteText {
+            get {
+                return this.noteTextField;
+            }
+            set {
+                this.noteTextField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO303000InvoiceSummaryServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO303000Actions {
+        
+        private Action saveField;
+        
+        private Action cancelField;
+        
+        private Action insertField;
+        
+        private Action deleteField;
+        
+        private Action copyDocumentCopyPasteField;
+        
+        private Action pasteDocumentCopyPasteField;
+        
+        private Action saveTemplateCopyPasteField;
+        
+        private Action firstField;
+        
+        private Action previousField;
+        
+        private Action nextField;
+        
+        private Action lastField;
+        
+        private Action releaseField;
+        
+        private Action voidCheckField;
+        
+        private Action viewBatchField;
+        
+        private Action postInvoiceToINActionField;
+        
+        private Action releaseActionField;
+        
+        private Action releaseFromCreditHoldActionField;
+        
+        private Action captureCCPaymentActionField;
+        
+        private Action validateAddressesActionField;
+        
+        private Action emailInvoiceActionField;
+        
+        private Action recalculateDiscountsActionActionField;
+        
+        private Action writeOffActionField;
+        
+        private Action reclassifyGLBatchActionField;
+        
+        private Action inquiryField;
+        
+        private Action aREditReportField;
+        
+        private Action printInvoiceReportField;
+        
+        private Action viewScheduleField;
+        
+        private Action newCustomerField;
+        
+        private Action editCustomerField;
+        
+        private Action customerDocumentsField;
+        
+        private Action sOInvoiceField;
+        
+        private Action sendARInvoiceMemoField;
+        
+        private Action writeOffField;
+        
+        private Action reverseInvoiceField;
+        
+        private Action payInvoiceField;
+        
+        private Action createScheduleField;
+        
+        private Action reclassifyBatchField;
+        
+        private Action autoApplyField;
+        
+        private Action viewPaymentField;
+        
+        private Action viewInvoiceField;
+        
+        private Action viewInvoice2Field;
+        
+        private Action viewItemField;
+        
+        private Action validateAddressesField;
+        
+        private Action recalculateDiscountsActionField;
+        
+        private Action recalcOkField;
+        
+        private Action newTaskField;
+        
+        private Action newEventField;
+        
+        private Action viewActivityField;
+        
+        private Action newMailActivityField;
+        
+        private Action openActivityOwnerField;
+        
+        private Action viewAllActivitiesField;
+        
+        private Action nNewActivityField;
+        
+        private Action cNewActivityField;
+        
+        private Action eNewActivityField;
+        
+        private Action mNewActivityField;
+        
+        private Action pNewActivityField;
+        
+        private Action wNewActivityField;
+        
+        private Action emailInvoiceNotificationField;
+        
+        private Action selectShipmentField;
+        
+        private Action addShipmentField;
+        
+        private Action addShipmentCancelField;
+        
+        private Action holdField;
+        
+        private Action creditHoldField;
+        
+        private Action onReleaseInvoiceFlowField;
+        
+        private Action postField;
+        
+        private Action captureCCPaymentField;
+        
+        private Action authorizeCCPaymentField;
+        
+        private Action voidCCPaymentField;
+        
+        private Action creditCCPaymentField;
+        
+        /// <remarks/>
+        public Action Save {
+            get {
+                return this.saveField;
+            }
+            set {
+                this.saveField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action Cancel {
+            get {
+                return this.cancelField;
+            }
+            set {
+                this.cancelField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action Insert {
+            get {
+                return this.insertField;
+            }
+            set {
+                this.insertField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action Delete {
+            get {
+                return this.deleteField;
+            }
+            set {
+                this.deleteField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action CopyDocumentCopyPaste {
+            get {
+                return this.copyDocumentCopyPasteField;
+            }
+            set {
+                this.copyDocumentCopyPasteField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action PasteDocumentCopyPaste {
+            get {
+                return this.pasteDocumentCopyPasteField;
+            }
+            set {
+                this.pasteDocumentCopyPasteField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action SaveTemplateCopyPaste {
+            get {
+                return this.saveTemplateCopyPasteField;
+            }
+            set {
+                this.saveTemplateCopyPasteField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action First {
+            get {
+                return this.firstField;
+            }
+            set {
+                this.firstField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action Previous {
+            get {
+                return this.previousField;
+            }
+            set {
+                this.previousField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action Next {
+            get {
+                return this.nextField;
+            }
+            set {
+                this.nextField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action Last {
+            get {
+                return this.lastField;
+            }
+            set {
+                this.lastField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action Release {
+            get {
+                return this.releaseField;
+            }
+            set {
+                this.releaseField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action VoidCheck {
+            get {
+                return this.voidCheckField;
+            }
+            set {
+                this.voidCheckField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action ViewBatch {
+            get {
+                return this.viewBatchField;
+            }
+            set {
+                this.viewBatchField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action PostInvoiceToINAction {
+            get {
+                return this.postInvoiceToINActionField;
+            }
+            set {
+                this.postInvoiceToINActionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action ReleaseAction {
+            get {
+                return this.releaseActionField;
+            }
+            set {
+                this.releaseActionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action ReleaseFromCreditHoldAction {
+            get {
+                return this.releaseFromCreditHoldActionField;
+            }
+            set {
+                this.releaseFromCreditHoldActionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action CaptureCCPaymentAction {
+            get {
+                return this.captureCCPaymentActionField;
+            }
+            set {
+                this.captureCCPaymentActionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action ValidateAddressesAction {
+            get {
+                return this.validateAddressesActionField;
+            }
+            set {
+                this.validateAddressesActionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action EmailInvoiceAction {
+            get {
+                return this.emailInvoiceActionField;
+            }
+            set {
+                this.emailInvoiceActionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action RecalculateDiscountsActionAction {
+            get {
+                return this.recalculateDiscountsActionActionField;
+            }
+            set {
+                this.recalculateDiscountsActionActionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action WriteOffAction {
+            get {
+                return this.writeOffActionField;
+            }
+            set {
+                this.writeOffActionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action ReclassifyGLBatchAction {
+            get {
+                return this.reclassifyGLBatchActionField;
+            }
+            set {
+                this.reclassifyGLBatchActionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action Inquiry {
+            get {
+                return this.inquiryField;
+            }
+            set {
+                this.inquiryField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action AREditReport {
+            get {
+                return this.aREditReportField;
+            }
+            set {
+                this.aREditReportField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action PrintInvoiceReport {
+            get {
+                return this.printInvoiceReportField;
+            }
+            set {
+                this.printInvoiceReportField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action ViewSchedule {
+            get {
+                return this.viewScheduleField;
+            }
+            set {
+                this.viewScheduleField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action NewCustomer {
+            get {
+                return this.newCustomerField;
+            }
+            set {
+                this.newCustomerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action EditCustomer {
+            get {
+                return this.editCustomerField;
+            }
+            set {
+                this.editCustomerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action CustomerDocuments {
+            get {
+                return this.customerDocumentsField;
+            }
+            set {
+                this.customerDocumentsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action SOInvoice {
+            get {
+                return this.sOInvoiceField;
+            }
+            set {
+                this.sOInvoiceField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action SendARInvoiceMemo {
+            get {
+                return this.sendARInvoiceMemoField;
+            }
+            set {
+                this.sendARInvoiceMemoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action WriteOff {
+            get {
+                return this.writeOffField;
+            }
+            set {
+                this.writeOffField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action ReverseInvoice {
+            get {
+                return this.reverseInvoiceField;
+            }
+            set {
+                this.reverseInvoiceField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action PayInvoice {
+            get {
+                return this.payInvoiceField;
+            }
+            set {
+                this.payInvoiceField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action CreateSchedule {
+            get {
+                return this.createScheduleField;
+            }
+            set {
+                this.createScheduleField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action ReclassifyBatch {
+            get {
+                return this.reclassifyBatchField;
+            }
+            set {
+                this.reclassifyBatchField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action AutoApply {
+            get {
+                return this.autoApplyField;
+            }
+            set {
+                this.autoApplyField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action ViewPayment {
+            get {
+                return this.viewPaymentField;
+            }
+            set {
+                this.viewPaymentField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action ViewInvoice {
+            get {
+                return this.viewInvoiceField;
+            }
+            set {
+                this.viewInvoiceField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action ViewInvoice2 {
+            get {
+                return this.viewInvoice2Field;
+            }
+            set {
+                this.viewInvoice2Field = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action ViewItem {
+            get {
+                return this.viewItemField;
+            }
+            set {
+                this.viewItemField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action ValidateAddresses {
+            get {
+                return this.validateAddressesField;
+            }
+            set {
+                this.validateAddressesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action RecalculateDiscountsAction {
+            get {
+                return this.recalculateDiscountsActionField;
+            }
+            set {
+                this.recalculateDiscountsActionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action RecalcOk {
+            get {
+                return this.recalcOkField;
+            }
+            set {
+                this.recalcOkField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action NewTask {
+            get {
+                return this.newTaskField;
+            }
+            set {
+                this.newTaskField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action NewEvent {
+            get {
+                return this.newEventField;
+            }
+            set {
+                this.newEventField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action ViewActivity {
+            get {
+                return this.viewActivityField;
+            }
+            set {
+                this.viewActivityField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action NewMailActivity {
+            get {
+                return this.newMailActivityField;
+            }
+            set {
+                this.newMailActivityField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action OpenActivityOwner {
+            get {
+                return this.openActivityOwnerField;
+            }
+            set {
+                this.openActivityOwnerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action ViewAllActivities {
+            get {
+                return this.viewAllActivitiesField;
+            }
+            set {
+                this.viewAllActivitiesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action NNewActivity {
+            get {
+                return this.nNewActivityField;
+            }
+            set {
+                this.nNewActivityField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action CNewActivity {
+            get {
+                return this.cNewActivityField;
+            }
+            set {
+                this.cNewActivityField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action ENewActivity {
+            get {
+                return this.eNewActivityField;
+            }
+            set {
+                this.eNewActivityField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action MNewActivity {
+            get {
+                return this.mNewActivityField;
+            }
+            set {
+                this.mNewActivityField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action PNewActivity {
+            get {
+                return this.pNewActivityField;
+            }
+            set {
+                this.pNewActivityField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action WNewActivity {
+            get {
+                return this.wNewActivityField;
+            }
+            set {
+                this.wNewActivityField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action EmailInvoiceNotification {
+            get {
+                return this.emailInvoiceNotificationField;
+            }
+            set {
+                this.emailInvoiceNotificationField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action SelectShipment {
+            get {
+                return this.selectShipmentField;
+            }
+            set {
+                this.selectShipmentField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action AddShipment {
+            get {
+                return this.addShipmentField;
+            }
+            set {
+                this.addShipmentField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action AddShipmentCancel {
+            get {
+                return this.addShipmentCancelField;
+            }
+            set {
+                this.addShipmentCancelField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action Hold {
+            get {
+                return this.holdField;
+            }
+            set {
+                this.holdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action CreditHold {
+            get {
+                return this.creditHoldField;
+            }
+            set {
+                this.creditHoldField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action OnReleaseInvoiceFlow {
+            get {
+                return this.onReleaseInvoiceFlowField;
+            }
+            set {
+                this.onReleaseInvoiceFlowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action Post {
+            get {
+                return this.postField;
+            }
+            set {
+                this.postField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action CaptureCCPayment {
+            get {
+                return this.captureCCPaymentField;
+            }
+            set {
+                this.captureCCPaymentField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action AuthorizeCCPayment {
+            get {
+                return this.authorizeCCPaymentField;
+            }
+            set {
+                this.authorizeCCPaymentField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action VoidCCPayment {
+            get {
+                return this.voidCCPaymentField;
+            }
+            set {
+                this.voidCCPaymentField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action CreditCCPayment {
+            get {
+                return this.creditCCPaymentField;
+            }
+            set {
+                this.creditCCPaymentField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class Action : Command {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO303000Content {
+        
+        private SO303000Actions actionsField;
+        
+        private SO303000InvoiceSummary invoiceSummaryField;
+        
+        private SO303000CommissionsDefaultSalesperson commissionsDefaultSalespersonField;
+        
+        private SO303000FinancialDetails financialDetailsField;
+        
+        private SO303000TotalsCashDiscountInfo totalsCashDiscountInfoField;
+        
+        private SO303000DocumentDetails documentDetailsField;
+        
+        private SO303000TaxDetails taxDetailsField;
+        
+        private SO303000Applications applicationsField;
+        
+        private SO303000InvoiceSummaryRateSelection invoiceSummaryRateSelectionField;
+        
+        private SO303000InvoiceSummaryRateSelectionCurrencyUnitEquivalents invoiceSummaryRateSelectionCurrencyUnitEquivalentsField;
+        
+        private SO303000BillingAddressBillToInfo billingAddressBillToInfoField;
+        
+        private SO303000BillingAddressBillToInfoOverrideContact billingAddressBillToInfoOverrideContactField;
+        
+        private SO303000RecalculatePrices recalculatePricesField;
+        
+        private SO303000Commissions commissionsField;
+        
+        private SO303000ROTRUTDetailsRUTAndROTSettings rOTRUTDetailsRUTAndROTSettingsField;
+        
+        private SO303000ROTRUTDetailsRUTAndROTTotals rOTRUTDetailsRUTAndROTTotalsField;
+        
+        private SO303000PaymentInformation paymentInformationField;
+        
+        private SO303000Totals totalsField;
+        
+        private SO303000AddOrder addOrderField;
+        
+        private SO303000DiscountDetails discountDetailsField;
+        
+        private SO303000FreightDetails freightDetailsField;
+        
+        private SO303000PaymentInformationCreditCardProcessingInfo paymentInformationCreditCardProcessingInfoField;
+        
+        /// <remarks/>
+        public SO303000Actions Actions {
+            get {
+                return this.actionsField;
+            }
+            set {
+                this.actionsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO303000InvoiceSummary InvoiceSummary {
+            get {
+                return this.invoiceSummaryField;
+            }
+            set {
+                this.invoiceSummaryField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO303000CommissionsDefaultSalesperson CommissionsDefaultSalesperson {
+            get {
+                return this.commissionsDefaultSalespersonField;
+            }
+            set {
+                this.commissionsDefaultSalespersonField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO303000FinancialDetails FinancialDetails {
+            get {
+                return this.financialDetailsField;
+            }
+            set {
+                this.financialDetailsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO303000TotalsCashDiscountInfo TotalsCashDiscountInfo {
+            get {
+                return this.totalsCashDiscountInfoField;
+            }
+            set {
+                this.totalsCashDiscountInfoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO303000DocumentDetails DocumentDetails {
+            get {
+                return this.documentDetailsField;
+            }
+            set {
+                this.documentDetailsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO303000TaxDetails TaxDetails {
+            get {
+                return this.taxDetailsField;
+            }
+            set {
+                this.taxDetailsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO303000Applications Applications {
+            get {
+                return this.applicationsField;
+            }
+            set {
+                this.applicationsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO303000InvoiceSummaryRateSelection InvoiceSummaryRateSelection {
+            get {
+                return this.invoiceSummaryRateSelectionField;
+            }
+            set {
+                this.invoiceSummaryRateSelectionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO303000InvoiceSummaryRateSelectionCurrencyUnitEquivalents InvoiceSummaryRateSelectionCurrencyUnitEquivalents {
+            get {
+                return this.invoiceSummaryRateSelectionCurrencyUnitEquivalentsField;
+            }
+            set {
+                this.invoiceSummaryRateSelectionCurrencyUnitEquivalentsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO303000BillingAddressBillToInfo BillingAddressBillToInfo {
+            get {
+                return this.billingAddressBillToInfoField;
+            }
+            set {
+                this.billingAddressBillToInfoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO303000BillingAddressBillToInfoOverrideContact BillingAddressBillToInfoOverrideContact {
+            get {
+                return this.billingAddressBillToInfoOverrideContactField;
+            }
+            set {
+                this.billingAddressBillToInfoOverrideContactField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO303000RecalculatePrices RecalculatePrices {
+            get {
+                return this.recalculatePricesField;
+            }
+            set {
+                this.recalculatePricesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO303000Commissions Commissions {
+            get {
+                return this.commissionsField;
+            }
+            set {
+                this.commissionsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO303000ROTRUTDetailsRUTAndROTSettings ROTRUTDetailsRUTAndROTSettings {
+            get {
+                return this.rOTRUTDetailsRUTAndROTSettingsField;
+            }
+            set {
+                this.rOTRUTDetailsRUTAndROTSettingsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO303000ROTRUTDetailsRUTAndROTTotals ROTRUTDetailsRUTAndROTTotals {
+            get {
+                return this.rOTRUTDetailsRUTAndROTTotalsField;
+            }
+            set {
+                this.rOTRUTDetailsRUTAndROTTotalsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO303000PaymentInformation PaymentInformation {
+            get {
+                return this.paymentInformationField;
+            }
+            set {
+                this.paymentInformationField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO303000Totals Totals {
+            get {
+                return this.totalsField;
+            }
+            set {
+                this.totalsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO303000AddOrder AddOrder {
+            get {
+                return this.addOrderField;
+            }
+            set {
+                this.addOrderField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO303000DiscountDetails DiscountDetails {
+            get {
+                return this.discountDetailsField;
+            }
+            set {
+                this.discountDetailsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO303000FreightDetails FreightDetails {
+            get {
+                return this.freightDetailsField;
+            }
+            set {
+                this.freightDetailsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO303000PaymentInformationCreditCardProcessingInfo PaymentInformationCreditCardProcessingInfo {
+            get {
+                return this.paymentInformationCreditCardProcessingInfoField;
+            }
+            set {
+                this.paymentInformationCreditCardProcessingInfoField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO302000ImportResult {
+        
+        private bool processedField;
+        
+        private string errorField;
+        
+        private SO302000PrimaryKey keysField;
+        
+        /// <remarks/>
+        public bool Processed {
+            get {
+                return this.processedField;
+            }
+            set {
+                this.processedField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Error {
+            get {
+                return this.errorField;
+            }
+            set {
+                this.errorField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO302000PrimaryKey Keys {
+            get {
+                return this.keysField;
+            }
+            set {
+                this.keysField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO302000PrimaryKey {
+        
+        private Value shipmentNbrField;
+        
+        /// <remarks/>
+        public Value ShipmentNbr {
+            get {
+                return this.shipmentNbrField;
+            }
+            set {
+                this.shipmentNbrField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO302000AllocationsUnassignedQtyServiceCommands {
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        private Attachment attachmentField;
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Attachment Attachment {
+            get {
+                return this.attachmentField;
+            }
+            set {
+                this.attachmentField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO302000AllocationsUnassignedQty {
+        
+        private string displayNameField;
+        
+        private Field unassignedQtyField;
+        
+        private Field quantityToGenerateField;
+        
+        private Field startLotSerialNumberField;
+        
+        private SO302000AllocationsUnassignedQtyServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field UnassignedQty {
+            get {
+                return this.unassignedQtyField;
+            }
+            set {
+                this.unassignedQtyField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field QuantityToGenerate {
+            get {
+                return this.quantityToGenerateField;
+            }
+            set {
+                this.quantityToGenerateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field StartLotSerialNumber {
+            get {
+                return this.startLotSerialNumberField;
+            }
+            set {
+                this.startLotSerialNumberField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO302000AllocationsUnassignedQtyServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO302000AddSalesOrderServiceCommands {
+        
+        private Parameter parameterAddSOFilterOrderTypeField;
+        
+        private Parameter parameterAddSOFilterOrderNbrField;
+        
+        private Parameter parameterAddSOFilterOperationField;
+        
+        private NewRow newRowField;
+        
+        private RowNumber rowNumberField;
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        /// <remarks/>
+        public Parameter ParameterAddSOFilterOrderType {
+            get {
+                return this.parameterAddSOFilterOrderTypeField;
+            }
+            set {
+                this.parameterAddSOFilterOrderTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Parameter ParameterAddSOFilterOrderNbr {
+            get {
+                return this.parameterAddSOFilterOrderNbrField;
+            }
+            set {
+                this.parameterAddSOFilterOrderNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Parameter ParameterAddSOFilterOperation {
+            get {
+                return this.parameterAddSOFilterOperationField;
+            }
+            set {
+                this.parameterAddSOFilterOperationField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public NewRow NewRow {
+            get {
+                return this.newRowField;
+            }
+            set {
+                this.newRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public RowNumber RowNumber {
+            get {
+                return this.rowNumberField;
+            }
+            set {
+                this.rowNumberField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class Parameter : Command {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO302000AddSalesOrder {
+        
+        private string displayNameField;
+        
+        private Field selectedField;
+        
+        private Field lineNbrField;
+        
+        private Field inventoryIDField;
+        
+        private Field uOMField;
+        
+        private Field lotSerialNbrField;
+        
+        private Field schedShipDateField;
+        
+        private Field quantityField;
+        
+        private Field lineDescriptionField;
+        
+        private SO302000AddSalesOrderServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Selected {
+            get {
+                return this.selectedField;
+            }
+            set {
+                this.selectedField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field LineNbr {
+            get {
+                return this.lineNbrField;
+            }
+            set {
+                this.lineNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field InventoryID {
+            get {
+                return this.inventoryIDField;
+            }
+            set {
+                this.inventoryIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field UOM {
+            get {
+                return this.uOMField;
+            }
+            set {
+                this.uOMField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field LotSerialNbr {
+            get {
+                return this.lotSerialNbrField;
+            }
+            set {
+                this.lotSerialNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field SchedShipDate {
+            get {
+                return this.schedShipDateField;
+            }
+            set {
+                this.schedShipDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Quantity {
+            get {
+                return this.quantityField;
+            }
+            set {
+                this.quantityField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field LineDescription {
+            get {
+                return this.lineDescriptionField;
+            }
+            set {
+                this.lineDescriptionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO302000AddSalesOrderServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO302000AddSalesOrderOperationServiceCommands {
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        private Attachment attachmentField;
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Attachment Attachment {
+            get {
+                return this.attachmentField;
+            }
+            set {
+                this.attachmentField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO302000AddSalesOrderOperation {
+        
+        private string displayNameField;
+        
+        private Field operationField;
+        
+        private Field orderTypeField;
+        
+        private Field orderNbrField;
+        
+        private SO302000AddSalesOrderOperationServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Operation {
+            get {
+                return this.operationField;
+            }
+            set {
+                this.operationField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field OrderType {
+            get {
+                return this.orderTypeField;
+            }
+            set {
+                this.orderTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field OrderNbr {
+            get {
+                return this.orderNbrField;
+            }
+            set {
+                this.orderNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO302000AddSalesOrderOperationServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO302000ShippingSettingsShippingInformationRateSelectionCurrencyUnitEquivalentsServiceCommands {
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        private Attachment attachmentField;
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Attachment Attachment {
+            get {
+                return this.attachmentField;
+            }
+            set {
+                this.attachmentField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO302000ShippingSettingsShippingInformationRateSelectionCurrencyUnitEquivalents {
+        
+        private string displayNameField;
+        
+        private Field currencyIDField;
+        
+        private Field baseCurrencyIDField;
+        
+        private Field currRateField;
+        
+        private Field reciprocalRateField;
+        
+        private SO302000ShippingSettingsShippingInformationRateSelectionCurrencyUnitEquivalentsServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field CurrencyID {
+            get {
+                return this.currencyIDField;
+            }
+            set {
+                this.currencyIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field BaseCurrencyID {
+            get {
+                return this.baseCurrencyIDField;
+            }
+            set {
+                this.baseCurrencyIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field CurrRate {
+            get {
+                return this.currRateField;
+            }
+            set {
+                this.currRateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ReciprocalRate {
+            get {
+                return this.reciprocalRateField;
+            }
+            set {
+                this.reciprocalRateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO302000ShippingSettingsShippingInformationRateSelectionCurrencyUnitEquivalentsServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO302000ShippingSettingsShippingInformationRateSelectionServiceCommands {
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        private Attachment attachmentField;
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Attachment Attachment {
+            get {
+                return this.attachmentField;
+            }
+            set {
+                this.attachmentField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO302000ShippingSettingsShippingInformationRateSelection {
+        
+        private string displayNameField;
+        
+        private Field currRateTypeIDField;
+        
+        private Field effectiveDateField;
+        
+        private SO302000ShippingSettingsShippingInformationRateSelectionServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field CurrRateTypeID {
+            get {
+                return this.currRateTypeIDField;
+            }
+            set {
+                this.currRateTypeIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field EffectiveDate {
+            get {
+                return this.effectiveDateField;
+            }
+            set {
+                this.effectiveDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO302000ShippingSettingsShippingInformationRateSelectionServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO302000PackagesServiceCommands {
+        
+        private NewRow newRowField;
+        
+        private RowNumber rowNumberField;
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        private Attachment attachmentField;
+        
+        /// <remarks/>
+        public NewRow NewRow {
+            get {
+                return this.newRowField;
+            }
+            set {
+                this.newRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public RowNumber RowNumber {
+            get {
+                return this.rowNumberField;
+            }
+            set {
+                this.rowNumberField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Attachment Attachment {
+            get {
+                return this.attachmentField;
+            }
+            set {
+                this.attachmentField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO302000Packages {
+        
+        private string displayNameField;
+        
+        private Field confirmedField;
+        
+        private Field boxIDField;
+        
+        private Field typeField;
+        
+        private Field descriptionField;
+        
+        private Field weightField;
+        
+        private Field uOMField;
+        
+        private Field declaredValueField;
+        
+        private Field cODAmountField;
+        
+        private Field trackingNumberField;
+        
+        private Field customRefNbr1Field;
+        
+        private Field customRefNbr2Field;
+        
+        private Field noteTextField;
+        
+        private SO302000PackagesServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Confirmed {
+            get {
+                return this.confirmedField;
+            }
+            set {
+                this.confirmedField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field BoxID {
+            get {
+                return this.boxIDField;
+            }
+            set {
+                this.boxIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Type {
+            get {
+                return this.typeField;
+            }
+            set {
+                this.typeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Description {
+            get {
+                return this.descriptionField;
+            }
+            set {
+                this.descriptionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Weight {
+            get {
+                return this.weightField;
+            }
+            set {
+                this.weightField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field UOM {
+            get {
+                return this.uOMField;
+            }
+            set {
+                this.uOMField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field DeclaredValue {
+            get {
+                return this.declaredValueField;
+            }
+            set {
+                this.declaredValueField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field CODAmount {
+            get {
+                return this.cODAmountField;
+            }
+            set {
+                this.cODAmountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field TrackingNumber {
+            get {
+                return this.trackingNumberField;
+            }
+            set {
+                this.trackingNumberField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field CustomRefNbr1 {
+            get {
+                return this.customRefNbr1Field;
+            }
+            set {
+                this.customRefNbr1Field = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field CustomRefNbr2 {
+            get {
+                return this.customRefNbr2Field;
+            }
+            set {
+                this.customRefNbr2Field = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field NoteText {
+            get {
+                return this.noteTextField;
+            }
+            set {
+                this.noteTextField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO302000PackagesServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO302000OrdersServiceCommands {
+        
+        private Key keyOrderTypeField;
+        
+        private Key keyOrderNbrField;
+        
+        private NewRow newRowField;
+        
+        private RowNumber rowNumberField;
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        private Attachment attachmentField;
+        
+        /// <remarks/>
+        public Key KeyOrderType {
+            get {
+                return this.keyOrderTypeField;
+            }
+            set {
+                this.keyOrderTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Key KeyOrderNbr {
+            get {
+                return this.keyOrderNbrField;
+            }
+            set {
+                this.keyOrderNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public NewRow NewRow {
+            get {
+                return this.newRowField;
+            }
+            set {
+                this.newRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public RowNumber RowNumber {
+            get {
+                return this.rowNumberField;
+            }
+            set {
+                this.rowNumberField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Attachment Attachment {
+            get {
+                return this.attachmentField;
+            }
+            set {
+                this.attachmentField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO302000Orders {
+        
+        private string displayNameField;
+        
+        private Field shipmentNbrField;
+        
+        private Field orderTypeField;
+        
+        private Field orderNbrField;
+        
+        private Field shippedQtyField;
+        
+        private Field shippedWeightField;
+        
+        private Field shippedVolumeField;
+        
+        private Field invoiceTypeField;
+        
+        private Field invoiceNbrField;
+        
+        private Field inventoryDocTypeField;
+        
+        private Field inventoryRefNbrField;
+        
+        private Field noteTextField;
+        
+        private SO302000OrdersServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ShipmentNbr {
+            get {
+                return this.shipmentNbrField;
+            }
+            set {
+                this.shipmentNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field OrderType {
+            get {
+                return this.orderTypeField;
+            }
+            set {
+                this.orderTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field OrderNbr {
+            get {
+                return this.orderNbrField;
+            }
+            set {
+                this.orderNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ShippedQty {
+            get {
+                return this.shippedQtyField;
+            }
+            set {
+                this.shippedQtyField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ShippedWeight {
+            get {
+                return this.shippedWeightField;
+            }
+            set {
+                this.shippedWeightField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ShippedVolume {
+            get {
+                return this.shippedVolumeField;
+            }
+            set {
+                this.shippedVolumeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field InvoiceType {
+            get {
+                return this.invoiceTypeField;
+            }
+            set {
+                this.invoiceTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field InvoiceNbr {
+            get {
+                return this.invoiceNbrField;
+            }
+            set {
+                this.invoiceNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field InventoryDocType {
+            get {
+                return this.inventoryDocTypeField;
+            }
+            set {
+                this.inventoryDocTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field InventoryRefNbr {
+            get {
+                return this.inventoryRefNbrField;
+            }
+            set {
+                this.inventoryRefNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field NoteText {
+            get {
+                return this.noteTextField;
+            }
+            set {
+                this.noteTextField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO302000OrdersServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO302000ShippingSettingsShipToInfoOverrideContactServiceCommands {
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        private Attachment attachmentField;
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Attachment Attachment {
+            get {
+                return this.attachmentField;
+            }
+            set {
+                this.attachmentField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO302000ShippingSettingsShipToInfoOverrideContact {
+        
+        private string displayNameField;
+        
+        private Field overrideContactField;
+        
+        private Field businessNameField;
+        
+        private Field attentionField;
+        
+        private Field phone1Field;
+        
+        private Field emailField;
+        
+        private SO302000ShippingSettingsShipToInfoOverrideContactServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field OverrideContact {
+            get {
+                return this.overrideContactField;
+            }
+            set {
+                this.overrideContactField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field BusinessName {
+            get {
+                return this.businessNameField;
+            }
+            set {
+                this.businessNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Attention {
+            get {
+                return this.attentionField;
+            }
+            set {
+                this.attentionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Phone1 {
+            get {
+                return this.phone1Field;
+            }
+            set {
+                this.phone1Field = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Email {
+            get {
+                return this.emailField;
+            }
+            set {
+                this.emailField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO302000ShippingSettingsShipToInfoOverrideContactServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO302000ShippingSettingsShipToInfoServiceCommands {
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        private Attachment attachmentField;
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Attachment Attachment {
+            get {
+                return this.attachmentField;
+            }
+            set {
+                this.attachmentField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO302000ShippingSettingsShipToInfo {
+        
+        private string displayNameField;
+        
+        private Field overrideAddressField;
+        
+        private Field validatedField;
+        
+        private Field addressLine1Field;
+        
+        private Field addressLine2Field;
+        
+        private Field cityField;
+        
+        private Field countryField;
+        
+        private Field stateField;
+        
+        private Field postalCodeField;
+        
+        private SO302000ShippingSettingsShipToInfoServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field OverrideAddress {
+            get {
+                return this.overrideAddressField;
+            }
+            set {
+                this.overrideAddressField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Validated {
+            get {
+                return this.validatedField;
+            }
+            set {
+                this.validatedField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field AddressLine1 {
+            get {
+                return this.addressLine1Field;
+            }
+            set {
+                this.addressLine1Field = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field AddressLine2 {
+            get {
+                return this.addressLine2Field;
+            }
+            set {
+                this.addressLine2Field = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field City {
+            get {
+                return this.cityField;
+            }
+            set {
+                this.cityField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Country {
+            get {
+                return this.countryField;
+            }
+            set {
+                this.countryField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field State {
+            get {
+                return this.stateField;
+            }
+            set {
+                this.stateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field PostalCode {
+            get {
+                return this.postalCodeField;
+            }
+            set {
+                this.postalCodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO302000ShippingSettingsShipToInfoServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO302000AllocationsServiceCommands {
+        
+        private NewRow newRowField;
+        
+        private RowNumber rowNumberField;
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        /// <remarks/>
+        public NewRow NewRow {
+            get {
+                return this.newRowField;
+            }
+            set {
+                this.newRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public RowNumber RowNumber {
+            get {
+                return this.rowNumberField;
+            }
+            set {
+                this.rowNumberField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO302000Allocations {
+        
+        private string displayNameField;
+        
+        private Field inventoryIDField;
+        
+        private Field locationField;
+        
+        private Field lotSerialNbrField;
+        
+        private Field quantityField;
+        
+        private Field uOMField;
+        
+        private Field expirationDateField;
+        
+        private Field descriptionField;
+        
+        private SO302000AllocationsServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field InventoryID {
+            get {
+                return this.inventoryIDField;
+            }
+            set {
+                this.inventoryIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Location {
+            get {
+                return this.locationField;
+            }
+            set {
+                this.locationField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field LotSerialNbr {
+            get {
+                return this.lotSerialNbrField;
+            }
+            set {
+                this.lotSerialNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Quantity {
+            get {
+                return this.quantityField;
+            }
+            set {
+                this.quantityField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field UOM {
+            get {
+                return this.uOMField;
+            }
+            set {
+                this.uOMField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ExpirationDate {
+            get {
+                return this.expirationDateField;
+            }
+            set {
+                this.expirationDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Description {
+            get {
+                return this.descriptionField;
+            }
+            set {
+                this.descriptionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO302000AllocationsServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO302000DocumentDetailsServiceCommands {
+        
+        private NewRow newRowField;
+        
+        private RowNumber rowNumberField;
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        private Attachment attachmentField;
+        
+        /// <remarks/>
+        public NewRow NewRow {
+            get {
+                return this.newRowField;
+            }
+            set {
+                this.newRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public RowNumber RowNumber {
+            get {
+                return this.rowNumberField;
+            }
+            set {
+                this.rowNumberField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Attachment Attachment {
+            get {
+                return this.attachmentField;
+            }
+            set {
+                this.attachmentField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO302000DocumentDetails {
+        
+        private string displayNameField;
+        
+        private Field shipmentNbrField;
+        
+        private Field lineNbrField;
+        
+        private Field orderTypeField;
+        
+        private Field orderNbrField;
+        
+        private Field orderLineNbrField;
+        
+        private Field inventoryIDField;
+        
+        private Field freeItemField;
+        
+        private Field warehouseField;
+        
+        private Field locationField;
+        
+        private Field uOMField;
+        
+        private Field shippedQtyField;
+        
+        private Field originalQtyField;
+        
+        private Field orderedQtyField;
+        
+        private Field openQtyField;
+        
+        private Field lotSerialNbrField;
+        
+        private Field expirationDateField;
+        
+        private Field reasonCodeField;
+        
+        private Field descriptionField;
+        
+        private Field noteTextField;
+        
+        private Field availabilityField;
+        
+        private SO302000DocumentDetailsServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ShipmentNbr {
+            get {
+                return this.shipmentNbrField;
+            }
+            set {
+                this.shipmentNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field LineNbr {
+            get {
+                return this.lineNbrField;
+            }
+            set {
+                this.lineNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field OrderType {
+            get {
+                return this.orderTypeField;
+            }
+            set {
+                this.orderTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field OrderNbr {
+            get {
+                return this.orderNbrField;
+            }
+            set {
+                this.orderNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field OrderLineNbr {
+            get {
+                return this.orderLineNbrField;
+            }
+            set {
+                this.orderLineNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field InventoryID {
+            get {
+                return this.inventoryIDField;
+            }
+            set {
+                this.inventoryIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field FreeItem {
+            get {
+                return this.freeItemField;
+            }
+            set {
+                this.freeItemField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Warehouse {
+            get {
+                return this.warehouseField;
+            }
+            set {
+                this.warehouseField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Location {
+            get {
+                return this.locationField;
+            }
+            set {
+                this.locationField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field UOM {
+            get {
+                return this.uOMField;
+            }
+            set {
+                this.uOMField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ShippedQty {
+            get {
+                return this.shippedQtyField;
+            }
+            set {
+                this.shippedQtyField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field OriginalQty {
+            get {
+                return this.originalQtyField;
+            }
+            set {
+                this.originalQtyField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field OrderedQty {
+            get {
+                return this.orderedQtyField;
+            }
+            set {
+                this.orderedQtyField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field OpenQty {
+            get {
+                return this.openQtyField;
+            }
+            set {
+                this.openQtyField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field LotSerialNbr {
+            get {
+                return this.lotSerialNbrField;
+            }
+            set {
+                this.lotSerialNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ExpirationDate {
+            get {
+                return this.expirationDateField;
+            }
+            set {
+                this.expirationDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ReasonCode {
+            get {
+                return this.reasonCodeField;
+            }
+            set {
+                this.reasonCodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Description {
+            get {
+                return this.descriptionField;
+            }
+            set {
+                this.descriptionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field NoteText {
+            get {
+                return this.noteTextField;
+            }
+            set {
+                this.noteTextField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Availability {
+            get {
+                return this.availabilityField;
+            }
+            set {
+                this.availabilityField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO302000DocumentDetailsServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO302000ShippingSettingsShippingInformationServiceCommands {
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        private Attachment attachmentField;
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Attachment Attachment {
+            get {
+                return this.attachmentField;
+            }
+            set {
+                this.attachmentField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO302000ShippingSettingsShippingInformation {
+        
+        private string displayNameField;
+        
+        private Field shipViaField;
+        
+        private Field fOBPointField;
+        
+        private Field shippingTermsField;
+        
+        private Field shippingZoneIDField;
+        
+        private Field residentialDeliveryField;
+        
+        private Field saturdayDeliveryField;
+        
+        private Field useCustomerSAccountField;
+        
+        private Field insuranceField;
+        
+        private Field groundCollectField;
+        
+        private Field freightCurrencyField;
+        
+        private Field curyViewStateField;
+        
+        private Field freightCostField;
+        
+        private Field freightAmtField;
+        
+        private SO302000ShippingSettingsShippingInformationServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ShipVia {
+            get {
+                return this.shipViaField;
+            }
+            set {
+                this.shipViaField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field FOBPoint {
+            get {
+                return this.fOBPointField;
+            }
+            set {
+                this.fOBPointField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ShippingTerms {
+            get {
+                return this.shippingTermsField;
+            }
+            set {
+                this.shippingTermsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ShippingZoneID {
+            get {
+                return this.shippingZoneIDField;
+            }
+            set {
+                this.shippingZoneIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ResidentialDelivery {
+            get {
+                return this.residentialDeliveryField;
+            }
+            set {
+                this.residentialDeliveryField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field SaturdayDelivery {
+            get {
+                return this.saturdayDeliveryField;
+            }
+            set {
+                this.saturdayDeliveryField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field UseCustomerSAccount {
+            get {
+                return this.useCustomerSAccountField;
+            }
+            set {
+                this.useCustomerSAccountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Insurance {
+            get {
+                return this.insuranceField;
+            }
+            set {
+                this.insuranceField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field GroundCollect {
+            get {
+                return this.groundCollectField;
+            }
+            set {
+                this.groundCollectField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field FreightCurrency {
+            get {
+                return this.freightCurrencyField;
+            }
+            set {
+                this.freightCurrencyField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field CuryViewState {
+            get {
+                return this.curyViewStateField;
+            }
+            set {
+                this.curyViewStateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field FreightCost {
+            get {
+                return this.freightCostField;
+            }
+            set {
+                this.freightCostField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field FreightAmt {
+            get {
+                return this.freightAmtField;
+            }
+            set {
+                this.freightAmtField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO302000ShippingSettingsShippingInformationServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO302000ShipmentSummaryServiceCommands {
+        
+        private Key keyShipmentNbrField;
+        
+        private EveryValue everyShipmentNbrField;
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        private Attachment attachmentField;
+        
+        /// <remarks/>
+        public Key KeyShipmentNbr {
+            get {
+                return this.keyShipmentNbrField;
+            }
+            set {
+                this.keyShipmentNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public EveryValue EveryShipmentNbr {
+            get {
+                return this.everyShipmentNbrField;
+            }
+            set {
+                this.everyShipmentNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Attachment Attachment {
+            get {
+                return this.attachmentField;
+            }
+            set {
+                this.attachmentField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO302000ShipmentSummary {
+        
+        private string displayNameField;
+        
+        private Field shipmentNbrField;
+        
+        private Field typeField;
+        
+        private Field statusField;
+        
+        private Field holdField;
+        
+        private Field operationField;
+        
+        private Field shipmentDateField;
+        
+        private Field customerField;
+        
+        private Field locationField;
+        
+        private Field warehouseIDField;
+        
+        private Field toWarehouseField;
+        
+        private Field workgroupField;
+        
+        private Field ownerField;
+        
+        private Field shippedQuantityField;
+        
+        private Field controlQuantityField;
+        
+        private Field shippedWeightField;
+        
+        private Field shippedVolumeField;
+        
+        private Field packagesField;
+        
+        private Field packageWeightField;
+        
+        private Field noteTextField;
+        
+        private SO302000ShipmentSummaryServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ShipmentNbr {
+            get {
+                return this.shipmentNbrField;
+            }
+            set {
+                this.shipmentNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Type {
+            get {
+                return this.typeField;
+            }
+            set {
+                this.typeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Status {
+            get {
+                return this.statusField;
+            }
+            set {
+                this.statusField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Hold {
+            get {
+                return this.holdField;
+            }
+            set {
+                this.holdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Operation {
+            get {
+                return this.operationField;
+            }
+            set {
+                this.operationField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ShipmentDate {
+            get {
+                return this.shipmentDateField;
+            }
+            set {
+                this.shipmentDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Customer {
+            get {
+                return this.customerField;
+            }
+            set {
+                this.customerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Location {
+            get {
+                return this.locationField;
+            }
+            set {
+                this.locationField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field WarehouseID {
+            get {
+                return this.warehouseIDField;
+            }
+            set {
+                this.warehouseIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ToWarehouse {
+            get {
+                return this.toWarehouseField;
+            }
+            set {
+                this.toWarehouseField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Workgroup {
+            get {
+                return this.workgroupField;
+            }
+            set {
+                this.workgroupField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Owner {
+            get {
+                return this.ownerField;
+            }
+            set {
+                this.ownerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ShippedQuantity {
+            get {
+                return this.shippedQuantityField;
+            }
+            set {
+                this.shippedQuantityField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ControlQuantity {
+            get {
+                return this.controlQuantityField;
+            }
+            set {
+                this.controlQuantityField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ShippedWeight {
+            get {
+                return this.shippedWeightField;
+            }
+            set {
+                this.shippedWeightField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ShippedVolume {
+            get {
+                return this.shippedVolumeField;
+            }
+            set {
+                this.shippedVolumeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Packages {
+            get {
+                return this.packagesField;
+            }
+            set {
+                this.packagesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field PackageWeight {
+            get {
+                return this.packageWeightField;
+            }
+            set {
+                this.packageWeightField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field NoteText {
+            get {
+                return this.noteTextField;
+            }
+            set {
+                this.noteTextField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO302000ShipmentSummaryServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO302000Actions {
+        
+        private Action saveField;
+        
+        private Action cancelField;
+        
+        private Action insertField;
+        
+        private Action deleteField;
+        
+        private Action copyDocumentCopyPasteField;
+        
+        private Action pasteDocumentCopyPasteField;
+        
+        private Action saveTemplateCopyPasteField;
+        
+        private Action firstField;
+        
+        private Action previousField;
+        
+        private Action nextField;
+        
+        private Action lastField;
+        
+        private Action lSSOShipLineGenerateLotSerialField;
+        
+        private Action lSSOShipLineBinLotSerialField;
+        
+        private Action newTaskField;
+        
+        private Action newEventField;
+        
+        private Action viewActivityField;
+        
+        private Action newMailActivityField;
+        
+        private Action openActivityOwnerField;
+        
+        private Action viewAllActivitiesField;
+        
+        private Action nNewActivityField;
+        
+        private Action cNewActivityField;
+        
+        private Action eNewActivityField;
+        
+        private Action mNewActivityField;
+        
+        private Action pNewActivityField;
+        
+        private Action wNewActivityField;
+        
+        private Action holdField;
+        
+        private Action syncStatusFlowField;
+        
+        private Action onConfirmationFlowField;
+        
+        private Action emailShipmentNotificationField;
+        
+        private Action confirmShipmentActionField;
+        
+        private Action prepareInvoiceActionField;
+        
+        private Action prepareDropShipInvoiceActionField;
+        
+        private Action updateINActionField;
+        
+        private Action correctShipmentActionField;
+        
+        private Action printLabelsActionField;
+        
+        private Action getReturnLabelsActionField;
+        
+        private Action cancelReturnActionField;
+        
+        private Action validateAddressesActionField;
+        
+        private Action emailShipmentActionField;
+        
+        private Action printPickListActionField;
+        
+        private Action inquiryField;
+        
+        private Action printShipmentConfirmationReportField;
+        
+        private Action recalculatePackagesField;
+        
+        private Action inventorySummaryField;
+        
+        private Action selectSOField;
+        
+        private Action addSOField;
+        
+        private Action addSOCancelField;
+        
+        private Action validateAddressesField;
+        
+        /// <remarks/>
+        public Action Save {
+            get {
+                return this.saveField;
+            }
+            set {
+                this.saveField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action Cancel {
+            get {
+                return this.cancelField;
+            }
+            set {
+                this.cancelField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action Insert {
+            get {
+                return this.insertField;
+            }
+            set {
+                this.insertField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action Delete {
+            get {
+                return this.deleteField;
+            }
+            set {
+                this.deleteField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action CopyDocumentCopyPaste {
+            get {
+                return this.copyDocumentCopyPasteField;
+            }
+            set {
+                this.copyDocumentCopyPasteField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action PasteDocumentCopyPaste {
+            get {
+                return this.pasteDocumentCopyPasteField;
+            }
+            set {
+                this.pasteDocumentCopyPasteField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action SaveTemplateCopyPaste {
+            get {
+                return this.saveTemplateCopyPasteField;
+            }
+            set {
+                this.saveTemplateCopyPasteField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action First {
+            get {
+                return this.firstField;
+            }
+            set {
+                this.firstField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action Previous {
+            get {
+                return this.previousField;
+            }
+            set {
+                this.previousField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action Next {
+            get {
+                return this.nextField;
+            }
+            set {
+                this.nextField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action Last {
+            get {
+                return this.lastField;
+            }
+            set {
+                this.lastField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action LSSOShipLineGenerateLotSerial {
+            get {
+                return this.lSSOShipLineGenerateLotSerialField;
+            }
+            set {
+                this.lSSOShipLineGenerateLotSerialField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action LSSOShipLineBinLotSerial {
+            get {
+                return this.lSSOShipLineBinLotSerialField;
+            }
+            set {
+                this.lSSOShipLineBinLotSerialField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action NewTask {
+            get {
+                return this.newTaskField;
+            }
+            set {
+                this.newTaskField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action NewEvent {
+            get {
+                return this.newEventField;
+            }
+            set {
+                this.newEventField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action ViewActivity {
+            get {
+                return this.viewActivityField;
+            }
+            set {
+                this.viewActivityField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action NewMailActivity {
+            get {
+                return this.newMailActivityField;
+            }
+            set {
+                this.newMailActivityField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action OpenActivityOwner {
+            get {
+                return this.openActivityOwnerField;
+            }
+            set {
+                this.openActivityOwnerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action ViewAllActivities {
+            get {
+                return this.viewAllActivitiesField;
+            }
+            set {
+                this.viewAllActivitiesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action NNewActivity {
+            get {
+                return this.nNewActivityField;
+            }
+            set {
+                this.nNewActivityField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action CNewActivity {
+            get {
+                return this.cNewActivityField;
+            }
+            set {
+                this.cNewActivityField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action ENewActivity {
+            get {
+                return this.eNewActivityField;
+            }
+            set {
+                this.eNewActivityField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action MNewActivity {
+            get {
+                return this.mNewActivityField;
+            }
+            set {
+                this.mNewActivityField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action PNewActivity {
+            get {
+                return this.pNewActivityField;
+            }
+            set {
+                this.pNewActivityField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action WNewActivity {
+            get {
+                return this.wNewActivityField;
+            }
+            set {
+                this.wNewActivityField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action Hold {
+            get {
+                return this.holdField;
+            }
+            set {
+                this.holdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action SyncStatusFlow {
+            get {
+                return this.syncStatusFlowField;
+            }
+            set {
+                this.syncStatusFlowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action OnConfirmationFlow {
+            get {
+                return this.onConfirmationFlowField;
+            }
+            set {
+                this.onConfirmationFlowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action EmailShipmentNotification {
+            get {
+                return this.emailShipmentNotificationField;
+            }
+            set {
+                this.emailShipmentNotificationField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action ConfirmShipmentAction {
+            get {
+                return this.confirmShipmentActionField;
+            }
+            set {
+                this.confirmShipmentActionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action PrepareInvoiceAction {
+            get {
+                return this.prepareInvoiceActionField;
+            }
+            set {
+                this.prepareInvoiceActionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action PrepareDropShipInvoiceAction {
+            get {
+                return this.prepareDropShipInvoiceActionField;
+            }
+            set {
+                this.prepareDropShipInvoiceActionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action UpdateINAction {
+            get {
+                return this.updateINActionField;
+            }
+            set {
+                this.updateINActionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action CorrectShipmentAction {
+            get {
+                return this.correctShipmentActionField;
+            }
+            set {
+                this.correctShipmentActionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action PrintLabelsAction {
+            get {
+                return this.printLabelsActionField;
+            }
+            set {
+                this.printLabelsActionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action GetReturnLabelsAction {
+            get {
+                return this.getReturnLabelsActionField;
+            }
+            set {
+                this.getReturnLabelsActionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action CancelReturnAction {
+            get {
+                return this.cancelReturnActionField;
+            }
+            set {
+                this.cancelReturnActionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action ValidateAddressesAction {
+            get {
+                return this.validateAddressesActionField;
+            }
+            set {
+                this.validateAddressesActionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action EmailShipmentAction {
+            get {
+                return this.emailShipmentActionField;
+            }
+            set {
+                this.emailShipmentActionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action PrintPickListAction {
+            get {
+                return this.printPickListActionField;
+            }
+            set {
+                this.printPickListActionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action Inquiry {
+            get {
+                return this.inquiryField;
+            }
+            set {
+                this.inquiryField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action PrintShipmentConfirmationReport {
+            get {
+                return this.printShipmentConfirmationReportField;
+            }
+            set {
+                this.printShipmentConfirmationReportField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action RecalculatePackages {
+            get {
+                return this.recalculatePackagesField;
+            }
+            set {
+                this.recalculatePackagesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action InventorySummary {
+            get {
+                return this.inventorySummaryField;
+            }
+            set {
+                this.inventorySummaryField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action SelectSO {
+            get {
+                return this.selectSOField;
+            }
+            set {
+                this.selectSOField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action AddSO {
+            get {
+                return this.addSOField;
+            }
+            set {
+                this.addSOField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action AddSOCancel {
+            get {
+                return this.addSOCancelField;
+            }
+            set {
+                this.addSOCancelField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action ValidateAddresses {
+            get {
+                return this.validateAddressesField;
+            }
+            set {
+                this.validateAddressesField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO302000Content {
+        
+        private SO302000Actions actionsField;
+        
+        private SO302000ShipmentSummary shipmentSummaryField;
+        
+        private SO302000ShippingSettingsShippingInformation shippingSettingsShippingInformationField;
+        
+        private SO302000DocumentDetails documentDetailsField;
+        
+        private SO302000Allocations allocationsField;
+        
+        private SO302000ShippingSettingsShipToInfo shippingSettingsShipToInfoField;
+        
+        private SO302000ShippingSettingsShipToInfoOverrideContact shippingSettingsShipToInfoOverrideContactField;
+        
+        private SO302000Orders ordersField;
+        
+        private SO302000Packages packagesField;
+        
+        private SO302000ShippingSettingsShippingInformationRateSelection shippingSettingsShippingInformationRateSelectionField;
+        
+        private SO302000ShippingSettingsShippingInformationRateSelectionCurrencyUnitEquivalents shippingSettingsShippingInformationRateSelectionCurrencyUnitEquivalentsField;
+        
+        private SO302000AddSalesOrderOperation addSalesOrderOperationField;
+        
+        private SO302000AddSalesOrder addSalesOrderField;
+        
+        private SO302000AllocationsUnassignedQty allocationsUnassignedQtyField;
+        
+        /// <remarks/>
+        public SO302000Actions Actions {
+            get {
+                return this.actionsField;
+            }
+            set {
+                this.actionsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO302000ShipmentSummary ShipmentSummary {
+            get {
+                return this.shipmentSummaryField;
+            }
+            set {
+                this.shipmentSummaryField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO302000ShippingSettingsShippingInformation ShippingSettingsShippingInformation {
+            get {
+                return this.shippingSettingsShippingInformationField;
+            }
+            set {
+                this.shippingSettingsShippingInformationField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO302000DocumentDetails DocumentDetails {
+            get {
+                return this.documentDetailsField;
+            }
+            set {
+                this.documentDetailsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO302000Allocations Allocations {
+            get {
+                return this.allocationsField;
+            }
+            set {
+                this.allocationsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO302000ShippingSettingsShipToInfo ShippingSettingsShipToInfo {
+            get {
+                return this.shippingSettingsShipToInfoField;
+            }
+            set {
+                this.shippingSettingsShipToInfoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO302000ShippingSettingsShipToInfoOverrideContact ShippingSettingsShipToInfoOverrideContact {
+            get {
+                return this.shippingSettingsShipToInfoOverrideContactField;
+            }
+            set {
+                this.shippingSettingsShipToInfoOverrideContactField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO302000Orders Orders {
+            get {
+                return this.ordersField;
+            }
+            set {
+                this.ordersField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO302000Packages Packages {
+            get {
+                return this.packagesField;
+            }
+            set {
+                this.packagesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO302000ShippingSettingsShippingInformationRateSelection ShippingSettingsShippingInformationRateSelection {
+            get {
+                return this.shippingSettingsShippingInformationRateSelectionField;
+            }
+            set {
+                this.shippingSettingsShippingInformationRateSelectionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO302000ShippingSettingsShippingInformationRateSelectionCurrencyUnitEquivalents ShippingSettingsShippingInformationRateSelectionCurrencyUnitEquivalents {
+            get {
+                return this.shippingSettingsShippingInformationRateSelectionCurrencyUnitEquivalentsField;
+            }
+            set {
+                this.shippingSettingsShippingInformationRateSelectionCurrencyUnitEquivalentsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO302000AddSalesOrderOperation AddSalesOrderOperation {
+            get {
+                return this.addSalesOrderOperationField;
+            }
+            set {
+                this.addSalesOrderOperationField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO302000AddSalesOrder AddSalesOrder {
+            get {
+                return this.addSalesOrderField;
+            }
+            set {
+                this.addSalesOrderField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO302000AllocationsUnassignedQty AllocationsUnassignedQty {
+            get {
+                return this.allocationsUnassignedQtyField;
+            }
+            set {
+                this.allocationsUnassignedQtyField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
     public partial class SO301000ImportResult {
         
         private bool processedField;
@@ -1146,64 +11352,6 @@ namespace AcumaticaWebServiceSample.TEST {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
-    public partial class Value : Field {
-        
-        private string messageField;
-        
-        private bool isErrorField;
-        
-        public Value() {
-            this.isErrorField = false;
-        }
-        
-        /// <remarks/>
-        public string Message {
-            get {
-                return this.messageField;
-            }
-            set {
-                this.messageField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.ComponentModel.DefaultValueAttribute(false)]
-        public bool IsError {
-            get {
-                return this.isErrorField;
-            }
-            set {
-                this.isErrorField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Attachment))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Value))]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
-    public partial class Field : Command {
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
-    public partial class Attachment : Field {
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
     public partial class SO301000AllocationsUnassignedQtyServiceCommands {
         
         private DeleteRow deleteRowField;
@@ -1241,24 +11389,6 @@ namespace AcumaticaWebServiceSample.TEST {
                 this.attachmentField = value;
             }
         }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
-    public partial class DeleteRow : Command {
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
-    public partial class Answer : Command {
     }
     
     /// <remarks/>
@@ -1397,33 +11527,6 @@ namespace AcumaticaWebServiceSample.TEST {
                 this.dialogAnswerField = value;
             }
         }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
-    public partial class Key : Command {
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
-    public partial class NewRow : Command {
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
-    public partial class RowNumber : Command {
     }
     
     /// <remarks/>
@@ -2209,6 +12312,306 @@ namespace AcumaticaWebServiceSample.TEST {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO301000ROTRUTDetailsRUTAndROTTotalsServiceCommands {
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        private Attachment attachmentField;
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Attachment Attachment {
+            get {
+                return this.attachmentField;
+            }
+            set {
+                this.attachmentField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO301000ROTRUTDetailsRUTAndROTTotals {
+        
+        private string displayNameField;
+        
+        private Field deductionField;
+        
+        private Field totalDeductibleAmountField;
+        
+        private Field otherCostField;
+        
+        private Field materialCostField;
+        
+        private Field workPriceField;
+        
+        private Field distributedAmountField;
+        
+        private Field undistributedAmountField;
+        
+        private SO301000ROTRUTDetailsRUTAndROTTotalsServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Deduction {
+            get {
+                return this.deductionField;
+            }
+            set {
+                this.deductionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field TotalDeductibleAmount {
+            get {
+                return this.totalDeductibleAmountField;
+            }
+            set {
+                this.totalDeductibleAmountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field OtherCost {
+            get {
+                return this.otherCostField;
+            }
+            set {
+                this.otherCostField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field MaterialCost {
+            get {
+                return this.materialCostField;
+            }
+            set {
+                this.materialCostField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field WorkPrice {
+            get {
+                return this.workPriceField;
+            }
+            set {
+                this.workPriceField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field DistributedAmount {
+            get {
+                return this.distributedAmountField;
+            }
+            set {
+                this.distributedAmountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field UndistributedAmount {
+            get {
+                return this.undistributedAmountField;
+            }
+            set {
+                this.undistributedAmountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO301000ROTRUTDetailsRUTAndROTTotalsServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO301000ROTRUTDetailsRUTAndROTSettingsServiceCommands {
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        private Attachment attachmentField;
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Attachment Attachment {
+            get {
+                return this.attachmentField;
+            }
+            set {
+                this.attachmentField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO301000ROTRUTDetailsRUTAndROTSettings {
+        
+        private string displayNameField;
+        
+        private Field distributeAutomaticallyField;
+        
+        private Field deductionTypeField;
+        
+        private Field apartmentField;
+        
+        private Field realEstateField;
+        
+        private Field organizationNbrField;
+        
+        private SO301000ROTRUTDetailsRUTAndROTSettingsServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field DistributeAutomatically {
+            get {
+                return this.distributeAutomaticallyField;
+            }
+            set {
+                this.distributeAutomaticallyField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field DeductionType {
+            get {
+                return this.deductionTypeField;
+            }
+            set {
+                this.deductionTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Apartment {
+            get {
+                return this.apartmentField;
+            }
+            set {
+                this.apartmentField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field RealEstate {
+            get {
+                return this.realEstateField;
+            }
+            set {
+                this.realEstateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field OrganizationNbr {
+            get {
+                return this.organizationNbrField;
+            }
+            set {
+                this.organizationNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO301000ROTRUTDetailsRUTAndROTSettingsServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
     public partial class SO301000PaymentsServiceCommands {
         
         private Key keyDocTypeField;
@@ -2464,6 +12867,168 @@ namespace AcumaticaWebServiceSample.TEST {
         
         /// <remarks/>
         public SO301000PaymentsServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO301000ShopForRatesCarrierRatesServiceCommands {
+        
+        private NewRow newRowField;
+        
+        private RowNumber rowNumberField;
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        /// <remarks/>
+        public NewRow NewRow {
+            get {
+                return this.newRowField;
+            }
+            set {
+                this.newRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public RowNumber RowNumber {
+            get {
+                return this.rowNumberField;
+            }
+            set {
+                this.rowNumberField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class SO301000ShopForRatesCarrierRates {
+        
+        private string displayNameField;
+        
+        private Field selectedField;
+        
+        private Field codeField;
+        
+        private Field descriptionField;
+        
+        private Field amountField;
+        
+        private Field daysInTransitField;
+        
+        private Field deliveryDateField;
+        
+        private SO301000ShopForRatesCarrierRatesServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Selected {
+            get {
+                return this.selectedField;
+            }
+            set {
+                this.selectedField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Code {
+            get {
+                return this.codeField;
+            }
+            set {
+                this.codeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Description {
+            get {
+                return this.descriptionField;
+            }
+            set {
+                this.descriptionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Amount {
+            get {
+                return this.amountField;
+            }
+            set {
+                this.amountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field DaysInTransit {
+            get {
+                return this.daysInTransitField;
+            }
+            set {
+                this.daysInTransitField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field DeliveryDate {
+            get {
+                return this.deliveryDateField;
+            }
+            set {
+                this.deliveryDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO301000ShopForRatesCarrierRatesServiceCommands ServiceCommands {
             get {
                 return this.serviceCommandsField;
             }
@@ -3166,15 +13731,6 @@ namespace AcumaticaWebServiceSample.TEST {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
-    public partial class Parameter : Command {
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
     public partial class SO301000AddInvoiceDetails {
         
         private string displayNameField;
@@ -3186,6 +13742,8 @@ namespace AcumaticaWebServiceSample.TEST {
         private Field warehouseField;
         
         private Field locationField;
+        
+        private Field lotSerialNbrField;
         
         private Field uOMField;
         
@@ -3242,6 +13800,16 @@ namespace AcumaticaWebServiceSample.TEST {
             }
             set {
                 this.locationField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field LotSerialNbr {
+            get {
+                return this.lotSerialNbrField;
+            }
+            set {
+                this.lotSerialNbrField = value;
             }
         }
         
@@ -4079,6 +14647,8 @@ namespace AcumaticaWebServiceSample.TEST {
         
         private Field locationField;
         
+        private Field lotSerialNbrField;
+        
         private Field quantityField;
         
         private Field qtyOnShipmentsField;
@@ -4086,6 +14656,8 @@ namespace AcumaticaWebServiceSample.TEST {
         private Field qtyReceivedField;
         
         private Field uOMField;
+        
+        private Field expirationDateField;
         
         private Field relatedDocumentField;
         
@@ -4162,6 +14734,16 @@ namespace AcumaticaWebServiceSample.TEST {
         }
         
         /// <remarks/>
+        public Field LotSerialNbr {
+            get {
+                return this.lotSerialNbrField;
+            }
+            set {
+                this.lotSerialNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
         public Field Quantity {
             get {
                 return this.quantityField;
@@ -4198,6 +14780,16 @@ namespace AcumaticaWebServiceSample.TEST {
             }
             set {
                 this.uOMField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ExpirationDate {
+            get {
+                return this.expirationDateField;
+            }
+            set {
+                this.expirationDateField = value;
             }
         }
         
@@ -6057,6 +16649,10 @@ namespace AcumaticaWebServiceSample.TEST {
         
         private Field pOSourceField;
         
+        private Field lotSerialNbrField;
+        
+        private Field expirationDateField;
+        
         private Field reasonCodeField;
         
         private Field salespersonIDField;
@@ -6470,6 +17066,26 @@ namespace AcumaticaWebServiceSample.TEST {
             }
             set {
                 this.pOSourceField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field LotSerialNbr {
+            get {
+                return this.lotSerialNbrField;
+            }
+            set {
+                this.lotSerialNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ExpirationDate {
+            get {
+                return this.expirationDateField;
+            }
+            set {
+                this.expirationDateField = value;
             }
         }
         
@@ -8077,15 +18693,6 @@ namespace AcumaticaWebServiceSample.TEST {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
-    public partial class EveryValue : Command {
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
     public partial class SO301000OrderSummary {
         
         private string displayNameField;
@@ -8137,6 +18744,8 @@ namespace AcumaticaWebServiceSample.TEST {
         private Field orderTotalField;
         
         private Field controlTotalField;
+        
+        private Field rOTAndRUTDeductibleDocumentField;
         
         private Field noteTextField;
         
@@ -8393,6 +19002,16 @@ namespace AcumaticaWebServiceSample.TEST {
         }
         
         /// <remarks/>
+        public Field ROTAndRUTDeductibleDocument {
+            get {
+                return this.rOTAndRUTDeductibleDocumentField;
+            }
+            set {
+                this.rOTAndRUTDeductibleDocumentField = value;
+            }
+        }
+        
+        /// <remarks/>
         public Field NoteText {
             get {
                 return this.noteTextField;
@@ -8459,17 +19078,15 @@ namespace AcumaticaWebServiceSample.TEST {
         
         private Action viewAllActivitiesField;
         
+        private Action nNewActivityField;
+        
         private Action cNewActivityField;
         
         private Action eNewActivityField;
         
         private Action mNewActivityField;
         
-        private Action nNewActivityField;
-        
         private Action pNewActivityField;
-        
-        private Action rNewActivityField;
         
         private Action wNewActivityField;
         
@@ -8772,6 +19389,16 @@ namespace AcumaticaWebServiceSample.TEST {
         }
         
         /// <remarks/>
+        public Action NNewActivity {
+            get {
+                return this.nNewActivityField;
+            }
+            set {
+                this.nNewActivityField = value;
+            }
+        }
+        
+        /// <remarks/>
         public Action CNewActivity {
             get {
                 return this.cNewActivityField;
@@ -8802,32 +19429,12 @@ namespace AcumaticaWebServiceSample.TEST {
         }
         
         /// <remarks/>
-        public Action NNewActivity {
-            get {
-                return this.nNewActivityField;
-            }
-            set {
-                this.nNewActivityField = value;
-            }
-        }
-        
-        /// <remarks/>
         public Action PNewActivity {
             get {
                 return this.pNewActivityField;
             }
             set {
                 this.pNewActivityField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public Action RNewActivity {
-            get {
-                return this.rNewActivityField;
-            }
-            set {
-                this.rNewActivityField = value;
             }
         }
         
@@ -9388,15 +19995,6 @@ namespace AcumaticaWebServiceSample.TEST {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
-    public partial class Action : Command {
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
     public partial class SO301000Content {
         
         private SO301000Actions actionsField;
@@ -9459,7 +20057,13 @@ namespace AcumaticaWebServiceSample.TEST {
         
         private SO301000ShopForRatesPackages shopForRatesPackagesField;
         
+        private SO301000ShopForRatesCarrierRates shopForRatesCarrierRatesField;
+        
         private SO301000Payments paymentsField;
+        
+        private SO301000ROTRUTDetailsRUTAndROTSettings rOTRUTDetailsRUTAndROTSettingsField;
+        
+        private SO301000ROTRUTDetailsRUTAndROTTotals rOTRUTDetailsRUTAndROTTotalsField;
         
         private SO301000PaymentSettingsInputMode paymentSettingsInputModeField;
         
@@ -9774,12 +20378,42 @@ namespace AcumaticaWebServiceSample.TEST {
         }
         
         /// <remarks/>
+        public SO301000ShopForRatesCarrierRates ShopForRatesCarrierRates {
+            get {
+                return this.shopForRatesCarrierRatesField;
+            }
+            set {
+                this.shopForRatesCarrierRatesField = value;
+            }
+        }
+        
+        /// <remarks/>
         public SO301000Payments Payments {
             get {
                 return this.paymentsField;
             }
             set {
                 this.paymentsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO301000ROTRUTDetailsRUTAndROTSettings ROTRUTDetailsRUTAndROTSettings {
+            get {
+                return this.rOTRUTDetailsRUTAndROTSettingsField;
+            }
+            set {
+                this.rOTRUTDetailsRUTAndROTSettingsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SO301000ROTRUTDetailsRUTAndROTTotals ROTRUTDetailsRUTAndROTTotals {
+            get {
+                return this.rOTRUTDetailsRUTAndROTTotalsField;
+            }
+            set {
+                this.rOTRUTDetailsRUTAndROTTotalsField = value;
             }
         }
         
@@ -9908,158 +20542,6 @@ namespace AcumaticaWebServiceSample.TEST {
                 this.customerIDField = value;
             }
         }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
-    public partial class Filter {
-        
-        private Field fieldField;
-        
-        private FilterCondition conditionField;
-        
-        private object valueField;
-        
-        private object value2Field;
-        
-        private int openBracketsField;
-        
-        private int closeBracketsField;
-        
-        private FilterOperator operatorField;
-        
-        /// <remarks/>
-        public Field Field {
-            get {
-                return this.fieldField;
-            }
-            set {
-                this.fieldField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public FilterCondition Condition {
-            get {
-                return this.conditionField;
-            }
-            set {
-                this.conditionField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public object Value {
-            get {
-                return this.valueField;
-            }
-            set {
-                this.valueField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public object Value2 {
-            get {
-                return this.value2Field;
-            }
-            set {
-                this.value2Field = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int OpenBrackets {
-            get {
-                return this.openBracketsField;
-            }
-            set {
-                this.openBracketsField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int CloseBrackets {
-            get {
-                return this.closeBracketsField;
-            }
-            set {
-                this.closeBracketsField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public FilterOperator Operator {
-            get {
-                return this.operatorField;
-            }
-            set {
-                this.operatorField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
-    [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
-    public enum FilterCondition {
-        
-        /// <remarks/>
-        Equals,
-        
-        /// <remarks/>
-        NotEqual,
-        
-        /// <remarks/>
-        Greater,
-        
-        /// <remarks/>
-        GreaterOrEqual,
-        
-        /// <remarks/>
-        Less,
-        
-        /// <remarks/>
-        LessOrEqual,
-        
-        /// <remarks/>
-        Contain,
-        
-        /// <remarks/>
-        StartsWith,
-        
-        /// <remarks/>
-        EndsWith,
-        
-        /// <remarks/>
-        NotContain,
-        
-        /// <remarks/>
-        Between,
-        
-        /// <remarks/>
-        IsNull,
-        
-        /// <remarks/>
-        IsNotNull,
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
-    [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
-    public enum FilterOperator {
-        
-        /// <remarks/>
-        And,
-        
-        /// <remarks/>
-        Or,
     }
     
     /// <remarks/>
@@ -11610,6 +22092,156 @@ namespace AcumaticaWebServiceSample.TEST {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR303000DeliverySettingsShippingInstructionsCarrierAccountsServiceCommands {
+        
+        private Key keyCarrierField;
+        
+        private NewRow newRowField;
+        
+        private RowNumber rowNumberField;
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        /// <remarks/>
+        public Key KeyCarrier {
+            get {
+                return this.keyCarrierField;
+            }
+            set {
+                this.keyCarrierField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public NewRow NewRow {
+            get {
+                return this.newRowField;
+            }
+            set {
+                this.newRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public RowNumber RowNumber {
+            get {
+                return this.rowNumberField;
+            }
+            set {
+                this.rowNumberField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR303000DeliverySettingsShippingInstructionsCarrierAccounts {
+        
+        private string displayNameField;
+        
+        private Field activeField;
+        
+        private Field carrierField;
+        
+        private Field carrierAccountField;
+        
+        private Field postalCodeField;
+        
+        private AR303000DeliverySettingsShippingInstructionsCarrierAccountsServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Active {
+            get {
+                return this.activeField;
+            }
+            set {
+                this.activeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Carrier {
+            get {
+                return this.carrierField;
+            }
+            set {
+                this.carrierField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field CarrierAccount {
+            get {
+                return this.carrierAccountField;
+            }
+            set {
+                this.carrierAccountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field PostalCode {
+            get {
+                return this.postalCodeField;
+            }
+            set {
+                this.postalCodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR303000DeliverySettingsShippingInstructionsCarrierAccountsServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
     public partial class AR303000GeneralInfoCreditVerificationRulesServiceCommands {
         
         private DeleteRow deleteRowField;
@@ -11854,6 +22486,8 @@ namespace AcumaticaWebServiceSample.TEST {
         
         private Key keySalespersonIDField;
         
+        private Key keyLocationIDField;
+        
         private NewRow newRowField;
         
         private RowNumber rowNumberField;
@@ -11869,6 +22503,16 @@ namespace AcumaticaWebServiceSample.TEST {
             }
             set {
                 this.keySalespersonIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Key KeyLocationID {
+            get {
+                return this.keyLocationIDField;
+            }
+            set {
+                this.keyLocationIDField = value;
             }
         }
         
@@ -11927,6 +22571,8 @@ namespace AcumaticaWebServiceSample.TEST {
         
         private Field nameField;
         
+        private Field locationIDField;
+        
         private Field locationNameField;
         
         private Field commissionField;
@@ -11962,6 +22608,16 @@ namespace AcumaticaWebServiceSample.TEST {
             }
             set {
                 this.nameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field LocationID {
+            get {
+                return this.locationIDField;
+            }
+            set {
+                this.locationIDField = value;
             }
         }
         
@@ -13087,6 +23743,8 @@ namespace AcumaticaWebServiceSample.TEST {
         
         private Field locationIDField;
         
+        private Field locationNameField;
+        
         private Field cityField;
         
         private Field countryField;
@@ -13142,6 +23800,16 @@ namespace AcumaticaWebServiceSample.TEST {
             }
             set {
                 this.locationIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field LocationName {
+            get {
+                return this.locationNameField;
+            }
+            set {
+                this.locationNameField = value;
             }
         }
         
@@ -15422,17 +26090,15 @@ namespace AcumaticaWebServiceSample.TEST {
         
         private Action viewAllActivitiesField;
         
+        private Action nNewActivityField;
+        
         private Action cNewActivityField;
         
         private Action eNewActivityField;
         
         private Action mNewActivityField;
         
-        private Action nNewActivityField;
-        
         private Action pNewActivityField;
-        
-        private Action rNewActivityField;
         
         private Action wNewActivityField;
         
@@ -15765,6 +26431,16 @@ namespace AcumaticaWebServiceSample.TEST {
         }
         
         /// <remarks/>
+        public Action NNewActivity {
+            get {
+                return this.nNewActivityField;
+            }
+            set {
+                this.nNewActivityField = value;
+            }
+        }
+        
+        /// <remarks/>
         public Action CNewActivity {
             get {
                 return this.cNewActivityField;
@@ -15795,32 +26471,12 @@ namespace AcumaticaWebServiceSample.TEST {
         }
         
         /// <remarks/>
-        public Action NNewActivity {
-            get {
-                return this.nNewActivityField;
-            }
-            set {
-                this.nNewActivityField = value;
-            }
-        }
-        
-        /// <remarks/>
         public Action PNewActivity {
             get {
                 return this.pNewActivityField;
             }
             set {
                 this.pNewActivityField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public Action RNewActivity {
-            get {
-                return this.rNewActivityField;
-            }
-            set {
-                this.rNewActivityField = value;
             }
         }
         
@@ -16335,6 +26991,8 @@ namespace AcumaticaWebServiceSample.TEST {
         
         private AR303000GeneralInfoCreditVerificationRules generalInfoCreditVerificationRulesField;
         
+        private AR303000DeliverySettingsShippingInstructionsCarrierAccounts deliverySettingsShippingInstructionsCarrierAccountsField;
+        
         private AR303000BillingSettingsDefaultPaymentMethod billingSettingsDefaultPaymentMethodField;
         
         private AR303000PaymentMethods paymentMethodsField;
@@ -16614,6 +27272,16 @@ namespace AcumaticaWebServiceSample.TEST {
         }
         
         /// <remarks/>
+        public AR303000DeliverySettingsShippingInstructionsCarrierAccounts DeliverySettingsShippingInstructionsCarrierAccounts {
+            get {
+                return this.deliverySettingsShippingInstructionsCarrierAccountsField;
+            }
+            set {
+                this.deliverySettingsShippingInstructionsCarrierAccountsField = value;
+            }
+        }
+        
+        /// <remarks/>
         public AR303000BillingSettingsDefaultPaymentMethod BillingSettingsDefaultPaymentMethod {
             get {
                 return this.billingSettingsDefaultPaymentMethodField;
@@ -16700,6 +27368,9626 @@ namespace AcumaticaWebServiceSample.TEST {
             }
             set {
                 this.specifyNewIDField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR302000ImportResult {
+        
+        private bool processedField;
+        
+        private string errorField;
+        
+        private AR302000PrimaryKey keysField;
+        
+        /// <remarks/>
+        public bool Processed {
+            get {
+                return this.processedField;
+            }
+            set {
+                this.processedField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Error {
+            get {
+                return this.errorField;
+            }
+            set {
+                this.errorField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR302000PrimaryKey Keys {
+            get {
+                return this.keysField;
+            }
+            set {
+                this.keysField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR302000PrimaryKey {
+        
+        private Value typeField;
+        
+        private Value referenceNbrField;
+        
+        /// <remarks/>
+        public Value Type {
+            get {
+                return this.typeField;
+            }
+            set {
+                this.typeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Value ReferenceNbr {
+            get {
+                return this.referenceNbrField;
+            }
+            set {
+                this.referenceNbrField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR302000FinancialDetailsVoucherDetailsServiceCommands {
+        
+        private Key keyWorkbookIDField;
+        
+        private Key keyVoucherBatchNbrField;
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        private Attachment attachmentField;
+        
+        /// <remarks/>
+        public Key KeyWorkbookID {
+            get {
+                return this.keyWorkbookIDField;
+            }
+            set {
+                this.keyWorkbookIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Key KeyVoucherBatchNbr {
+            get {
+                return this.keyVoucherBatchNbrField;
+            }
+            set {
+                this.keyVoucherBatchNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Attachment Attachment {
+            get {
+                return this.attachmentField;
+            }
+            set {
+                this.attachmentField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR302000FinancialDetailsVoucherDetails {
+        
+        private string displayNameField;
+        
+        private Field voucherBatchNbrField;
+        
+        private Field workbookIDField;
+        
+        private AR302000FinancialDetailsVoucherDetailsServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field VoucherBatchNbr {
+            get {
+                return this.voucherBatchNbrField;
+            }
+            set {
+                this.voucherBatchNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field WorkbookID {
+            get {
+                return this.workbookIDField;
+            }
+            set {
+                this.workbookIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR302000FinancialDetailsVoucherDetailsServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR302000LoadOptionsServiceCommands {
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        private Attachment attachmentField;
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Attachment Attachment {
+            get {
+                return this.attachmentField;
+            }
+            set {
+                this.attachmentField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR302000LoadOptions {
+        
+        private string displayNameField;
+        
+        private Field fromDateField;
+        
+        private Field startRefNbrField;
+        
+        private Field startOrderNbrField;
+        
+        private Field maxDocsField;
+        
+        private Field tillDateField;
+        
+        private Field endRefNbrField;
+        
+        private Field endOrderNbrField;
+        
+        private Field loadChildDocumentsField;
+        
+        private Field orderByField;
+        
+        private Field sOOrderByField;
+        
+        private AR302000LoadOptionsServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field FromDate {
+            get {
+                return this.fromDateField;
+            }
+            set {
+                this.fromDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field StartRefNbr {
+            get {
+                return this.startRefNbrField;
+            }
+            set {
+                this.startRefNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field StartOrderNbr {
+            get {
+                return this.startOrderNbrField;
+            }
+            set {
+                this.startOrderNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field MaxDocs {
+            get {
+                return this.maxDocsField;
+            }
+            set {
+                this.maxDocsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field TillDate {
+            get {
+                return this.tillDateField;
+            }
+            set {
+                this.tillDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field EndRefNbr {
+            get {
+                return this.endRefNbrField;
+            }
+            set {
+                this.endRefNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field EndOrderNbr {
+            get {
+                return this.endOrderNbrField;
+            }
+            set {
+                this.endOrderNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field LoadChildDocuments {
+            get {
+                return this.loadChildDocumentsField;
+            }
+            set {
+                this.loadChildDocumentsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field OrderBy {
+            get {
+                return this.orderByField;
+            }
+            set {
+                this.orderByField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field SOOrderBy {
+            get {
+                return this.sOOrderByField;
+            }
+            set {
+                this.sOOrderByField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR302000LoadOptionsServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR302000CCPaymentWithExternalAuthorizationCCPaymentDataServiceCommands {
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        private Attachment attachmentField;
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Attachment Attachment {
+            get {
+                return this.attachmentField;
+            }
+            set {
+                this.attachmentField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR302000CCPaymentWithExternalAuthorizationCCPaymentData {
+        
+        private string displayNameField;
+        
+        private Field authNumberField;
+        
+        private AR302000CCPaymentWithExternalAuthorizationCCPaymentDataServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field AuthNumber {
+            get {
+                return this.authNumberField;
+            }
+            set {
+                this.authNumberField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR302000CCPaymentWithExternalAuthorizationCCPaymentDataServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR302000RecordCCPaymentCCPaymentDataServiceCommands {
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        private Attachment attachmentField;
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Attachment Attachment {
+            get {
+                return this.attachmentField;
+            }
+            set {
+                this.attachmentField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR302000RecordCCPaymentCCPaymentData {
+        
+        private string displayNameField;
+        
+        private Field pCTranNumberField;
+        
+        private Field authNumberField;
+        
+        private AR302000RecordCCPaymentCCPaymentDataServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field PCTranNumber {
+            get {
+                return this.pCTranNumberField;
+            }
+            set {
+                this.pCTranNumberField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field AuthNumber {
+            get {
+                return this.authNumberField;
+            }
+            set {
+                this.authNumberField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR302000RecordCCPaymentCCPaymentDataServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR302000FinanceChargesServiceCommands {
+        
+        private NewRow newRowField;
+        
+        private RowNumber rowNumberField;
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        /// <remarks/>
+        public NewRow NewRow {
+            get {
+                return this.newRowField;
+            }
+            set {
+                this.newRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public RowNumber RowNumber {
+            get {
+                return this.rowNumberField;
+            }
+            set {
+                this.rowNumberField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR302000FinanceCharges {
+        
+        private string displayNameField;
+        
+        private Field entryTypeField;
+        
+        private Field descriptionField;
+        
+        private Field offsetAccountField;
+        
+        private Field offsetSubaccountField;
+        
+        private Field amountField;
+        
+        private AR302000FinanceChargesServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field EntryType {
+            get {
+                return this.entryTypeField;
+            }
+            set {
+                this.entryTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Description {
+            get {
+                return this.descriptionField;
+            }
+            set {
+                this.descriptionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field OffsetAccount {
+            get {
+                return this.offsetAccountField;
+            }
+            set {
+                this.offsetAccountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field OffsetSubaccount {
+            get {
+                return this.offsetSubaccountField;
+            }
+            set {
+                this.offsetSubaccountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Amount {
+            get {
+                return this.amountField;
+            }
+            set {
+                this.amountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR302000FinanceChargesServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR302000CreditCardProcessingInfoServiceCommands {
+        
+        private Key keyTranNbrField;
+        
+        private NewRow newRowField;
+        
+        private RowNumber rowNumberField;
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        /// <remarks/>
+        public Key KeyTranNbr {
+            get {
+                return this.keyTranNbrField;
+            }
+            set {
+                this.keyTranNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public NewRow NewRow {
+            get {
+                return this.newRowField;
+            }
+            set {
+                this.newRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public RowNumber RowNumber {
+            get {
+                return this.rowNumberField;
+            }
+            set {
+                this.rowNumberField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR302000CreditCardProcessingInfo {
+        
+        private string displayNameField;
+        
+        private Field tranNbrField;
+        
+        private Field procCenterField;
+        
+        private Field tranTypeField;
+        
+        private Field tranStatusField;
+        
+        private Field tranAmountField;
+        
+        private Field referencedTranNbrField;
+        
+        private Field procCenterTranNbrField;
+        
+        private Field procCenterAuthNbrField;
+        
+        private Field pCResponseReasonField;
+        
+        private Field tranTimeField;
+        
+        private Field procStatusField;
+        
+        private Field cVVVerificationField;
+        
+        private Field errorSourceField;
+        
+        private Field errorTextField;
+        
+        private AR302000CreditCardProcessingInfoServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field TranNbr {
+            get {
+                return this.tranNbrField;
+            }
+            set {
+                this.tranNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ProcCenter {
+            get {
+                return this.procCenterField;
+            }
+            set {
+                this.procCenterField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field TranType {
+            get {
+                return this.tranTypeField;
+            }
+            set {
+                this.tranTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field TranStatus {
+            get {
+                return this.tranStatusField;
+            }
+            set {
+                this.tranStatusField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field TranAmount {
+            get {
+                return this.tranAmountField;
+            }
+            set {
+                this.tranAmountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ReferencedTranNbr {
+            get {
+                return this.referencedTranNbrField;
+            }
+            set {
+                this.referencedTranNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ProcCenterTranNbr {
+            get {
+                return this.procCenterTranNbrField;
+            }
+            set {
+                this.procCenterTranNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ProcCenterAuthNbr {
+            get {
+                return this.procCenterAuthNbrField;
+            }
+            set {
+                this.procCenterAuthNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field PCResponseReason {
+            get {
+                return this.pCResponseReasonField;
+            }
+            set {
+                this.pCResponseReasonField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field TranTime {
+            get {
+                return this.tranTimeField;
+            }
+            set {
+                this.tranTimeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ProcStatus {
+            get {
+                return this.procStatusField;
+            }
+            set {
+                this.procStatusField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field CVVVerification {
+            get {
+                return this.cVVVerificationField;
+            }
+            set {
+                this.cVVVerificationField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ErrorSource {
+            get {
+                return this.errorSourceField;
+            }
+            set {
+                this.errorSourceField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ErrorText {
+            get {
+                return this.errorTextField;
+            }
+            set {
+                this.errorTextField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR302000CreditCardProcessingInfoServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR302000PaymentSummaryRateSelectionCurrencyUnitEquivalentsServiceCommands {
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        private Attachment attachmentField;
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Attachment Attachment {
+            get {
+                return this.attachmentField;
+            }
+            set {
+                this.attachmentField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR302000PaymentSummaryRateSelectionCurrencyUnitEquivalents {
+        
+        private string displayNameField;
+        
+        private Field currencyIDField;
+        
+        private Field baseCurrencyIDField;
+        
+        private Field currRateField;
+        
+        private Field reciprocalRateField;
+        
+        private AR302000PaymentSummaryRateSelectionCurrencyUnitEquivalentsServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field CurrencyID {
+            get {
+                return this.currencyIDField;
+            }
+            set {
+                this.currencyIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field BaseCurrencyID {
+            get {
+                return this.baseCurrencyIDField;
+            }
+            set {
+                this.baseCurrencyIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field CurrRate {
+            get {
+                return this.currRateField;
+            }
+            set {
+                this.currRateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ReciprocalRate {
+            get {
+                return this.reciprocalRateField;
+            }
+            set {
+                this.reciprocalRateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR302000PaymentSummaryRateSelectionCurrencyUnitEquivalentsServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR302000PaymentSummaryRateSelectionServiceCommands {
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        private Attachment attachmentField;
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Attachment Attachment {
+            get {
+                return this.attachmentField;
+            }
+            set {
+                this.attachmentField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR302000PaymentSummaryRateSelection {
+        
+        private string displayNameField;
+        
+        private Field currRateTypeIDField;
+        
+        private Field effectiveDateField;
+        
+        private AR302000PaymentSummaryRateSelectionServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field CurrRateTypeID {
+            get {
+                return this.currRateTypeIDField;
+            }
+            set {
+                this.currRateTypeIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field EffectiveDate {
+            get {
+                return this.effectiveDateField;
+            }
+            set {
+                this.effectiveDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR302000PaymentSummaryRateSelectionServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR302000OrdersToApplyServiceCommands {
+        
+        private Key keyOrderTypeField;
+        
+        private Key keyOrderNbrField;
+        
+        private NewRow newRowField;
+        
+        private RowNumber rowNumberField;
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        private Attachment attachmentField;
+        
+        /// <remarks/>
+        public Key KeyOrderType {
+            get {
+                return this.keyOrderTypeField;
+            }
+            set {
+                this.keyOrderTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Key KeyOrderNbr {
+            get {
+                return this.keyOrderNbrField;
+            }
+            set {
+                this.keyOrderNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public NewRow NewRow {
+            get {
+                return this.newRowField;
+            }
+            set {
+                this.newRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public RowNumber RowNumber {
+            get {
+                return this.rowNumberField;
+            }
+            set {
+                this.rowNumberField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Attachment Attachment {
+            get {
+                return this.attachmentField;
+            }
+            set {
+                this.attachmentField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR302000OrdersToApply {
+        
+        private string displayNameField;
+        
+        private Field orderTypeField;
+        
+        private Field orderNbrField;
+        
+        private Field statusField;
+        
+        private Field docTypeField;
+        
+        private Field referenceNbrField;
+        
+        private Field appliedToOrderField;
+        
+        private Field transferredToInvoiceField;
+        
+        private Field dateField;
+        
+        private Field dueDateField;
+        
+        private Field cashDiscountDateField;
+        
+        private Field balanceField;
+        
+        private Field descriptionField;
+        
+        private Field orderTotalField;
+        
+        private Field currencyField;
+        
+        private Field invoiceNbrField;
+        
+        private Field invoiceDateField;
+        
+        private Field noteTextField;
+        
+        private AR302000OrdersToApplyServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field OrderType {
+            get {
+                return this.orderTypeField;
+            }
+            set {
+                this.orderTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field OrderNbr {
+            get {
+                return this.orderNbrField;
+            }
+            set {
+                this.orderNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Status {
+            get {
+                return this.statusField;
+            }
+            set {
+                this.statusField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field DocType {
+            get {
+                return this.docTypeField;
+            }
+            set {
+                this.docTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ReferenceNbr {
+            get {
+                return this.referenceNbrField;
+            }
+            set {
+                this.referenceNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field AppliedToOrder {
+            get {
+                return this.appliedToOrderField;
+            }
+            set {
+                this.appliedToOrderField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field TransferredToInvoice {
+            get {
+                return this.transferredToInvoiceField;
+            }
+            set {
+                this.transferredToInvoiceField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Date {
+            get {
+                return this.dateField;
+            }
+            set {
+                this.dateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field DueDate {
+            get {
+                return this.dueDateField;
+            }
+            set {
+                this.dueDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field CashDiscountDate {
+            get {
+                return this.cashDiscountDateField;
+            }
+            set {
+                this.cashDiscountDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Balance {
+            get {
+                return this.balanceField;
+            }
+            set {
+                this.balanceField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Description {
+            get {
+                return this.descriptionField;
+            }
+            set {
+                this.descriptionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field OrderTotal {
+            get {
+                return this.orderTotalField;
+            }
+            set {
+                this.orderTotalField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Currency {
+            get {
+                return this.currencyField;
+            }
+            set {
+                this.currencyField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field InvoiceNbr {
+            get {
+                return this.invoiceNbrField;
+            }
+            set {
+                this.invoiceNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field InvoiceDate {
+            get {
+                return this.invoiceDateField;
+            }
+            set {
+                this.invoiceDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field NoteText {
+            get {
+                return this.noteTextField;
+            }
+            set {
+                this.noteTextField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR302000OrdersToApplyServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR302000ApplicationHistoryServiceCommands {
+        
+        private Key keyReferenceNbrField;
+        
+        private NewRow newRowField;
+        
+        private RowNumber rowNumberField;
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        private Attachment attachmentField;
+        
+        /// <remarks/>
+        public Key KeyReferenceNbr {
+            get {
+                return this.keyReferenceNbrField;
+            }
+            set {
+                this.keyReferenceNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public NewRow NewRow {
+            get {
+                return this.newRowField;
+            }
+            set {
+                this.newRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public RowNumber RowNumber {
+            get {
+                return this.rowNumberField;
+            }
+            set {
+                this.rowNumberField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Attachment Attachment {
+            get {
+                return this.attachmentField;
+            }
+            set {
+                this.attachmentField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR302000ApplicationHistory {
+        
+        private string displayNameField;
+        
+        private Field batchNumberField;
+        
+        private Field typeField;
+        
+        private Field referenceNbrField;
+        
+        private Field customerField;
+        
+        private Field amountPaidField;
+        
+        private Field cashDiscountTakenField;
+        
+        private Field balanceWriteOffField;
+        
+        private Field applicationPeriodField;
+        
+        private Field dateField;
+        
+        private Field dueDateField;
+        
+        private Field cashDiscountDateField;
+        
+        private Field balanceField;
+        
+        private Field cashDiscountBalanceField;
+        
+        private Field descriptionField;
+        
+        private Field currencyField;
+        
+        private Field postPeriodField;
+        
+        private Field customerOrderField;
+        
+        private Field adjustmentNbrField;
+        
+        private Field adjustsVATField;
+        
+        private Field vATCreditMemoField;
+        
+        private Field noteTextField;
+        
+        private AR302000ApplicationHistoryServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field BatchNumber {
+            get {
+                return this.batchNumberField;
+            }
+            set {
+                this.batchNumberField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Type {
+            get {
+                return this.typeField;
+            }
+            set {
+                this.typeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ReferenceNbr {
+            get {
+                return this.referenceNbrField;
+            }
+            set {
+                this.referenceNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Customer {
+            get {
+                return this.customerField;
+            }
+            set {
+                this.customerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field AmountPaid {
+            get {
+                return this.amountPaidField;
+            }
+            set {
+                this.amountPaidField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field CashDiscountTaken {
+            get {
+                return this.cashDiscountTakenField;
+            }
+            set {
+                this.cashDiscountTakenField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field BalanceWriteOff {
+            get {
+                return this.balanceWriteOffField;
+            }
+            set {
+                this.balanceWriteOffField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ApplicationPeriod {
+            get {
+                return this.applicationPeriodField;
+            }
+            set {
+                this.applicationPeriodField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Date {
+            get {
+                return this.dateField;
+            }
+            set {
+                this.dateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field DueDate {
+            get {
+                return this.dueDateField;
+            }
+            set {
+                this.dueDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field CashDiscountDate {
+            get {
+                return this.cashDiscountDateField;
+            }
+            set {
+                this.cashDiscountDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Balance {
+            get {
+                return this.balanceField;
+            }
+            set {
+                this.balanceField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field CashDiscountBalance {
+            get {
+                return this.cashDiscountBalanceField;
+            }
+            set {
+                this.cashDiscountBalanceField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Description {
+            get {
+                return this.descriptionField;
+            }
+            set {
+                this.descriptionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Currency {
+            get {
+                return this.currencyField;
+            }
+            set {
+                this.currencyField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field PostPeriod {
+            get {
+                return this.postPeriodField;
+            }
+            set {
+                this.postPeriodField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field CustomerOrder {
+            get {
+                return this.customerOrderField;
+            }
+            set {
+                this.customerOrderField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field AdjustmentNbr {
+            get {
+                return this.adjustmentNbrField;
+            }
+            set {
+                this.adjustmentNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field AdjustsVAT {
+            get {
+                return this.adjustsVATField;
+            }
+            set {
+                this.adjustsVATField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field VATCreditMemo {
+            get {
+                return this.vATCreditMemoField;
+            }
+            set {
+                this.vATCreditMemoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field NoteText {
+            get {
+                return this.noteTextField;
+            }
+            set {
+                this.noteTextField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR302000ApplicationHistoryServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR302000DocumentsToApplyServiceCommands {
+        
+        private Key keyDocTypeField;
+        
+        private Key keyReferenceNbrField;
+        
+        private NewRow newRowField;
+        
+        private RowNumber rowNumberField;
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        private Attachment attachmentField;
+        
+        /// <remarks/>
+        public Key KeyDocType {
+            get {
+                return this.keyDocTypeField;
+            }
+            set {
+                this.keyDocTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Key KeyReferenceNbr {
+            get {
+                return this.keyReferenceNbrField;
+            }
+            set {
+                this.keyReferenceNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public NewRow NewRow {
+            get {
+                return this.newRowField;
+            }
+            set {
+                this.newRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public RowNumber RowNumber {
+            get {
+                return this.rowNumberField;
+            }
+            set {
+                this.rowNumberField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Attachment Attachment {
+            get {
+                return this.attachmentField;
+            }
+            set {
+                this.attachmentField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR302000DocumentsToApply {
+        
+        private string displayNameField;
+        
+        private Field docTypeField;
+        
+        private Field referenceNbrField;
+        
+        private Field customerField;
+        
+        private Field amountPaidField;
+        
+        private Field cashDiscountTakenField;
+        
+        private Field balanceWriteOffField;
+        
+        private Field writeOffReasonCodeField;
+        
+        private Field dateField;
+        
+        private Field dueDateField;
+        
+        private Field cashDiscountDateField;
+        
+        private Field crossRateField;
+        
+        private Field balanceField;
+        
+        private Field cashDiscountBalanceField;
+        
+        private Field descriptionField;
+        
+        private Field currencyField;
+        
+        private Field postPeriodField;
+        
+        private Field customerOrderField;
+        
+        private Field adjustmentNbrField;
+        
+        private Field noteTextField;
+        
+        private AR302000DocumentsToApplyServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field DocType {
+            get {
+                return this.docTypeField;
+            }
+            set {
+                this.docTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ReferenceNbr {
+            get {
+                return this.referenceNbrField;
+            }
+            set {
+                this.referenceNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Customer {
+            get {
+                return this.customerField;
+            }
+            set {
+                this.customerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field AmountPaid {
+            get {
+                return this.amountPaidField;
+            }
+            set {
+                this.amountPaidField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field CashDiscountTaken {
+            get {
+                return this.cashDiscountTakenField;
+            }
+            set {
+                this.cashDiscountTakenField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field BalanceWriteOff {
+            get {
+                return this.balanceWriteOffField;
+            }
+            set {
+                this.balanceWriteOffField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field WriteOffReasonCode {
+            get {
+                return this.writeOffReasonCodeField;
+            }
+            set {
+                this.writeOffReasonCodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Date {
+            get {
+                return this.dateField;
+            }
+            set {
+                this.dateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field DueDate {
+            get {
+                return this.dueDateField;
+            }
+            set {
+                this.dueDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field CashDiscountDate {
+            get {
+                return this.cashDiscountDateField;
+            }
+            set {
+                this.cashDiscountDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field CrossRate {
+            get {
+                return this.crossRateField;
+            }
+            set {
+                this.crossRateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Balance {
+            get {
+                return this.balanceField;
+            }
+            set {
+                this.balanceField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field CashDiscountBalance {
+            get {
+                return this.cashDiscountBalanceField;
+            }
+            set {
+                this.cashDiscountBalanceField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Description {
+            get {
+                return this.descriptionField;
+            }
+            set {
+                this.descriptionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Currency {
+            get {
+                return this.currencyField;
+            }
+            set {
+                this.currencyField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field PostPeriod {
+            get {
+                return this.postPeriodField;
+            }
+            set {
+                this.postPeriodField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field CustomerOrder {
+            get {
+                return this.customerOrderField;
+            }
+            set {
+                this.customerOrderField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field AdjustmentNbr {
+            get {
+                return this.adjustmentNbrField;
+            }
+            set {
+                this.adjustmentNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field NoteText {
+            get {
+                return this.noteTextField;
+            }
+            set {
+                this.noteTextField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR302000DocumentsToApplyServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR302000FinancialDetailsPaymentInformationServiceCommands {
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        private Attachment attachmentField;
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Attachment Attachment {
+            get {
+                return this.attachmentField;
+            }
+            set {
+                this.attachmentField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR302000FinancialDetailsPaymentInformation {
+        
+        private string displayNameField;
+        
+        private Field paymentDateField;
+        
+        private Field paymentPeriodField;
+        
+        private Field clearedField;
+        
+        private Field clearDateField;
+        
+        private Field batchDepositField;
+        
+        private Field depositedField;
+        
+        private Field batchDepositDateField;
+        
+        private Field batchDepositNbrField;
+        
+        private AR302000FinancialDetailsPaymentInformationServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field PaymentDate {
+            get {
+                return this.paymentDateField;
+            }
+            set {
+                this.paymentDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field PaymentPeriod {
+            get {
+                return this.paymentPeriodField;
+            }
+            set {
+                this.paymentPeriodField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Cleared {
+            get {
+                return this.clearedField;
+            }
+            set {
+                this.clearedField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ClearDate {
+            get {
+                return this.clearDateField;
+            }
+            set {
+                this.clearDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field BatchDeposit {
+            get {
+                return this.batchDepositField;
+            }
+            set {
+                this.batchDepositField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Deposited {
+            get {
+                return this.depositedField;
+            }
+            set {
+                this.depositedField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field BatchDepositDate {
+            get {
+                return this.batchDepositDateField;
+            }
+            set {
+                this.batchDepositDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field BatchDepositNbr {
+            get {
+                return this.batchDepositNbrField;
+            }
+            set {
+                this.batchDepositNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR302000FinancialDetailsPaymentInformationServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR302000FinancialDetailsLinkToGLServiceCommands {
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        private Attachment attachmentField;
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Attachment Attachment {
+            get {
+                return this.attachmentField;
+            }
+            set {
+                this.attachmentField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR302000FinancialDetailsLinkToGL {
+        
+        private string displayNameField;
+        
+        private Field batchNbrField;
+        
+        private Field branchField;
+        
+        private Field aRAccountField;
+        
+        private Field aRSubaccountField;
+        
+        private Field projectField;
+        
+        private Field projectTaskField;
+        
+        private AR302000FinancialDetailsLinkToGLServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field BatchNbr {
+            get {
+                return this.batchNbrField;
+            }
+            set {
+                this.batchNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Branch {
+            get {
+                return this.branchField;
+            }
+            set {
+                this.branchField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ARAccount {
+            get {
+                return this.aRAccountField;
+            }
+            set {
+                this.aRAccountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ARSubaccount {
+            get {
+                return this.aRSubaccountField;
+            }
+            set {
+                this.aRSubaccountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Project {
+            get {
+                return this.projectField;
+            }
+            set {
+                this.projectField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ProjectTask {
+            get {
+                return this.projectTaskField;
+            }
+            set {
+                this.projectTaskField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR302000FinancialDetailsLinkToGLServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR302000PaymentSummaryServiceCommands {
+        
+        private Key keyTypeField;
+        
+        private EveryValue everyTypeField;
+        
+        private Key keyReferenceNbrField;
+        
+        private EveryValue everyReferenceNbrField;
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        private Attachment attachmentField;
+        
+        /// <remarks/>
+        public Key KeyType {
+            get {
+                return this.keyTypeField;
+            }
+            set {
+                this.keyTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public EveryValue EveryType {
+            get {
+                return this.everyTypeField;
+            }
+            set {
+                this.everyTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Key KeyReferenceNbr {
+            get {
+                return this.keyReferenceNbrField;
+            }
+            set {
+                this.keyReferenceNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public EveryValue EveryReferenceNbr {
+            get {
+                return this.everyReferenceNbrField;
+            }
+            set {
+                this.everyReferenceNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Attachment Attachment {
+            get {
+                return this.attachmentField;
+            }
+            set {
+                this.attachmentField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR302000PaymentSummary {
+        
+        private string displayNameField;
+        
+        private Field typeField;
+        
+        private Field referenceNbrField;
+        
+        private Field statusField;
+        
+        private Field holdField;
+        
+        private Field applicationDateField;
+        
+        private Field applicationPeriodField;
+        
+        private Field paymentRefField;
+        
+        private Field customerField;
+        
+        private Field locationField;
+        
+        private Field paymentMethodField;
+        
+        private Field cardAccountNoField;
+        
+        private Field cardAccountNoCardAccountNoField;
+        
+        private Field cashAccountField;
+        
+        private Field currencyField;
+        
+        private Field curyViewStateField;
+        
+        private Field depositAfterField;
+        
+        private Field descriptionField;
+        
+        private Field processingStatusField;
+        
+        private Field paymentAmountField;
+        
+        private Field appliedToDocumentsField;
+        
+        private Field appliedToOrdersField;
+        
+        private Field availableBalanceField;
+        
+        private Field writeOffAmountField;
+        
+        private Field financeChargesField;
+        
+        private Field deductedChargesField;
+        
+        private Field isCCPaymentField;
+        
+        private Field origPCRefNbrField;
+        
+        private Field rOTOrRUTPaymentField;
+        
+        private Field noteTextField;
+        
+        private AR302000PaymentSummaryServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Type {
+            get {
+                return this.typeField;
+            }
+            set {
+                this.typeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ReferenceNbr {
+            get {
+                return this.referenceNbrField;
+            }
+            set {
+                this.referenceNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Status {
+            get {
+                return this.statusField;
+            }
+            set {
+                this.statusField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Hold {
+            get {
+                return this.holdField;
+            }
+            set {
+                this.holdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ApplicationDate {
+            get {
+                return this.applicationDateField;
+            }
+            set {
+                this.applicationDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ApplicationPeriod {
+            get {
+                return this.applicationPeriodField;
+            }
+            set {
+                this.applicationPeriodField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field PaymentRef {
+            get {
+                return this.paymentRefField;
+            }
+            set {
+                this.paymentRefField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Customer {
+            get {
+                return this.customerField;
+            }
+            set {
+                this.customerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Location {
+            get {
+                return this.locationField;
+            }
+            set {
+                this.locationField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field PaymentMethod {
+            get {
+                return this.paymentMethodField;
+            }
+            set {
+                this.paymentMethodField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field CardAccountNo {
+            get {
+                return this.cardAccountNoField;
+            }
+            set {
+                this.cardAccountNoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field CardAccountNoCardAccountNo {
+            get {
+                return this.cardAccountNoCardAccountNoField;
+            }
+            set {
+                this.cardAccountNoCardAccountNoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field CashAccount {
+            get {
+                return this.cashAccountField;
+            }
+            set {
+                this.cashAccountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Currency {
+            get {
+                return this.currencyField;
+            }
+            set {
+                this.currencyField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field CuryViewState {
+            get {
+                return this.curyViewStateField;
+            }
+            set {
+                this.curyViewStateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field DepositAfter {
+            get {
+                return this.depositAfterField;
+            }
+            set {
+                this.depositAfterField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Description {
+            get {
+                return this.descriptionField;
+            }
+            set {
+                this.descriptionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ProcessingStatus {
+            get {
+                return this.processingStatusField;
+            }
+            set {
+                this.processingStatusField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field PaymentAmount {
+            get {
+                return this.paymentAmountField;
+            }
+            set {
+                this.paymentAmountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field AppliedToDocuments {
+            get {
+                return this.appliedToDocumentsField;
+            }
+            set {
+                this.appliedToDocumentsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field AppliedToOrders {
+            get {
+                return this.appliedToOrdersField;
+            }
+            set {
+                this.appliedToOrdersField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field AvailableBalance {
+            get {
+                return this.availableBalanceField;
+            }
+            set {
+                this.availableBalanceField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field WriteOffAmount {
+            get {
+                return this.writeOffAmountField;
+            }
+            set {
+                this.writeOffAmountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field FinanceCharges {
+            get {
+                return this.financeChargesField;
+            }
+            set {
+                this.financeChargesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field DeductedCharges {
+            get {
+                return this.deductedChargesField;
+            }
+            set {
+                this.deductedChargesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field IsCCPayment {
+            get {
+                return this.isCCPaymentField;
+            }
+            set {
+                this.isCCPaymentField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field OrigPCRefNbr {
+            get {
+                return this.origPCRefNbrField;
+            }
+            set {
+                this.origPCRefNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ROTOrRUTPayment {
+            get {
+                return this.rOTOrRUTPaymentField;
+            }
+            set {
+                this.rOTOrRUTPaymentField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field NoteText {
+            get {
+                return this.noteTextField;
+            }
+            set {
+                this.noteTextField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR302000PaymentSummaryServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR302000Actions {
+        
+        private Action saveField;
+        
+        private Action cancelField;
+        
+        private Action insertField;
+        
+        private Action deleteField;
+        
+        private Action copyDocumentCopyPasteField;
+        
+        private Action pasteDocumentCopyPasteField;
+        
+        private Action saveTemplateCopyPasteField;
+        
+        private Action firstField;
+        
+        private Action previousField;
+        
+        private Action nextField;
+        
+        private Action lastField;
+        
+        private Action releaseField;
+        
+        private Action voidCheckField;
+        
+        private Action viewBatchField;
+        
+        private Action captureCCPaymentActionField;
+        
+        private Action authorizeCCPaymentActionField;
+        
+        private Action voidCCPaymentActionField;
+        
+        private Action creditCCPaymentActionField;
+        
+        private Action recordCCPaymentActionField;
+        
+        private Action captureOnlyCCPaymentActionField;
+        
+        private Action customerDocumentsInquiryField;
+        
+        private Action aREditDetailedReportField;
+        
+        private Action aRRegisterDetailedReportField;
+        
+        private Action newCustomerField;
+        
+        private Action editCustomerField;
+        
+        private Action customerDocumentsField;
+        
+        private Action loadInvoicesField;
+        
+        private Action loadOrdersField;
+        
+        private Action reverseApplicationField;
+        
+        private Action viewDocumentToApplyField;
+        
+        private Action viewApplicationDocumentField;
+        
+        private Action viewSODocumentToApplyField;
+        
+        private Action viewCurrentBatchField;
+        
+        private Action captureCCPaymentField;
+        
+        private Action authorizeCCPaymentField;
+        
+        private Action voidCCPaymentField;
+        
+        private Action creditCCPaymentField;
+        
+        private Action recordCCPaymentField;
+        
+        private Action captureOnlyCCPaymentField;
+        
+        /// <remarks/>
+        public Action Save {
+            get {
+                return this.saveField;
+            }
+            set {
+                this.saveField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action Cancel {
+            get {
+                return this.cancelField;
+            }
+            set {
+                this.cancelField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action Insert {
+            get {
+                return this.insertField;
+            }
+            set {
+                this.insertField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action Delete {
+            get {
+                return this.deleteField;
+            }
+            set {
+                this.deleteField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action CopyDocumentCopyPaste {
+            get {
+                return this.copyDocumentCopyPasteField;
+            }
+            set {
+                this.copyDocumentCopyPasteField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action PasteDocumentCopyPaste {
+            get {
+                return this.pasteDocumentCopyPasteField;
+            }
+            set {
+                this.pasteDocumentCopyPasteField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action SaveTemplateCopyPaste {
+            get {
+                return this.saveTemplateCopyPasteField;
+            }
+            set {
+                this.saveTemplateCopyPasteField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action First {
+            get {
+                return this.firstField;
+            }
+            set {
+                this.firstField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action Previous {
+            get {
+                return this.previousField;
+            }
+            set {
+                this.previousField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action Next {
+            get {
+                return this.nextField;
+            }
+            set {
+                this.nextField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action Last {
+            get {
+                return this.lastField;
+            }
+            set {
+                this.lastField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action Release {
+            get {
+                return this.releaseField;
+            }
+            set {
+                this.releaseField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action VoidCheck {
+            get {
+                return this.voidCheckField;
+            }
+            set {
+                this.voidCheckField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action ViewBatch {
+            get {
+                return this.viewBatchField;
+            }
+            set {
+                this.viewBatchField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action CaptureCCPaymentAction {
+            get {
+                return this.captureCCPaymentActionField;
+            }
+            set {
+                this.captureCCPaymentActionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action AuthorizeCCPaymentAction {
+            get {
+                return this.authorizeCCPaymentActionField;
+            }
+            set {
+                this.authorizeCCPaymentActionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action VoidCCPaymentAction {
+            get {
+                return this.voidCCPaymentActionField;
+            }
+            set {
+                this.voidCCPaymentActionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action CreditCCPaymentAction {
+            get {
+                return this.creditCCPaymentActionField;
+            }
+            set {
+                this.creditCCPaymentActionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action RecordCCPaymentAction {
+            get {
+                return this.recordCCPaymentActionField;
+            }
+            set {
+                this.recordCCPaymentActionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action CaptureOnlyCCPaymentAction {
+            get {
+                return this.captureOnlyCCPaymentActionField;
+            }
+            set {
+                this.captureOnlyCCPaymentActionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action CustomerDocumentsInquiry {
+            get {
+                return this.customerDocumentsInquiryField;
+            }
+            set {
+                this.customerDocumentsInquiryField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action AREditDetailedReport {
+            get {
+                return this.aREditDetailedReportField;
+            }
+            set {
+                this.aREditDetailedReportField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action ARRegisterDetailedReport {
+            get {
+                return this.aRRegisterDetailedReportField;
+            }
+            set {
+                this.aRRegisterDetailedReportField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action NewCustomer {
+            get {
+                return this.newCustomerField;
+            }
+            set {
+                this.newCustomerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action EditCustomer {
+            get {
+                return this.editCustomerField;
+            }
+            set {
+                this.editCustomerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action CustomerDocuments {
+            get {
+                return this.customerDocumentsField;
+            }
+            set {
+                this.customerDocumentsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action LoadInvoices {
+            get {
+                return this.loadInvoicesField;
+            }
+            set {
+                this.loadInvoicesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action LoadOrders {
+            get {
+                return this.loadOrdersField;
+            }
+            set {
+                this.loadOrdersField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action ReverseApplication {
+            get {
+                return this.reverseApplicationField;
+            }
+            set {
+                this.reverseApplicationField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action ViewDocumentToApply {
+            get {
+                return this.viewDocumentToApplyField;
+            }
+            set {
+                this.viewDocumentToApplyField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action ViewApplicationDocument {
+            get {
+                return this.viewApplicationDocumentField;
+            }
+            set {
+                this.viewApplicationDocumentField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action ViewSODocumentToApply {
+            get {
+                return this.viewSODocumentToApplyField;
+            }
+            set {
+                this.viewSODocumentToApplyField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action ViewCurrentBatch {
+            get {
+                return this.viewCurrentBatchField;
+            }
+            set {
+                this.viewCurrentBatchField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action CaptureCCPayment {
+            get {
+                return this.captureCCPaymentField;
+            }
+            set {
+                this.captureCCPaymentField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action AuthorizeCCPayment {
+            get {
+                return this.authorizeCCPaymentField;
+            }
+            set {
+                this.authorizeCCPaymentField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action VoidCCPayment {
+            get {
+                return this.voidCCPaymentField;
+            }
+            set {
+                this.voidCCPaymentField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action CreditCCPayment {
+            get {
+                return this.creditCCPaymentField;
+            }
+            set {
+                this.creditCCPaymentField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action RecordCCPayment {
+            get {
+                return this.recordCCPaymentField;
+            }
+            set {
+                this.recordCCPaymentField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action CaptureOnlyCCPayment {
+            get {
+                return this.captureOnlyCCPaymentField;
+            }
+            set {
+                this.captureOnlyCCPaymentField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR302000Content {
+        
+        private AR302000Actions actionsField;
+        
+        private AR302000PaymentSummary paymentSummaryField;
+        
+        private AR302000FinancialDetailsLinkToGL financialDetailsLinkToGLField;
+        
+        private AR302000FinancialDetailsPaymentInformation financialDetailsPaymentInformationField;
+        
+        private AR302000DocumentsToApply documentsToApplyField;
+        
+        private AR302000ApplicationHistory applicationHistoryField;
+        
+        private AR302000OrdersToApply ordersToApplyField;
+        
+        private AR302000PaymentSummaryRateSelection paymentSummaryRateSelectionField;
+        
+        private AR302000PaymentSummaryRateSelectionCurrencyUnitEquivalents paymentSummaryRateSelectionCurrencyUnitEquivalentsField;
+        
+        private AR302000CreditCardProcessingInfo creditCardProcessingInfoField;
+        
+        private AR302000FinanceCharges financeChargesField;
+        
+        private AR302000RecordCCPaymentCCPaymentData recordCCPaymentCCPaymentDataField;
+        
+        private AR302000CCPaymentWithExternalAuthorizationCCPaymentData cCPaymentWithExternalAuthorizationCCPaymentDataField;
+        
+        private AR302000LoadOptions loadOptionsField;
+        
+        private AR302000FinancialDetailsVoucherDetails financialDetailsVoucherDetailsField;
+        
+        /// <remarks/>
+        public AR302000Actions Actions {
+            get {
+                return this.actionsField;
+            }
+            set {
+                this.actionsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR302000PaymentSummary PaymentSummary {
+            get {
+                return this.paymentSummaryField;
+            }
+            set {
+                this.paymentSummaryField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR302000FinancialDetailsLinkToGL FinancialDetailsLinkToGL {
+            get {
+                return this.financialDetailsLinkToGLField;
+            }
+            set {
+                this.financialDetailsLinkToGLField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR302000FinancialDetailsPaymentInformation FinancialDetailsPaymentInformation {
+            get {
+                return this.financialDetailsPaymentInformationField;
+            }
+            set {
+                this.financialDetailsPaymentInformationField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR302000DocumentsToApply DocumentsToApply {
+            get {
+                return this.documentsToApplyField;
+            }
+            set {
+                this.documentsToApplyField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR302000ApplicationHistory ApplicationHistory {
+            get {
+                return this.applicationHistoryField;
+            }
+            set {
+                this.applicationHistoryField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR302000OrdersToApply OrdersToApply {
+            get {
+                return this.ordersToApplyField;
+            }
+            set {
+                this.ordersToApplyField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR302000PaymentSummaryRateSelection PaymentSummaryRateSelection {
+            get {
+                return this.paymentSummaryRateSelectionField;
+            }
+            set {
+                this.paymentSummaryRateSelectionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR302000PaymentSummaryRateSelectionCurrencyUnitEquivalents PaymentSummaryRateSelectionCurrencyUnitEquivalents {
+            get {
+                return this.paymentSummaryRateSelectionCurrencyUnitEquivalentsField;
+            }
+            set {
+                this.paymentSummaryRateSelectionCurrencyUnitEquivalentsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR302000CreditCardProcessingInfo CreditCardProcessingInfo {
+            get {
+                return this.creditCardProcessingInfoField;
+            }
+            set {
+                this.creditCardProcessingInfoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR302000FinanceCharges FinanceCharges {
+            get {
+                return this.financeChargesField;
+            }
+            set {
+                this.financeChargesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR302000RecordCCPaymentCCPaymentData RecordCCPaymentCCPaymentData {
+            get {
+                return this.recordCCPaymentCCPaymentDataField;
+            }
+            set {
+                this.recordCCPaymentCCPaymentDataField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR302000CCPaymentWithExternalAuthorizationCCPaymentData CCPaymentWithExternalAuthorizationCCPaymentData {
+            get {
+                return this.cCPaymentWithExternalAuthorizationCCPaymentDataField;
+            }
+            set {
+                this.cCPaymentWithExternalAuthorizationCCPaymentDataField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR302000LoadOptions LoadOptions {
+            get {
+                return this.loadOptionsField;
+            }
+            set {
+                this.loadOptionsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR302000FinancialDetailsVoucherDetails FinancialDetailsVoucherDetails {
+            get {
+                return this.financialDetailsVoucherDetailsField;
+            }
+            set {
+                this.financialDetailsVoucherDetailsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR301000ImportResult {
+        
+        private bool processedField;
+        
+        private string errorField;
+        
+        private AR301000PrimaryKey keysField;
+        
+        /// <remarks/>
+        public bool Processed {
+            get {
+                return this.processedField;
+            }
+            set {
+                this.processedField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Error {
+            get {
+                return this.errorField;
+            }
+            set {
+                this.errorField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR301000PrimaryKey Keys {
+            get {
+                return this.keysField;
+            }
+            set {
+                this.keysField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR301000PrimaryKey {
+        
+        private Value typeField;
+        
+        private Value referenceNbrField;
+        
+        /// <remarks/>
+        public Value Type {
+            get {
+                return this.typeField;
+            }
+            set {
+                this.typeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Value ReferenceNbr {
+            get {
+                return this.referenceNbrField;
+            }
+            set {
+                this.referenceNbrField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class Filter {
+        
+        private Field fieldField;
+        
+        private FilterCondition conditionField;
+        
+        private object valueField;
+        
+        private object value2Field;
+        
+        private int openBracketsField;
+        
+        private int closeBracketsField;
+        
+        private FilterOperator operatorField;
+        
+        /// <remarks/>
+        public Field Field {
+            get {
+                return this.fieldField;
+            }
+            set {
+                this.fieldField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public FilterCondition Condition {
+            get {
+                return this.conditionField;
+            }
+            set {
+                this.conditionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public object Value {
+            get {
+                return this.valueField;
+            }
+            set {
+                this.valueField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public object Value2 {
+            get {
+                return this.value2Field;
+            }
+            set {
+                this.value2Field = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int OpenBrackets {
+            get {
+                return this.openBracketsField;
+            }
+            set {
+                this.openBracketsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int CloseBrackets {
+            get {
+                return this.closeBracketsField;
+            }
+            set {
+                this.closeBracketsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public FilterOperator Operator {
+            get {
+                return this.operatorField;
+            }
+            set {
+                this.operatorField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public enum FilterCondition {
+        
+        /// <remarks/>
+        Equals,
+        
+        /// <remarks/>
+        NotEqual,
+        
+        /// <remarks/>
+        Greater,
+        
+        /// <remarks/>
+        GreaterOrEqual,
+        
+        /// <remarks/>
+        Less,
+        
+        /// <remarks/>
+        LessOrEqual,
+        
+        /// <remarks/>
+        Contain,
+        
+        /// <remarks/>
+        StartsWith,
+        
+        /// <remarks/>
+        EndsWith,
+        
+        /// <remarks/>
+        NotContain,
+        
+        /// <remarks/>
+        Between,
+        
+        /// <remarks/>
+        IsNull,
+        
+        /// <remarks/>
+        IsNotNull,
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public enum FilterOperator {
+        
+        /// <remarks/>
+        And,
+        
+        /// <remarks/>
+        Or,
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR301000FinancialDetailsVoucherDetailsServiceCommands {
+        
+        private Key keyWorkbookIDField;
+        
+        private Key keyVoucherBatchNbrField;
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        private Attachment attachmentField;
+        
+        /// <remarks/>
+        public Key KeyWorkbookID {
+            get {
+                return this.keyWorkbookIDField;
+            }
+            set {
+                this.keyWorkbookIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Key KeyVoucherBatchNbr {
+            get {
+                return this.keyVoucherBatchNbrField;
+            }
+            set {
+                this.keyVoucherBatchNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Attachment Attachment {
+            get {
+                return this.attachmentField;
+            }
+            set {
+                this.attachmentField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR301000FinancialDetailsVoucherDetails {
+        
+        private string displayNameField;
+        
+        private Field voucherBatchNbrField;
+        
+        private Field workbookIDField;
+        
+        private AR301000FinancialDetailsVoucherDetailsServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field VoucherBatchNbr {
+            get {
+                return this.voucherBatchNbrField;
+            }
+            set {
+                this.voucherBatchNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field WorkbookID {
+            get {
+                return this.workbookIDField;
+            }
+            set {
+                this.workbookIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR301000FinancialDetailsVoucherDetailsServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR301000DuplicateReferenceNbrServiceCommands {
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        private Attachment attachmentField;
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Attachment Attachment {
+            get {
+                return this.attachmentField;
+            }
+            set {
+                this.attachmentField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR301000DuplicateReferenceNbr {
+        
+        private string displayNameField;
+        
+        private Field refNbrField;
+        
+        private AR301000DuplicateReferenceNbrServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field RefNbr {
+            get {
+                return this.refNbrField;
+            }
+            set {
+                this.refNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR301000DuplicateReferenceNbrServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR301000ROTRUTDetailsRUTAndROTTotalsServiceCommands {
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        private Attachment attachmentField;
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Attachment Attachment {
+            get {
+                return this.attachmentField;
+            }
+            set {
+                this.attachmentField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR301000ROTRUTDetailsRUTAndROTTotals {
+        
+        private string displayNameField;
+        
+        private Field deductionField;
+        
+        private Field totalDeductibleAmountField;
+        
+        private Field otherCostField;
+        
+        private Field materialCostField;
+        
+        private Field workPriceField;
+        
+        private Field distributedAmountField;
+        
+        private Field undistributedAmountField;
+        
+        private AR301000ROTRUTDetailsRUTAndROTTotalsServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Deduction {
+            get {
+                return this.deductionField;
+            }
+            set {
+                this.deductionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field TotalDeductibleAmount {
+            get {
+                return this.totalDeductibleAmountField;
+            }
+            set {
+                this.totalDeductibleAmountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field OtherCost {
+            get {
+                return this.otherCostField;
+            }
+            set {
+                this.otherCostField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field MaterialCost {
+            get {
+                return this.materialCostField;
+            }
+            set {
+                this.materialCostField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field WorkPrice {
+            get {
+                return this.workPriceField;
+            }
+            set {
+                this.workPriceField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field DistributedAmount {
+            get {
+                return this.distributedAmountField;
+            }
+            set {
+                this.distributedAmountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field UndistributedAmount {
+            get {
+                return this.undistributedAmountField;
+            }
+            set {
+                this.undistributedAmountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR301000ROTRUTDetailsRUTAndROTTotalsServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR301000ROTRUTDetailsRUTAndROTSettingsServiceCommands {
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        private Attachment attachmentField;
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Attachment Attachment {
+            get {
+                return this.attachmentField;
+            }
+            set {
+                this.attachmentField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR301000ROTRUTDetailsRUTAndROTSettings {
+        
+        private string displayNameField;
+        
+        private Field distributeAutomaticallyField;
+        
+        private Field deductionTypeField;
+        
+        private Field apartmentField;
+        
+        private Field realEstateField;
+        
+        private Field organizationNbrField;
+        
+        private AR301000ROTRUTDetailsRUTAndROTSettingsServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field DistributeAutomatically {
+            get {
+                return this.distributeAutomaticallyField;
+            }
+            set {
+                this.distributeAutomaticallyField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field DeductionType {
+            get {
+                return this.deductionTypeField;
+            }
+            set {
+                this.deductionTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Apartment {
+            get {
+                return this.apartmentField;
+            }
+            set {
+                this.apartmentField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field RealEstate {
+            get {
+                return this.realEstateField;
+            }
+            set {
+                this.realEstateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field OrganizationNbr {
+            get {
+                return this.organizationNbrField;
+            }
+            set {
+                this.organizationNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR301000ROTRUTDetailsRUTAndROTSettingsServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR301000SalespersonCommissionServiceCommands {
+        
+        private Key keySalespersonIDField;
+        
+        private NewRow newRowField;
+        
+        private RowNumber rowNumberField;
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        /// <remarks/>
+        public Key KeySalespersonID {
+            get {
+                return this.keySalespersonIDField;
+            }
+            set {
+                this.keySalespersonIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public NewRow NewRow {
+            get {
+                return this.newRowField;
+            }
+            set {
+                this.newRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public RowNumber RowNumber {
+            get {
+                return this.rowNumberField;
+            }
+            set {
+                this.rowNumberField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR301000SalespersonCommission {
+        
+        private string displayNameField;
+        
+        private Field salespersonIDField;
+        
+        private Field commissionField;
+        
+        private Field commissionAmtField;
+        
+        private Field commissionableAmountField;
+        
+        private AR301000SalespersonCommissionServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field SalespersonID {
+            get {
+                return this.salespersonIDField;
+            }
+            set {
+                this.salespersonIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Commission {
+            get {
+                return this.commissionField;
+            }
+            set {
+                this.commissionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field CommissionAmt {
+            get {
+                return this.commissionAmtField;
+            }
+            set {
+                this.commissionAmtField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field CommissionableAmount {
+            get {
+                return this.commissionableAmountField;
+            }
+            set {
+                this.commissionableAmountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR301000SalespersonCommissionServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR301000DiscountDetailsServiceCommands {
+        
+        private NewRow newRowField;
+        
+        private RowNumber rowNumberField;
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        /// <remarks/>
+        public NewRow NewRow {
+            get {
+                return this.newRowField;
+            }
+            set {
+                this.newRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public RowNumber RowNumber {
+            get {
+                return this.rowNumberField;
+            }
+            set {
+                this.rowNumberField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR301000DiscountDetails {
+        
+        private string displayNameField;
+        
+        private Field skipDiscountField;
+        
+        private Field discountCodeField;
+        
+        private Field sequenceIDField;
+        
+        private Field typeTypeField;
+        
+        private Field manualDiscountField;
+        
+        private Field discountableAmtField;
+        
+        private Field discountableQtyField;
+        
+        private Field discountAmtField;
+        
+        private Field discountField;
+        
+        private Field freeItemField;
+        
+        private Field freeItemQtyField;
+        
+        private AR301000DiscountDetailsServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field SkipDiscount {
+            get {
+                return this.skipDiscountField;
+            }
+            set {
+                this.skipDiscountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field DiscountCode {
+            get {
+                return this.discountCodeField;
+            }
+            set {
+                this.discountCodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field SequenceID {
+            get {
+                return this.sequenceIDField;
+            }
+            set {
+                this.sequenceIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field TypeType {
+            get {
+                return this.typeTypeField;
+            }
+            set {
+                this.typeTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ManualDiscount {
+            get {
+                return this.manualDiscountField;
+            }
+            set {
+                this.manualDiscountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field DiscountableAmt {
+            get {
+                return this.discountableAmtField;
+            }
+            set {
+                this.discountableAmtField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field DiscountableQty {
+            get {
+                return this.discountableQtyField;
+            }
+            set {
+                this.discountableQtyField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field DiscountAmt {
+            get {
+                return this.discountAmtField;
+            }
+            set {
+                this.discountAmtField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Discount {
+            get {
+                return this.discountField;
+            }
+            set {
+                this.discountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field FreeItem {
+            get {
+                return this.freeItemField;
+            }
+            set {
+                this.freeItemField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field FreeItemQty {
+            get {
+                return this.freeItemQtyField;
+            }
+            set {
+                this.freeItemQtyField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR301000DiscountDetailsServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR301000FinancialDetailsDunningInfoServiceCommands {
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        private Attachment attachmentField;
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Attachment Attachment {
+            get {
+                return this.attachmentField;
+            }
+            set {
+                this.attachmentField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR301000FinancialDetailsDunningInfo {
+        
+        private string displayNameField;
+        
+        private Field dunningLetterDateField;
+        
+        private Field dunningLevelField;
+        
+        private AR301000FinancialDetailsDunningInfoServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field DunningLetterDate {
+            get {
+                return this.dunningLetterDateField;
+            }
+            set {
+                this.dunningLetterDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field DunningLevel {
+            get {
+                return this.dunningLevelField;
+            }
+            set {
+                this.dunningLevelField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR301000FinancialDetailsDunningInfoServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR301000RecalculatePricesServiceCommands {
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        private Attachment attachmentField;
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Attachment Attachment {
+            get {
+                return this.attachmentField;
+            }
+            set {
+                this.attachmentField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR301000RecalculatePrices {
+        
+        private string displayNameField;
+        
+        private Field recalcTargetField;
+        
+        private Field recalcUnitPricesField;
+        
+        private Field overrideManualPricesField;
+        
+        private Field recalcDiscountsField;
+        
+        private Field overrideManualDiscountsField;
+        
+        private AR301000RecalculatePricesServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field RecalcTarget {
+            get {
+                return this.recalcTargetField;
+            }
+            set {
+                this.recalcTargetField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field RecalcUnitPrices {
+            get {
+                return this.recalcUnitPricesField;
+            }
+            set {
+                this.recalcUnitPricesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field OverrideManualPrices {
+            get {
+                return this.overrideManualPricesField;
+            }
+            set {
+                this.overrideManualPricesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field RecalcDiscounts {
+            get {
+                return this.recalcDiscountsField;
+            }
+            set {
+                this.recalcDiscountsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field OverrideManualDiscounts {
+            get {
+                return this.overrideManualDiscountsField;
+            }
+            set {
+                this.overrideManualDiscountsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR301000RecalculatePricesServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR301000BillingAddressContactInformationServiceCommands {
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        private Attachment attachmentField;
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Attachment Attachment {
+            get {
+                return this.attachmentField;
+            }
+            set {
+                this.attachmentField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR301000BillingAddressContactInformation {
+        
+        private string displayNameField;
+        
+        private Field overrideContactField;
+        
+        private Field businessNameField;
+        
+        private Field attentionField;
+        
+        private Field phone1Field;
+        
+        private Field emailField;
+        
+        private AR301000BillingAddressContactInformationServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field OverrideContact {
+            get {
+                return this.overrideContactField;
+            }
+            set {
+                this.overrideContactField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field BusinessName {
+            get {
+                return this.businessNameField;
+            }
+            set {
+                this.businessNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Attention {
+            get {
+                return this.attentionField;
+            }
+            set {
+                this.attentionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Phone1 {
+            get {
+                return this.phone1Field;
+            }
+            set {
+                this.phone1Field = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Email {
+            get {
+                return this.emailField;
+            }
+            set {
+                this.emailField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR301000BillingAddressContactInformationServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR301000BillingAddressAddressServiceCommands {
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        private Attachment attachmentField;
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Attachment Attachment {
+            get {
+                return this.attachmentField;
+            }
+            set {
+                this.attachmentField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR301000BillingAddressAddress {
+        
+        private string displayNameField;
+        
+        private Field overrideAddressField;
+        
+        private Field validatedField;
+        
+        private Field addressLine1Field;
+        
+        private Field addressLine2Field;
+        
+        private Field cityField;
+        
+        private Field countryField;
+        
+        private Field stateField;
+        
+        private Field postalCodeField;
+        
+        private AR301000BillingAddressAddressServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field OverrideAddress {
+            get {
+                return this.overrideAddressField;
+            }
+            set {
+                this.overrideAddressField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Validated {
+            get {
+                return this.validatedField;
+            }
+            set {
+                this.validatedField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field AddressLine1 {
+            get {
+                return this.addressLine1Field;
+            }
+            set {
+                this.addressLine1Field = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field AddressLine2 {
+            get {
+                return this.addressLine2Field;
+            }
+            set {
+                this.addressLine2Field = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field City {
+            get {
+                return this.cityField;
+            }
+            set {
+                this.cityField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Country {
+            get {
+                return this.countryField;
+            }
+            set {
+                this.countryField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field State {
+            get {
+                return this.stateField;
+            }
+            set {
+                this.stateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field PostalCode {
+            get {
+                return this.postalCodeField;
+            }
+            set {
+                this.postalCodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR301000BillingAddressAddressServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR301000InvoiceSummaryRateSelectionCurrencyUnitEquivalentsServiceCommands {
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        private Attachment attachmentField;
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Attachment Attachment {
+            get {
+                return this.attachmentField;
+            }
+            set {
+                this.attachmentField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR301000InvoiceSummaryRateSelectionCurrencyUnitEquivalents {
+        
+        private string displayNameField;
+        
+        private Field currencyIDField;
+        
+        private Field baseCurrencyIDField;
+        
+        private Field currRateField;
+        
+        private Field reciprocalRateField;
+        
+        private AR301000InvoiceSummaryRateSelectionCurrencyUnitEquivalentsServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field CurrencyID {
+            get {
+                return this.currencyIDField;
+            }
+            set {
+                this.currencyIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field BaseCurrencyID {
+            get {
+                return this.baseCurrencyIDField;
+            }
+            set {
+                this.baseCurrencyIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field CurrRate {
+            get {
+                return this.currRateField;
+            }
+            set {
+                this.currRateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ReciprocalRate {
+            get {
+                return this.reciprocalRateField;
+            }
+            set {
+                this.reciprocalRateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR301000InvoiceSummaryRateSelectionCurrencyUnitEquivalentsServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR301000InvoiceSummaryRateSelectionServiceCommands {
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        private Attachment attachmentField;
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Attachment Attachment {
+            get {
+                return this.attachmentField;
+            }
+            set {
+                this.attachmentField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR301000InvoiceSummaryRateSelection {
+        
+        private string displayNameField;
+        
+        private Field currRateTypeIDField;
+        
+        private Field effectiveDateField;
+        
+        private AR301000InvoiceSummaryRateSelectionServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field CurrRateTypeID {
+            get {
+                return this.currRateTypeIDField;
+            }
+            set {
+                this.currRateTypeIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field EffectiveDate {
+            get {
+                return this.effectiveDateField;
+            }
+            set {
+                this.effectiveDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR301000InvoiceSummaryRateSelectionServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR301000ApplicationsDocTypeDisplayDocTypeServiceCommands {
+        
+        private NewRow newRowField;
+        
+        private RowNumber rowNumberField;
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        private Attachment attachmentField;
+        
+        /// <remarks/>
+        public NewRow NewRow {
+            get {
+                return this.newRowField;
+            }
+            set {
+                this.newRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public RowNumber RowNumber {
+            get {
+                return this.rowNumberField;
+            }
+            set {
+                this.rowNumberField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Attachment Attachment {
+            get {
+                return this.attachmentField;
+            }
+            set {
+                this.attachmentField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR301000ApplicationsDocTypeDisplayDocType {
+        
+        private string displayNameField;
+        
+        private Field docTypeDisplayDocTypeField;
+        
+        private Field referenceNbrDisplayRefNbrField;
+        
+        private Field customerField;
+        
+        private Field amountPaidField;
+        
+        private Field dateField;
+        
+        private Field balanceField;
+        
+        private Field descriptionField;
+        
+        private Field currencyField;
+        
+        private Field postPeriodField;
+        
+        private Field customerOrderField;
+        
+        private Field statusField;
+        
+        private Field noteTextField;
+        
+        private AR301000ApplicationsDocTypeDisplayDocTypeServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field DocTypeDisplayDocType {
+            get {
+                return this.docTypeDisplayDocTypeField;
+            }
+            set {
+                this.docTypeDisplayDocTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ReferenceNbrDisplayRefNbr {
+            get {
+                return this.referenceNbrDisplayRefNbrField;
+            }
+            set {
+                this.referenceNbrDisplayRefNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Customer {
+            get {
+                return this.customerField;
+            }
+            set {
+                this.customerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field AmountPaid {
+            get {
+                return this.amountPaidField;
+            }
+            set {
+                this.amountPaidField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Date {
+            get {
+                return this.dateField;
+            }
+            set {
+                this.dateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Balance {
+            get {
+                return this.balanceField;
+            }
+            set {
+                this.balanceField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Description {
+            get {
+                return this.descriptionField;
+            }
+            set {
+                this.descriptionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Currency {
+            get {
+                return this.currencyField;
+            }
+            set {
+                this.currencyField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field PostPeriod {
+            get {
+                return this.postPeriodField;
+            }
+            set {
+                this.postPeriodField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field CustomerOrder {
+            get {
+                return this.customerOrderField;
+            }
+            set {
+                this.customerOrderField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Status {
+            get {
+                return this.statusField;
+            }
+            set {
+                this.statusField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field NoteText {
+            get {
+                return this.noteTextField;
+            }
+            set {
+                this.noteTextField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR301000ApplicationsDocTypeDisplayDocTypeServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR301000ApplicationsDocTypeServiceCommands {
+        
+        private Key keyDocTypeField;
+        
+        private Key keyReferenceNbrField;
+        
+        private NewRow newRowField;
+        
+        private RowNumber rowNumberField;
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        private Attachment attachmentField;
+        
+        /// <remarks/>
+        public Key KeyDocType {
+            get {
+                return this.keyDocTypeField;
+            }
+            set {
+                this.keyDocTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Key KeyReferenceNbr {
+            get {
+                return this.keyReferenceNbrField;
+            }
+            set {
+                this.keyReferenceNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public NewRow NewRow {
+            get {
+                return this.newRowField;
+            }
+            set {
+                this.newRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public RowNumber RowNumber {
+            get {
+                return this.rowNumberField;
+            }
+            set {
+                this.rowNumberField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Attachment Attachment {
+            get {
+                return this.attachmentField;
+            }
+            set {
+                this.attachmentField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR301000ApplicationsDocType {
+        
+        private string displayNameField;
+        
+        private Field docTypeField;
+        
+        private Field referenceNbrField;
+        
+        private Field customerField;
+        
+        private Field amountPaidField;
+        
+        private Field dateField;
+        
+        private Field balanceField;
+        
+        private Field descriptionField;
+        
+        private Field currencyField;
+        
+        private Field postPeriodField;
+        
+        private Field customerOrderField;
+        
+        private Field statusField;
+        
+        private Field noteTextField;
+        
+        private AR301000ApplicationsDocTypeServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field DocType {
+            get {
+                return this.docTypeField;
+            }
+            set {
+                this.docTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ReferenceNbr {
+            get {
+                return this.referenceNbrField;
+            }
+            set {
+                this.referenceNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Customer {
+            get {
+                return this.customerField;
+            }
+            set {
+                this.customerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field AmountPaid {
+            get {
+                return this.amountPaidField;
+            }
+            set {
+                this.amountPaidField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Date {
+            get {
+                return this.dateField;
+            }
+            set {
+                this.dateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Balance {
+            get {
+                return this.balanceField;
+            }
+            set {
+                this.balanceField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Description {
+            get {
+                return this.descriptionField;
+            }
+            set {
+                this.descriptionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Currency {
+            get {
+                return this.currencyField;
+            }
+            set {
+                this.currencyField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field PostPeriod {
+            get {
+                return this.postPeriodField;
+            }
+            set {
+                this.postPeriodField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field CustomerOrder {
+            get {
+                return this.customerOrderField;
+            }
+            set {
+                this.customerOrderField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Status {
+            get {
+                return this.statusField;
+            }
+            set {
+                this.statusField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field NoteText {
+            get {
+                return this.noteTextField;
+            }
+            set {
+                this.noteTextField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR301000ApplicationsDocTypeServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR301000ApplicationsServiceCommands {
+        
+        private Key keyDocTypeField;
+        
+        private Key keyReferenceNbrAdjgRefNbrField;
+        
+        private NewRow newRowField;
+        
+        private RowNumber rowNumberField;
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        private Attachment attachmentField;
+        
+        /// <remarks/>
+        public Key KeyDocType {
+            get {
+                return this.keyDocTypeField;
+            }
+            set {
+                this.keyDocTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Key KeyReferenceNbrAdjgRefNbr {
+            get {
+                return this.keyReferenceNbrAdjgRefNbrField;
+            }
+            set {
+                this.keyReferenceNbrAdjgRefNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public NewRow NewRow {
+            get {
+                return this.newRowField;
+            }
+            set {
+                this.newRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public RowNumber RowNumber {
+            get {
+                return this.rowNumberField;
+            }
+            set {
+                this.rowNumberField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Attachment Attachment {
+            get {
+                return this.attachmentField;
+            }
+            set {
+                this.attachmentField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR301000Applications {
+        
+        private string displayNameField;
+        
+        private Field docTypeField;
+        
+        private Field referenceNbrAdjgRefNbrField;
+        
+        private Field customerField;
+        
+        private Field amountPaidField;
+        
+        private Field cashDiscountTakenField;
+        
+        private Field paymentDateField;
+        
+        private Field balanceField;
+        
+        private Field descriptionField;
+        
+        private Field currencyField;
+        
+        private Field paymentPeriodField;
+        
+        private Field paymentRefField;
+        
+        private Field adjustmentNbrField;
+        
+        private Field statusField;
+        
+        private Field adjustsVATField;
+        
+        private Field vATCreditMemoField;
+        
+        private Field noteTextField;
+        
+        private AR301000ApplicationsServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field DocType {
+            get {
+                return this.docTypeField;
+            }
+            set {
+                this.docTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ReferenceNbrAdjgRefNbr {
+            get {
+                return this.referenceNbrAdjgRefNbrField;
+            }
+            set {
+                this.referenceNbrAdjgRefNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Customer {
+            get {
+                return this.customerField;
+            }
+            set {
+                this.customerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field AmountPaid {
+            get {
+                return this.amountPaidField;
+            }
+            set {
+                this.amountPaidField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field CashDiscountTaken {
+            get {
+                return this.cashDiscountTakenField;
+            }
+            set {
+                this.cashDiscountTakenField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field PaymentDate {
+            get {
+                return this.paymentDateField;
+            }
+            set {
+                this.paymentDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Balance {
+            get {
+                return this.balanceField;
+            }
+            set {
+                this.balanceField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Description {
+            get {
+                return this.descriptionField;
+            }
+            set {
+                this.descriptionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Currency {
+            get {
+                return this.currencyField;
+            }
+            set {
+                this.currencyField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field PaymentPeriod {
+            get {
+                return this.paymentPeriodField;
+            }
+            set {
+                this.paymentPeriodField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field PaymentRef {
+            get {
+                return this.paymentRefField;
+            }
+            set {
+                this.paymentRefField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field AdjustmentNbr {
+            get {
+                return this.adjustmentNbrField;
+            }
+            set {
+                this.adjustmentNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Status {
+            get {
+                return this.statusField;
+            }
+            set {
+                this.statusField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field AdjustsVAT {
+            get {
+                return this.adjustsVATField;
+            }
+            set {
+                this.adjustsVATField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field VATCreditMemo {
+            get {
+                return this.vATCreditMemoField;
+            }
+            set {
+                this.vATCreditMemoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field NoteText {
+            get {
+                return this.noteTextField;
+            }
+            set {
+                this.noteTextField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR301000ApplicationsServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR301000TaxDetailsServiceCommands {
+        
+        private Key keyTaxIDField;
+        
+        private NewRow newRowField;
+        
+        private RowNumber rowNumberField;
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        /// <remarks/>
+        public Key KeyTaxID {
+            get {
+                return this.keyTaxIDField;
+            }
+            set {
+                this.keyTaxIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public NewRow NewRow {
+            get {
+                return this.newRowField;
+            }
+            set {
+                this.newRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public RowNumber RowNumber {
+            get {
+                return this.rowNumberField;
+            }
+            set {
+                this.rowNumberField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR301000TaxDetails {
+        
+        private string displayNameField;
+        
+        private Field taxIDField;
+        
+        private Field taxRateField;
+        
+        private Field taxableAmountField;
+        
+        private Field taxAmountField;
+        
+        private Field taxTypeField;
+        
+        private Field pendingVATField;
+        
+        private Field reverseVATField;
+        
+        private Field includeInVATExemptTotalField;
+        
+        private Field statisticalVATField;
+        
+        private AR301000TaxDetailsServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field TaxID {
+            get {
+                return this.taxIDField;
+            }
+            set {
+                this.taxIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field TaxRate {
+            get {
+                return this.taxRateField;
+            }
+            set {
+                this.taxRateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field TaxableAmount {
+            get {
+                return this.taxableAmountField;
+            }
+            set {
+                this.taxableAmountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field TaxAmount {
+            get {
+                return this.taxAmountField;
+            }
+            set {
+                this.taxAmountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field TaxType {
+            get {
+                return this.taxTypeField;
+            }
+            set {
+                this.taxTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field PendingVAT {
+            get {
+                return this.pendingVATField;
+            }
+            set {
+                this.pendingVATField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ReverseVAT {
+            get {
+                return this.reverseVATField;
+            }
+            set {
+                this.reverseVATField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field IncludeInVATExemptTotal {
+            get {
+                return this.includeInVATExemptTotalField;
+            }
+            set {
+                this.includeInVATExemptTotalField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field StatisticalVAT {
+            get {
+                return this.statisticalVATField;
+            }
+            set {
+                this.statisticalVATField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR301000TaxDetailsServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR301000DocumentDetailsServiceCommands {
+        
+        private NewRow newRowField;
+        
+        private RowNumber rowNumberField;
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        private Attachment attachmentField;
+        
+        /// <remarks/>
+        public NewRow NewRow {
+            get {
+                return this.newRowField;
+            }
+            set {
+                this.newRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public RowNumber RowNumber {
+            get {
+                return this.rowNumberField;
+            }
+            set {
+                this.rowNumberField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Attachment Attachment {
+            get {
+                return this.attachmentField;
+            }
+            set {
+                this.attachmentField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR301000DocumentDetails {
+        
+        private string displayNameField;
+        
+        private Field branchField;
+        
+        private Field dateField;
+        
+        private Field inventoryIDField;
+        
+        private Field transactionDescrField;
+        
+        private Field quantityField;
+        
+        private Field uOMField;
+        
+        private Field unitPriceField;
+        
+        private Field extPriceField;
+        
+        private Field discountPercentField;
+        
+        private Field discountAmountField;
+        
+        private Field amountField;
+        
+        private Field manualDiscountField;
+        
+        private Field discountCodeField;
+        
+        private Field discountSequenceField;
+        
+        private Field accountField;
+        
+        private Field descriptionField;
+        
+        private Field subaccountField;
+        
+        private Field projectTaskField;
+        
+        private Field salespersonIDField;
+        
+        private Field originalDeferralScheduleField;
+        
+        private Field deferralCodeField;
+        
+        private Field termStartDateField;
+        
+        private Field termEndDateField;
+        
+        private Field taxCategoryField;
+        
+        private Field commissionableField;
+        
+        private Field billingOptionField;
+        
+        private Field originalInvoiceDateField;
+        
+        private Field caseIDField;
+        
+        private Field unitPriceForDRField;
+        
+        private Field discountPercentForDRField;
+        
+        private Field noteTextField;
+        
+        private AR301000DocumentDetailsServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Branch {
+            get {
+                return this.branchField;
+            }
+            set {
+                this.branchField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Date {
+            get {
+                return this.dateField;
+            }
+            set {
+                this.dateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field InventoryID {
+            get {
+                return this.inventoryIDField;
+            }
+            set {
+                this.inventoryIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field TransactionDescr {
+            get {
+                return this.transactionDescrField;
+            }
+            set {
+                this.transactionDescrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Quantity {
+            get {
+                return this.quantityField;
+            }
+            set {
+                this.quantityField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field UOM {
+            get {
+                return this.uOMField;
+            }
+            set {
+                this.uOMField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field UnitPrice {
+            get {
+                return this.unitPriceField;
+            }
+            set {
+                this.unitPriceField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ExtPrice {
+            get {
+                return this.extPriceField;
+            }
+            set {
+                this.extPriceField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field DiscountPercent {
+            get {
+                return this.discountPercentField;
+            }
+            set {
+                this.discountPercentField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field DiscountAmount {
+            get {
+                return this.discountAmountField;
+            }
+            set {
+                this.discountAmountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Amount {
+            get {
+                return this.amountField;
+            }
+            set {
+                this.amountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ManualDiscount {
+            get {
+                return this.manualDiscountField;
+            }
+            set {
+                this.manualDiscountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field DiscountCode {
+            get {
+                return this.discountCodeField;
+            }
+            set {
+                this.discountCodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field DiscountSequence {
+            get {
+                return this.discountSequenceField;
+            }
+            set {
+                this.discountSequenceField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Account {
+            get {
+                return this.accountField;
+            }
+            set {
+                this.accountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Description {
+            get {
+                return this.descriptionField;
+            }
+            set {
+                this.descriptionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Subaccount {
+            get {
+                return this.subaccountField;
+            }
+            set {
+                this.subaccountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ProjectTask {
+            get {
+                return this.projectTaskField;
+            }
+            set {
+                this.projectTaskField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field SalespersonID {
+            get {
+                return this.salespersonIDField;
+            }
+            set {
+                this.salespersonIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field OriginalDeferralSchedule {
+            get {
+                return this.originalDeferralScheduleField;
+            }
+            set {
+                this.originalDeferralScheduleField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field DeferralCode {
+            get {
+                return this.deferralCodeField;
+            }
+            set {
+                this.deferralCodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field TermStartDate {
+            get {
+                return this.termStartDateField;
+            }
+            set {
+                this.termStartDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field TermEndDate {
+            get {
+                return this.termEndDateField;
+            }
+            set {
+                this.termEndDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field TaxCategory {
+            get {
+                return this.taxCategoryField;
+            }
+            set {
+                this.taxCategoryField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Commissionable {
+            get {
+                return this.commissionableField;
+            }
+            set {
+                this.commissionableField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field BillingOption {
+            get {
+                return this.billingOptionField;
+            }
+            set {
+                this.billingOptionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field OriginalInvoiceDate {
+            get {
+                return this.originalInvoiceDateField;
+            }
+            set {
+                this.originalInvoiceDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field CaseID {
+            get {
+                return this.caseIDField;
+            }
+            set {
+                this.caseIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field UnitPriceForDR {
+            get {
+                return this.unitPriceForDRField;
+            }
+            set {
+                this.unitPriceForDRField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field DiscountPercentForDR {
+            get {
+                return this.discountPercentForDRField;
+            }
+            set {
+                this.discountPercentForDRField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field NoteText {
+            get {
+                return this.noteTextField;
+            }
+            set {
+                this.noteTextField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR301000DocumentDetailsServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR301000SalespersonCommissionDefaultSalespersonServiceCommands {
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        private Attachment attachmentField;
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Attachment Attachment {
+            get {
+                return this.attachmentField;
+            }
+            set {
+                this.attachmentField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR301000SalespersonCommissionDefaultSalesperson {
+        
+        private string displayNameField;
+        
+        private Field defaultSalespersonField;
+        
+        private Field totalCommissionableField;
+        
+        private Field commissionAmtField;
+        
+        private AR301000SalespersonCommissionDefaultSalespersonServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field DefaultSalesperson {
+            get {
+                return this.defaultSalespersonField;
+            }
+            set {
+                this.defaultSalespersonField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field TotalCommissionable {
+            get {
+                return this.totalCommissionableField;
+            }
+            set {
+                this.totalCommissionableField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field CommissionAmt {
+            get {
+                return this.commissionAmtField;
+            }
+            set {
+                this.commissionAmtField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR301000SalespersonCommissionDefaultSalespersonServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR301000BillingAddressPrintAndEmailOptionsServiceCommands {
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        private Attachment attachmentField;
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Attachment Attachment {
+            get {
+                return this.attachmentField;
+            }
+            set {
+                this.attachmentField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR301000BillingAddressPrintAndEmailOptions {
+        
+        private string displayNameField;
+        
+        private Field printedField;
+        
+        private Field donTPrintField;
+        
+        private Field emailedField;
+        
+        private Field donTEmailField;
+        
+        private AR301000BillingAddressPrintAndEmailOptionsServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Printed {
+            get {
+                return this.printedField;
+            }
+            set {
+                this.printedField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field DonTPrint {
+            get {
+                return this.donTPrintField;
+            }
+            set {
+                this.donTPrintField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Emailed {
+            get {
+                return this.emailedField;
+            }
+            set {
+                this.emailedField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field DonTEmail {
+            get {
+                return this.donTEmailField;
+            }
+            set {
+                this.donTEmailField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR301000BillingAddressPrintAndEmailOptionsServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR301000FinancialDetailsCashDiscountInfoServiceCommands {
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        private Attachment attachmentField;
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Attachment Attachment {
+            get {
+                return this.attachmentField;
+            }
+            set {
+                this.attachmentField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR301000FinancialDetailsCashDiscountInfo {
+        
+        private string displayNameField;
+        
+        private Field discountedDocTotalField;
+        
+        private Field discountedTaxableTotalField;
+        
+        private Field taxOnDiscountedPriceField;
+        
+        private AR301000FinancialDetailsCashDiscountInfoServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field DiscountedDocTotal {
+            get {
+                return this.discountedDocTotalField;
+            }
+            set {
+                this.discountedDocTotalField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field DiscountedTaxableTotal {
+            get {
+                return this.discountedTaxableTotalField;
+            }
+            set {
+                this.discountedTaxableTotalField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field TaxOnDiscountedPrice {
+            get {
+                return this.taxOnDiscountedPriceField;
+            }
+            set {
+                this.taxOnDiscountedPriceField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR301000FinancialDetailsCashDiscountInfoServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR301000FinancialDetailsDunningInfoRevokedServiceCommands {
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        private Attachment attachmentField;
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Attachment Attachment {
+            get {
+                return this.attachmentField;
+            }
+            set {
+                this.attachmentField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR301000FinancialDetailsDunningInfoRevoked {
+        
+        private string displayNameField;
+        
+        private Field revokedField;
+        
+        private AR301000FinancialDetailsDunningInfoRevokedServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Revoked {
+            get {
+                return this.revokedField;
+            }
+            set {
+                this.revokedField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR301000FinancialDetailsDunningInfoRevokedServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR301000FinancialDetailsAssignedToServiceCommands {
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        private Attachment attachmentField;
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Attachment Attachment {
+            get {
+                return this.attachmentField;
+            }
+            set {
+                this.attachmentField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR301000FinancialDetailsAssignedTo {
+        
+        private string displayNameField;
+        
+        private Field workgroupField;
+        
+        private Field ownerField;
+        
+        private AR301000FinancialDetailsAssignedToServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Workgroup {
+            get {
+                return this.workgroupField;
+            }
+            set {
+                this.workgroupField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Owner {
+            get {
+                return this.ownerField;
+            }
+            set {
+                this.ownerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR301000FinancialDetailsAssignedToServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR301000FinancialDetailsTaxInfoServiceCommands {
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        private Attachment attachmentField;
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Attachment Attachment {
+            get {
+                return this.attachmentField;
+            }
+            set {
+                this.attachmentField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR301000FinancialDetailsTaxInfo {
+        
+        private string displayNameField;
+        
+        private Field customerTaxZoneField;
+        
+        private Field customerUsageTypeField;
+        
+        private AR301000FinancialDetailsTaxInfoServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field CustomerTaxZone {
+            get {
+                return this.customerTaxZoneField;
+            }
+            set {
+                this.customerTaxZoneField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field CustomerUsageType {
+            get {
+                return this.customerUsageTypeField;
+            }
+            set {
+                this.customerUsageTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR301000FinancialDetailsTaxInfoServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR301000FinancialDetailsDefaultPaymentInfoServiceCommands {
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        private Attachment attachmentField;
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Attachment Attachment {
+            get {
+                return this.attachmentField;
+            }
+            set {
+                this.attachmentField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR301000FinancialDetailsDefaultPaymentInfo {
+        
+        private string displayNameField;
+        
+        private Field paymentMethodField;
+        
+        private Field cardAccountNoField;
+        
+        private Field cardAccountNoCardAccountNoField;
+        
+        private Field cashAccountField;
+        
+        private Field applyOverdueChargeField;
+        
+        private AR301000FinancialDetailsDefaultPaymentInfoServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field PaymentMethod {
+            get {
+                return this.paymentMethodField;
+            }
+            set {
+                this.paymentMethodField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field CardAccountNo {
+            get {
+                return this.cardAccountNoField;
+            }
+            set {
+                this.cardAccountNoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field CardAccountNoCardAccountNo {
+            get {
+                return this.cardAccountNoCardAccountNoField;
+            }
+            set {
+                this.cardAccountNoCardAccountNoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field CashAccount {
+            get {
+                return this.cashAccountField;
+            }
+            set {
+                this.cashAccountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ApplyOverdueCharge {
+            get {
+                return this.applyOverdueChargeField;
+            }
+            set {
+                this.applyOverdueChargeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR301000FinancialDetailsDefaultPaymentInfoServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR301000FinancialDetailsLinkToGLServiceCommands {
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        private Attachment attachmentField;
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Attachment Attachment {
+            get {
+                return this.attachmentField;
+            }
+            set {
+                this.attachmentField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR301000FinancialDetailsLinkToGL {
+        
+        private string displayNameField;
+        
+        private Field batchNbrField;
+        
+        private Field branchField;
+        
+        private Field aRAccountField;
+        
+        private Field aRSubaccountField;
+        
+        private AR301000FinancialDetailsLinkToGLServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field BatchNbr {
+            get {
+                return this.batchNbrField;
+            }
+            set {
+                this.batchNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Branch {
+            get {
+                return this.branchField;
+            }
+            set {
+                this.branchField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ARAccount {
+            get {
+                return this.aRAccountField;
+            }
+            set {
+                this.aRAccountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ARSubaccount {
+            get {
+                return this.aRSubaccountField;
+            }
+            set {
+                this.aRSubaccountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR301000FinancialDetailsLinkToGLServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR301000InvoiceSummaryServiceCommands {
+        
+        private Key keyTypeField;
+        
+        private EveryValue everyTypeField;
+        
+        private Key keyReferenceNbrField;
+        
+        private EveryValue everyReferenceNbrField;
+        
+        private DeleteRow deleteRowField;
+        
+        private Answer dialogAnswerField;
+        
+        private Attachment attachmentField;
+        
+        /// <remarks/>
+        public Key KeyType {
+            get {
+                return this.keyTypeField;
+            }
+            set {
+                this.keyTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public EveryValue EveryType {
+            get {
+                return this.everyTypeField;
+            }
+            set {
+                this.everyTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Key KeyReferenceNbr {
+            get {
+                return this.keyReferenceNbrField;
+            }
+            set {
+                this.keyReferenceNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public EveryValue EveryReferenceNbr {
+            get {
+                return this.everyReferenceNbrField;
+            }
+            set {
+                this.everyReferenceNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public DeleteRow DeleteRow {
+            get {
+                return this.deleteRowField;
+            }
+            set {
+                this.deleteRowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Answer DialogAnswer {
+            get {
+                return this.dialogAnswerField;
+            }
+            set {
+                this.dialogAnswerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Attachment Attachment {
+            get {
+                return this.attachmentField;
+            }
+            set {
+                this.attachmentField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR301000InvoiceSummary {
+        
+        private string displayNameField;
+        
+        private Field typeField;
+        
+        private Field referenceNbrField;
+        
+        private Field statusField;
+        
+        private Field holdField;
+        
+        private Field dateField;
+        
+        private Field postPeriodField;
+        
+        private Field customerOrderField;
+        
+        private Field descriptionField;
+        
+        private Field customerField;
+        
+        private Field locationField;
+        
+        private Field currencyField;
+        
+        private Field curyViewStateField;
+        
+        private Field termsField;
+        
+        private Field dueDateField;
+        
+        private Field cashDiscountDateField;
+        
+        private Field projectField;
+        
+        private Field detailTotalField;
+        
+        private Field discountTotalField;
+        
+        private Field vATTaxableTotalField;
+        
+        private Field vATExemptTotalField;
+        
+        private Field taxTotalField;
+        
+        private Field balanceField;
+        
+        private Field roundingDiffField;
+        
+        private Field amountField;
+        
+        private Field cashDiscountField;
+        
+        private Field rOTAndRUTDeductibleDocumentField;
+        
+        private Field noteTextField;
+        
+        private AR301000InvoiceSummaryServiceCommands serviceCommandsField;
+        
+        /// <remarks/>
+        public string DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Type {
+            get {
+                return this.typeField;
+            }
+            set {
+                this.typeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ReferenceNbr {
+            get {
+                return this.referenceNbrField;
+            }
+            set {
+                this.referenceNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Status {
+            get {
+                return this.statusField;
+            }
+            set {
+                this.statusField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Hold {
+            get {
+                return this.holdField;
+            }
+            set {
+                this.holdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Date {
+            get {
+                return this.dateField;
+            }
+            set {
+                this.dateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field PostPeriod {
+            get {
+                return this.postPeriodField;
+            }
+            set {
+                this.postPeriodField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field CustomerOrder {
+            get {
+                return this.customerOrderField;
+            }
+            set {
+                this.customerOrderField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Description {
+            get {
+                return this.descriptionField;
+            }
+            set {
+                this.descriptionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Customer {
+            get {
+                return this.customerField;
+            }
+            set {
+                this.customerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Location {
+            get {
+                return this.locationField;
+            }
+            set {
+                this.locationField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Currency {
+            get {
+                return this.currencyField;
+            }
+            set {
+                this.currencyField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field CuryViewState {
+            get {
+                return this.curyViewStateField;
+            }
+            set {
+                this.curyViewStateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Terms {
+            get {
+                return this.termsField;
+            }
+            set {
+                this.termsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field DueDate {
+            get {
+                return this.dueDateField;
+            }
+            set {
+                this.dueDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field CashDiscountDate {
+            get {
+                return this.cashDiscountDateField;
+            }
+            set {
+                this.cashDiscountDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Project {
+            get {
+                return this.projectField;
+            }
+            set {
+                this.projectField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field DetailTotal {
+            get {
+                return this.detailTotalField;
+            }
+            set {
+                this.detailTotalField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field DiscountTotal {
+            get {
+                return this.discountTotalField;
+            }
+            set {
+                this.discountTotalField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field VATTaxableTotal {
+            get {
+                return this.vATTaxableTotalField;
+            }
+            set {
+                this.vATTaxableTotalField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field VATExemptTotal {
+            get {
+                return this.vATExemptTotalField;
+            }
+            set {
+                this.vATExemptTotalField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field TaxTotal {
+            get {
+                return this.taxTotalField;
+            }
+            set {
+                this.taxTotalField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Balance {
+            get {
+                return this.balanceField;
+            }
+            set {
+                this.balanceField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field RoundingDiff {
+            get {
+                return this.roundingDiffField;
+            }
+            set {
+                this.roundingDiffField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field Amount {
+            get {
+                return this.amountField;
+            }
+            set {
+                this.amountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field CashDiscount {
+            get {
+                return this.cashDiscountField;
+            }
+            set {
+                this.cashDiscountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field ROTAndRUTDeductibleDocument {
+            get {
+                return this.rOTAndRUTDeductibleDocumentField;
+            }
+            set {
+                this.rOTAndRUTDeductibleDocumentField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Field NoteText {
+            get {
+                return this.noteTextField;
+            }
+            set {
+                this.noteTextField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR301000InvoiceSummaryServiceCommands ServiceCommands {
+            get {
+                return this.serviceCommandsField;
+            }
+            set {
+                this.serviceCommandsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR301000Actions {
+        
+        private Action saveField;
+        
+        private Action cancelField;
+        
+        private Action insertField;
+        
+        private Action deleteField;
+        
+        private Action copyDocumentCopyPasteField;
+        
+        private Action pasteDocumentCopyPasteField;
+        
+        private Action saveTemplateCopyPasteField;
+        
+        private Action firstField;
+        
+        private Action previousField;
+        
+        private Action nextField;
+        
+        private Action lastField;
+        
+        private Action releaseField;
+        
+        private Action voidCheckField;
+        
+        private Action viewBatchField;
+        
+        private Action emailInvoiceMemoActionField;
+        
+        private Action sendEmailActionField;
+        
+        private Action enterPaymentApplyMemoActionField;
+        
+        private Action reverseActionField;
+        
+        private Action addToScheduleActionField;
+        
+        private Action markAsDoNotEmailActionField;
+        
+        private Action validateAddressesActionField;
+        
+        private Action recalculateDiscountsActionActionField;
+        
+        private Action writeOffActionField;
+        
+        private Action reclassifyGLBatchActionField;
+        
+        private Action customerDocumentsInquiryField;
+        
+        private Action customerDetailsInquiryField;
+        
+        private Action sOInvoiceInquiryField;
+        
+        private Action aREditDetailedReportField;
+        
+        private Action aRRegisterDetailedReportField;
+        
+        private Action printInvoiceMemoReportField;
+        
+        private Action viewScheduleField;
+        
+        private Action newCustomerField;
+        
+        private Action editCustomerField;
+        
+        private Action customerDocumentsField;
+        
+        private Action sOInvoiceField;
+        
+        private Action sendARInvoiceMemoField;
+        
+        private Action writeOffField;
+        
+        private Action reverseInvoiceField;
+        
+        private Action payInvoiceField;
+        
+        private Action createScheduleField;
+        
+        private Action reclassifyBatchField;
+        
+        private Action autoApplyField;
+        
+        private Action viewPaymentField;
+        
+        private Action viewInvoiceField;
+        
+        private Action viewInvoice2Field;
+        
+        private Action viewItemField;
+        
+        private Action validateAddressesField;
+        
+        private Action recalculateDiscountsActionField;
+        
+        private Action recalcOkField;
+        
+        private Action newTaskField;
+        
+        private Action newEventField;
+        
+        private Action viewActivityField;
+        
+        private Action newMailActivityField;
+        
+        private Action openActivityOwnerField;
+        
+        private Action viewAllActivitiesField;
+        
+        private Action nNewActivityField;
+        
+        private Action cNewActivityField;
+        
+        private Action eNewActivityField;
+        
+        private Action mNewActivityField;
+        
+        private Action pNewActivityField;
+        
+        private Action wNewActivityField;
+        
+        private Action emailInvoiceMemoNotificationField;
+        
+        /// <remarks/>
+        public Action Save {
+            get {
+                return this.saveField;
+            }
+            set {
+                this.saveField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action Cancel {
+            get {
+                return this.cancelField;
+            }
+            set {
+                this.cancelField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action Insert {
+            get {
+                return this.insertField;
+            }
+            set {
+                this.insertField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action Delete {
+            get {
+                return this.deleteField;
+            }
+            set {
+                this.deleteField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action CopyDocumentCopyPaste {
+            get {
+                return this.copyDocumentCopyPasteField;
+            }
+            set {
+                this.copyDocumentCopyPasteField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action PasteDocumentCopyPaste {
+            get {
+                return this.pasteDocumentCopyPasteField;
+            }
+            set {
+                this.pasteDocumentCopyPasteField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action SaveTemplateCopyPaste {
+            get {
+                return this.saveTemplateCopyPasteField;
+            }
+            set {
+                this.saveTemplateCopyPasteField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action First {
+            get {
+                return this.firstField;
+            }
+            set {
+                this.firstField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action Previous {
+            get {
+                return this.previousField;
+            }
+            set {
+                this.previousField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action Next {
+            get {
+                return this.nextField;
+            }
+            set {
+                this.nextField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action Last {
+            get {
+                return this.lastField;
+            }
+            set {
+                this.lastField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action Release {
+            get {
+                return this.releaseField;
+            }
+            set {
+                this.releaseField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action VoidCheck {
+            get {
+                return this.voidCheckField;
+            }
+            set {
+                this.voidCheckField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action ViewBatch {
+            get {
+                return this.viewBatchField;
+            }
+            set {
+                this.viewBatchField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action EmailInvoiceMemoAction {
+            get {
+                return this.emailInvoiceMemoActionField;
+            }
+            set {
+                this.emailInvoiceMemoActionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action SendEmailAction {
+            get {
+                return this.sendEmailActionField;
+            }
+            set {
+                this.sendEmailActionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action EnterPaymentApplyMemoAction {
+            get {
+                return this.enterPaymentApplyMemoActionField;
+            }
+            set {
+                this.enterPaymentApplyMemoActionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action ReverseAction {
+            get {
+                return this.reverseActionField;
+            }
+            set {
+                this.reverseActionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action AddToScheduleAction {
+            get {
+                return this.addToScheduleActionField;
+            }
+            set {
+                this.addToScheduleActionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action MarkAsDoNotEmailAction {
+            get {
+                return this.markAsDoNotEmailActionField;
+            }
+            set {
+                this.markAsDoNotEmailActionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action ValidateAddressesAction {
+            get {
+                return this.validateAddressesActionField;
+            }
+            set {
+                this.validateAddressesActionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action RecalculateDiscountsActionAction {
+            get {
+                return this.recalculateDiscountsActionActionField;
+            }
+            set {
+                this.recalculateDiscountsActionActionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action WriteOffAction {
+            get {
+                return this.writeOffActionField;
+            }
+            set {
+                this.writeOffActionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action ReclassifyGLBatchAction {
+            get {
+                return this.reclassifyGLBatchActionField;
+            }
+            set {
+                this.reclassifyGLBatchActionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action CustomerDocumentsInquiry {
+            get {
+                return this.customerDocumentsInquiryField;
+            }
+            set {
+                this.customerDocumentsInquiryField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action CustomerDetailsInquiry {
+            get {
+                return this.customerDetailsInquiryField;
+            }
+            set {
+                this.customerDetailsInquiryField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action SOInvoiceInquiry {
+            get {
+                return this.sOInvoiceInquiryField;
+            }
+            set {
+                this.sOInvoiceInquiryField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action AREditDetailedReport {
+            get {
+                return this.aREditDetailedReportField;
+            }
+            set {
+                this.aREditDetailedReportField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action ARRegisterDetailedReport {
+            get {
+                return this.aRRegisterDetailedReportField;
+            }
+            set {
+                this.aRRegisterDetailedReportField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action PrintInvoiceMemoReport {
+            get {
+                return this.printInvoiceMemoReportField;
+            }
+            set {
+                this.printInvoiceMemoReportField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action ViewSchedule {
+            get {
+                return this.viewScheduleField;
+            }
+            set {
+                this.viewScheduleField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action NewCustomer {
+            get {
+                return this.newCustomerField;
+            }
+            set {
+                this.newCustomerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action EditCustomer {
+            get {
+                return this.editCustomerField;
+            }
+            set {
+                this.editCustomerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action CustomerDocuments {
+            get {
+                return this.customerDocumentsField;
+            }
+            set {
+                this.customerDocumentsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action SOInvoice {
+            get {
+                return this.sOInvoiceField;
+            }
+            set {
+                this.sOInvoiceField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action SendARInvoiceMemo {
+            get {
+                return this.sendARInvoiceMemoField;
+            }
+            set {
+                this.sendARInvoiceMemoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action WriteOff {
+            get {
+                return this.writeOffField;
+            }
+            set {
+                this.writeOffField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action ReverseInvoice {
+            get {
+                return this.reverseInvoiceField;
+            }
+            set {
+                this.reverseInvoiceField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action PayInvoice {
+            get {
+                return this.payInvoiceField;
+            }
+            set {
+                this.payInvoiceField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action CreateSchedule {
+            get {
+                return this.createScheduleField;
+            }
+            set {
+                this.createScheduleField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action ReclassifyBatch {
+            get {
+                return this.reclassifyBatchField;
+            }
+            set {
+                this.reclassifyBatchField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action AutoApply {
+            get {
+                return this.autoApplyField;
+            }
+            set {
+                this.autoApplyField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action ViewPayment {
+            get {
+                return this.viewPaymentField;
+            }
+            set {
+                this.viewPaymentField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action ViewInvoice {
+            get {
+                return this.viewInvoiceField;
+            }
+            set {
+                this.viewInvoiceField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action ViewInvoice2 {
+            get {
+                return this.viewInvoice2Field;
+            }
+            set {
+                this.viewInvoice2Field = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action ViewItem {
+            get {
+                return this.viewItemField;
+            }
+            set {
+                this.viewItemField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action ValidateAddresses {
+            get {
+                return this.validateAddressesField;
+            }
+            set {
+                this.validateAddressesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action RecalculateDiscountsAction {
+            get {
+                return this.recalculateDiscountsActionField;
+            }
+            set {
+                this.recalculateDiscountsActionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action RecalcOk {
+            get {
+                return this.recalcOkField;
+            }
+            set {
+                this.recalcOkField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action NewTask {
+            get {
+                return this.newTaskField;
+            }
+            set {
+                this.newTaskField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action NewEvent {
+            get {
+                return this.newEventField;
+            }
+            set {
+                this.newEventField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action ViewActivity {
+            get {
+                return this.viewActivityField;
+            }
+            set {
+                this.viewActivityField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action NewMailActivity {
+            get {
+                return this.newMailActivityField;
+            }
+            set {
+                this.newMailActivityField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action OpenActivityOwner {
+            get {
+                return this.openActivityOwnerField;
+            }
+            set {
+                this.openActivityOwnerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action ViewAllActivities {
+            get {
+                return this.viewAllActivitiesField;
+            }
+            set {
+                this.viewAllActivitiesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action NNewActivity {
+            get {
+                return this.nNewActivityField;
+            }
+            set {
+                this.nNewActivityField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action CNewActivity {
+            get {
+                return this.cNewActivityField;
+            }
+            set {
+                this.cNewActivityField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action ENewActivity {
+            get {
+                return this.eNewActivityField;
+            }
+            set {
+                this.eNewActivityField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action MNewActivity {
+            get {
+                return this.mNewActivityField;
+            }
+            set {
+                this.mNewActivityField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action PNewActivity {
+            get {
+                return this.pNewActivityField;
+            }
+            set {
+                this.pNewActivityField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action WNewActivity {
+            get {
+                return this.wNewActivityField;
+            }
+            set {
+                this.wNewActivityField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Action EmailInvoiceMemoNotification {
+            get {
+                return this.emailInvoiceMemoNotificationField;
+            }
+            set {
+                this.emailInvoiceMemoNotificationField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1067.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.acumatica.com/generic/")]
+    public partial class AR301000Content {
+        
+        private AR301000Actions actionsField;
+        
+        private AR301000InvoiceSummary invoiceSummaryField;
+        
+        private AR301000FinancialDetailsLinkToGL financialDetailsLinkToGLField;
+        
+        private AR301000FinancialDetailsDefaultPaymentInfo financialDetailsDefaultPaymentInfoField;
+        
+        private AR301000FinancialDetailsTaxInfo financialDetailsTaxInfoField;
+        
+        private AR301000FinancialDetailsAssignedTo financialDetailsAssignedToField;
+        
+        private AR301000FinancialDetailsDunningInfoRevoked financialDetailsDunningInfoRevokedField;
+        
+        private AR301000FinancialDetailsCashDiscountInfo financialDetailsCashDiscountInfoField;
+        
+        private AR301000BillingAddressPrintAndEmailOptions billingAddressPrintAndEmailOptionsField;
+        
+        private AR301000SalespersonCommissionDefaultSalesperson salespersonCommissionDefaultSalespersonField;
+        
+        private AR301000DocumentDetails documentDetailsField;
+        
+        private AR301000TaxDetails taxDetailsField;
+        
+        private AR301000Applications applicationsField;
+        
+        private AR301000ApplicationsDocType applicationsDocTypeField;
+        
+        private AR301000ApplicationsDocTypeDisplayDocType applicationsDocTypeDisplayDocTypeField;
+        
+        private AR301000InvoiceSummaryRateSelection invoiceSummaryRateSelectionField;
+        
+        private AR301000InvoiceSummaryRateSelectionCurrencyUnitEquivalents invoiceSummaryRateSelectionCurrencyUnitEquivalentsField;
+        
+        private AR301000BillingAddressAddress billingAddressAddressField;
+        
+        private AR301000BillingAddressContactInformation billingAddressContactInformationField;
+        
+        private AR301000RecalculatePrices recalculatePricesField;
+        
+        private AR301000FinancialDetailsDunningInfo financialDetailsDunningInfoField;
+        
+        private AR301000DiscountDetails discountDetailsField;
+        
+        private AR301000SalespersonCommission salespersonCommissionField;
+        
+        private AR301000ROTRUTDetailsRUTAndROTSettings rOTRUTDetailsRUTAndROTSettingsField;
+        
+        private AR301000ROTRUTDetailsRUTAndROTTotals rOTRUTDetailsRUTAndROTTotalsField;
+        
+        private AR301000DuplicateReferenceNbr duplicateReferenceNbrField;
+        
+        private AR301000FinancialDetailsVoucherDetails financialDetailsVoucherDetailsField;
+        
+        /// <remarks/>
+        public AR301000Actions Actions {
+            get {
+                return this.actionsField;
+            }
+            set {
+                this.actionsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR301000InvoiceSummary InvoiceSummary {
+            get {
+                return this.invoiceSummaryField;
+            }
+            set {
+                this.invoiceSummaryField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR301000FinancialDetailsLinkToGL FinancialDetailsLinkToGL {
+            get {
+                return this.financialDetailsLinkToGLField;
+            }
+            set {
+                this.financialDetailsLinkToGLField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR301000FinancialDetailsDefaultPaymentInfo FinancialDetailsDefaultPaymentInfo {
+            get {
+                return this.financialDetailsDefaultPaymentInfoField;
+            }
+            set {
+                this.financialDetailsDefaultPaymentInfoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR301000FinancialDetailsTaxInfo FinancialDetailsTaxInfo {
+            get {
+                return this.financialDetailsTaxInfoField;
+            }
+            set {
+                this.financialDetailsTaxInfoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR301000FinancialDetailsAssignedTo FinancialDetailsAssignedTo {
+            get {
+                return this.financialDetailsAssignedToField;
+            }
+            set {
+                this.financialDetailsAssignedToField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR301000FinancialDetailsDunningInfoRevoked FinancialDetailsDunningInfoRevoked {
+            get {
+                return this.financialDetailsDunningInfoRevokedField;
+            }
+            set {
+                this.financialDetailsDunningInfoRevokedField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR301000FinancialDetailsCashDiscountInfo FinancialDetailsCashDiscountInfo {
+            get {
+                return this.financialDetailsCashDiscountInfoField;
+            }
+            set {
+                this.financialDetailsCashDiscountInfoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR301000BillingAddressPrintAndEmailOptions BillingAddressPrintAndEmailOptions {
+            get {
+                return this.billingAddressPrintAndEmailOptionsField;
+            }
+            set {
+                this.billingAddressPrintAndEmailOptionsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR301000SalespersonCommissionDefaultSalesperson SalespersonCommissionDefaultSalesperson {
+            get {
+                return this.salespersonCommissionDefaultSalespersonField;
+            }
+            set {
+                this.salespersonCommissionDefaultSalespersonField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR301000DocumentDetails DocumentDetails {
+            get {
+                return this.documentDetailsField;
+            }
+            set {
+                this.documentDetailsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR301000TaxDetails TaxDetails {
+            get {
+                return this.taxDetailsField;
+            }
+            set {
+                this.taxDetailsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR301000Applications Applications {
+            get {
+                return this.applicationsField;
+            }
+            set {
+                this.applicationsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR301000ApplicationsDocType ApplicationsDocType {
+            get {
+                return this.applicationsDocTypeField;
+            }
+            set {
+                this.applicationsDocTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR301000ApplicationsDocTypeDisplayDocType ApplicationsDocTypeDisplayDocType {
+            get {
+                return this.applicationsDocTypeDisplayDocTypeField;
+            }
+            set {
+                this.applicationsDocTypeDisplayDocTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR301000InvoiceSummaryRateSelection InvoiceSummaryRateSelection {
+            get {
+                return this.invoiceSummaryRateSelectionField;
+            }
+            set {
+                this.invoiceSummaryRateSelectionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR301000InvoiceSummaryRateSelectionCurrencyUnitEquivalents InvoiceSummaryRateSelectionCurrencyUnitEquivalents {
+            get {
+                return this.invoiceSummaryRateSelectionCurrencyUnitEquivalentsField;
+            }
+            set {
+                this.invoiceSummaryRateSelectionCurrencyUnitEquivalentsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR301000BillingAddressAddress BillingAddressAddress {
+            get {
+                return this.billingAddressAddressField;
+            }
+            set {
+                this.billingAddressAddressField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR301000BillingAddressContactInformation BillingAddressContactInformation {
+            get {
+                return this.billingAddressContactInformationField;
+            }
+            set {
+                this.billingAddressContactInformationField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR301000RecalculatePrices RecalculatePrices {
+            get {
+                return this.recalculatePricesField;
+            }
+            set {
+                this.recalculatePricesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR301000FinancialDetailsDunningInfo FinancialDetailsDunningInfo {
+            get {
+                return this.financialDetailsDunningInfoField;
+            }
+            set {
+                this.financialDetailsDunningInfoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR301000DiscountDetails DiscountDetails {
+            get {
+                return this.discountDetailsField;
+            }
+            set {
+                this.discountDetailsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR301000SalespersonCommission SalespersonCommission {
+            get {
+                return this.salespersonCommissionField;
+            }
+            set {
+                this.salespersonCommissionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR301000ROTRUTDetailsRUTAndROTSettings ROTRUTDetailsRUTAndROTSettings {
+            get {
+                return this.rOTRUTDetailsRUTAndROTSettingsField;
+            }
+            set {
+                this.rOTRUTDetailsRUTAndROTSettingsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR301000ROTRUTDetailsRUTAndROTTotals ROTRUTDetailsRUTAndROTTotals {
+            get {
+                return this.rOTRUTDetailsRUTAndROTTotalsField;
+            }
+            set {
+                this.rOTRUTDetailsRUTAndROTTotalsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR301000DuplicateReferenceNbr DuplicateReferenceNbr {
+            get {
+                return this.duplicateReferenceNbrField;
+            }
+            set {
+                this.duplicateReferenceNbrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AR301000FinancialDetailsVoucherDetails FinancialDetailsVoucherDetails {
+            get {
+                return this.financialDetailsVoucherDetailsField;
+            }
+            set {
+                this.financialDetailsVoucherDetailsField = value;
             }
         }
     }
@@ -16912,6 +37200,282 @@ namespace AcumaticaWebServiceSample.TEST {
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void SetSchemaModeCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void AR301000ClearCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void AR301000GetProcessStatusCompletedEventHandler(object sender, AR301000GetProcessStatusCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class AR301000GetProcessStatusCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal AR301000GetProcessStatusCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public ProcessResult Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((ProcessResult)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void AR301000GetSchemaCompletedEventHandler(object sender, AR301000GetSchemaCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class AR301000GetSchemaCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal AR301000GetSchemaCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public AR301000Content Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((AR301000Content)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void AR301000SetSchemaCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void AR301000ImportCompletedEventHandler(object sender, AR301000ImportCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class AR301000ImportCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal AR301000ImportCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public AR301000ImportResult[] Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((AR301000ImportResult[])(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void AR301000ExportCompletedEventHandler(object sender, AR301000ExportCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class AR301000ExportCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal AR301000ExportCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string[][] Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string[][])(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void AR301000SubmitCompletedEventHandler(object sender, AR301000SubmitCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class AR301000SubmitCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal AR301000SubmitCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public AR301000Content[] Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((AR301000Content[])(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void AR302000ClearCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void AR302000GetProcessStatusCompletedEventHandler(object sender, AR302000GetProcessStatusCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class AR302000GetProcessStatusCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal AR302000GetProcessStatusCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public ProcessResult Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((ProcessResult)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void AR302000GetSchemaCompletedEventHandler(object sender, AR302000GetSchemaCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class AR302000GetSchemaCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal AR302000GetSchemaCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public AR302000Content Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((AR302000Content)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void AR302000SetSchemaCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void AR302000ImportCompletedEventHandler(object sender, AR302000ImportCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class AR302000ImportCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal AR302000ImportCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public AR302000ImportResult[] Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((AR302000ImportResult[])(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void AR302000ExportCompletedEventHandler(object sender, AR302000ExportCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class AR302000ExportCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal AR302000ExportCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string[][] Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string[][])(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void AR302000SubmitCompletedEventHandler(object sender, AR302000SubmitCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class AR302000SubmitCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal AR302000SubmitCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public AR302000Content[] Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((AR302000Content[])(this.results[0]));
+            }
+        }
+    }
     
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
@@ -17185,6 +37749,282 @@ namespace AcumaticaWebServiceSample.TEST {
             get {
                 this.RaiseExceptionIfNecessary();
                 return ((SO301000Content[])(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void SO302000ClearCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void SO302000GetProcessStatusCompletedEventHandler(object sender, SO302000GetProcessStatusCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class SO302000GetProcessStatusCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal SO302000GetProcessStatusCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public ProcessResult Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((ProcessResult)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void SO302000GetSchemaCompletedEventHandler(object sender, SO302000GetSchemaCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class SO302000GetSchemaCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal SO302000GetSchemaCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public SO302000Content Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((SO302000Content)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void SO302000SetSchemaCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void SO302000ImportCompletedEventHandler(object sender, SO302000ImportCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class SO302000ImportCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal SO302000ImportCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public SO302000ImportResult[] Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((SO302000ImportResult[])(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void SO302000ExportCompletedEventHandler(object sender, SO302000ExportCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class SO302000ExportCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal SO302000ExportCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string[][] Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string[][])(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void SO302000SubmitCompletedEventHandler(object sender, SO302000SubmitCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class SO302000SubmitCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal SO302000SubmitCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public SO302000Content[] Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((SO302000Content[])(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void SO303000ClearCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void SO303000GetProcessStatusCompletedEventHandler(object sender, SO303000GetProcessStatusCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class SO303000GetProcessStatusCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal SO303000GetProcessStatusCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public ProcessResult Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((ProcessResult)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void SO303000GetSchemaCompletedEventHandler(object sender, SO303000GetSchemaCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class SO303000GetSchemaCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal SO303000GetSchemaCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public SO303000Content Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((SO303000Content)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void SO303000SetSchemaCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void SO303000ImportCompletedEventHandler(object sender, SO303000ImportCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class SO303000ImportCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal SO303000ImportCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public SO303000ImportResult[] Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((SO303000ImportResult[])(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void SO303000ExportCompletedEventHandler(object sender, SO303000ExportCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class SO303000ExportCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal SO303000ExportCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string[][] Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string[][])(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void SO303000SubmitCompletedEventHandler(object sender, SO303000SubmitCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class SO303000SubmitCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal SO303000SubmitCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public SO303000Content[] Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((SO303000Content[])(this.results[0]));
             }
         }
     }

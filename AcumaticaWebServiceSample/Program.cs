@@ -5,8 +5,10 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Globalization;
 using AcumaticaWebServiceSample.TEST;
+using System.ServiceProcess;
+using System.Diagnostics;
 
-namespace AcumaticaWebServiceSample
+namespace AcumaticaWebServiceSample 
 {
     class Program
     {
@@ -18,6 +20,9 @@ namespace AcumaticaWebServiceSample
             Console.WriteLine("Select an option you want to do:");
             Console.WriteLine("1. Create Customer");
             Console.WriteLine("2. Get Customer Info");
+            Console.WriteLine("3. Create Sales Invoice");
+            Console.WriteLine("4. Create Invoice to Payments");
+            
             Console.Write("Enter option: ");
             int.TryParse(Console.ReadLine(), out option);
             switch (option)
@@ -62,6 +67,13 @@ namespace AcumaticaWebServiceSample
                     Main();
                     break;
                 case 3:
+                    CreateSalesOrder();
+                    break;
+                case 4:
+                    Program foo = new Program();
+                    foo.CreateSalesInvoiceToPayment();
+                    break;
+                case 5:
                     Environment.Exit(0);
                     break;
                 case 0:
@@ -115,6 +127,7 @@ namespace AcumaticaWebServiceSample
         static void CreateCustomer(string CustomerID, string customerName, string email, string address1, string address2, string city)
         {
             TEST.Screen context = new TEST.Screen();
+            bool loginSuccess = false;
 
             try
             {
@@ -123,6 +136,8 @@ namespace AcumaticaWebServiceSample
                 context.Timeout = 100000000;
                 context.Url = "http://localhost/AcumaticaERP/Soap/APITEST.asmx";
                 LoginResult result = context.Login("admin", "123");
+
+                loginSuccess = true;
 
                 AR303000Content schema = context.AR303000GetSchema();
                 //Create series of commands
@@ -173,8 +188,8 @@ namespace AcumaticaWebServiceSample
             }
             finally
             {
-                //declare logout to terminate cookie session
-                context.Logout();
+                if (loginSuccess)
+                    context.Logout(); //declare logout to terminate cookie session
             }
         }
 
@@ -240,6 +255,419 @@ namespace AcumaticaWebServiceSample
             }
         }
 
+        static void CreateSalesOrder()
+        {
+            TEST.Screen context = new Screen();
+            bool loginSuccess = false;
+
+            try
+            {
+                context.CookieContainer = new System.Net.CookieContainer(); //stores cookie session
+                context.EnableDecompression = true;
+                context.Timeout = 100000000;
+                context.Url = "http://localhost/AcumaticaERP/Soap/APITEST.asmx";
+                LoginResult result = context.Login("admin", "123");
+
+                //If login is successful
+                loginSuccess = true;
+
+                SO301000Content schema = context.SO301000GetSchema();
+
+                var commands = new Command[]
+                {
+                    //Assign Values
+                    new Value
+                    {
+                        Value = "SO",
+                        LinkedCommand = schema.OrderSummary.OrderType
+                    },
+                    new Value
+                    {
+                        Value = "<NEW>",
+                        LinkedCommand = schema.OrderSummary.OrderNbr
+                    },
+                    new Value
+                    {
+                        Value = "TEST2",
+                        LinkedCommand = schema.OrderSummary.Customer
+                    },
+                    new Value
+                    {
+                        Value = "Test Sales Order",
+                        LinkedCommand = schema.OrderSummary.Description
+                    },
+                    new Value
+                    {
+                        Value = "OPTIONAL",
+                        LinkedCommand = schema.OrderSummary.CustomerOrder
+                    },
+
+                    //add new item in document details tab of sales order screen
+
+                    //first item
+                    schema.DocumentDetails.ServiceCommands.NewRow,
+                    new Value
+                    {
+                        Value = "AALEGO500",
+                        LinkedCommand = schema.DocumentDetails.InventoryID
+                    },
+                    new Value
+                    {
+                        Value = "4",
+                        LinkedCommand = schema.DocumentDetails.Quantity
+                    },
+                    new Value
+                    {
+                        Value = "EA",
+                        LinkedCommand = schema.DocumentDetails.UOM
+                    },
+                    new Value
+                    {
+                        Value = "120",
+                        LinkedCommand = schema.DocumentDetails.UnitPrice,
+                        Commit = true
+                    },
+                    new Value
+                    {
+                        Value = "2",
+                        LinkedCommand = schema.DocumentDetails.DiscountPercent,
+                        Commit = true
+                    },
+
+                    //second item
+                    schema.DocumentDetails.ServiceCommands.NewRow,
+                    new Value
+                    {
+                        Value = "CONGRILL",
+                        LinkedCommand = schema.DocumentDetails.InventoryID
+                    },
+                    new Value
+                    {
+                        Value = "2",
+                        LinkedCommand = schema.DocumentDetails.Quantity
+                    },
+                    new Value
+                    {
+                        Value = "EA",
+                        LinkedCommand = schema.DocumentDetails.UOM
+                    },
+
+                    // Save Action
+                    schema.Actions.Save,
+
+                    // Request data to return after save
+                    schema.OrderSummary.OrderType,
+                    schema.OrderSummary.OrderNbr,
+                    schema.OrderSummary.OrderedQty,
+                    schema.OrderSummary.OrderTotal
+
+                };
+
+                schema = context.SO301000Submit(commands)[0];
+                Console.WriteLine("Order Type: " + schema.OrderSummary.OrderType.Value.ToString());
+                Console.WriteLine("Order Nbr: " + schema.OrderSummary.OrderNbr.Value.ToString());
+                Console.WriteLine("Ordered Qty: " + schema.OrderSummary.OrderedQty.Value.ToString());
+                Console.WriteLine("Order Total: " + schema.OrderSummary.OrderTotal.Value.ToString());
+                Console.Read();
+                
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                Console.Read();
+            }
+            finally
+            {
+                if (loginSuccess)
+                    context.Logout();
+            }
+        }
+
+        void CreateSalesInvoiceToPayment()
+        {
+            TEST.Screen context = new Screen();
+            bool loginSuccess = false;
+
+            try
+            {
+                context.CookieContainer = new System.Net.CookieContainer(); //stores cookie session
+                context.EnableDecompression = true;
+                context.Timeout = 100000000;
+                context.Url = "http://localhost/AcumaticaERP/Soap/APITEST.asmx";
+                LoginResult result = context.Login("admin", "123");
+
+                //If login is successful
+                loginSuccess = true;
+
+                SO301000Content schema = context.SO301000GetSchema();
+
+                var commands = new Command[]
+                {
+                    //Assign Values
+                    new Value
+                    {
+                        Value = "IN",
+                        LinkedCommand = schema.OrderSummary.OrderType
+                    },
+                    new Value
+                    {
+                        Value = "<NEW>",
+                        LinkedCommand = schema.OrderSummary.OrderNbr
+                    },
+                    new Value
+                    {
+                        Value = "TEST2",
+                        LinkedCommand = schema.OrderSummary.Customer
+                    },
+                    new Value
+                    {
+                        Value = "Test Sales Order",
+                        LinkedCommand = schema.OrderSummary.Description
+                    },
+                    new Value
+                    {
+                        Value = "OPTIONAL",
+                        LinkedCommand = schema.OrderSummary.CustomerOrder
+                    },
+                    new Value
+                    {
+                        Value = "095135124",
+                        LinkedCommand = schema.OrderSummary.ExternalReference
+                    },
+
+                    //add new item in document details tab of sales order screen
+
+                    //first item
+                    schema.DocumentDetails.ServiceCommands.NewRow,
+                    new Value
+                    {
+                        Value = "AALEGO500",
+                        LinkedCommand = schema.DocumentDetails.InventoryID
+                    },
+                    new Value
+                    {
+                        Value = "4",
+                        LinkedCommand = schema.DocumentDetails.Quantity
+                    },
+                    new Value
+                    {
+                        Value = "EA",
+                        LinkedCommand = schema.DocumentDetails.UOM
+                    },
+                    new Value
+                    {
+                        Value = "120",
+                        LinkedCommand = schema.DocumentDetails.UnitPrice,
+                        Commit = true
+                    },
+                    new Value
+                    {
+                        Value = "2",
+                        LinkedCommand = schema.DocumentDetails.DiscountPercent,
+                        Commit = true
+                    },
+
+                    //second item
+                    schema.DocumentDetails.ServiceCommands.NewRow,
+                    new Value
+                    {
+                        Value = "CONGRILL",
+                        LinkedCommand = schema.DocumentDetails.InventoryID
+                    },
+                    new Value
+                    {
+                        Value = "2",
+                        LinkedCommand = schema.DocumentDetails.Quantity
+                    },
+                    new Value
+                    {
+                        Value = "EA",
+                        LinkedCommand = schema.DocumentDetails.UOM
+                    },
+
+                    // Save Action
+                    //schema.Actions.Save,
+                    schema.Actions.PrepareInvoice
+
+                };
+
+                context.SO301000Submit(commands);
+
+                var status = context.SO301000GetProcessStatus();
+                while (status.Status == TEST.ProcessStatus.InProcess)
+                {
+                    status = context.SO301000GetProcessStatus();
+                }
+
+                if (status.Status == TEST.ProcessStatus.Completed)
+                {
+                    commands = new Command[]
+                    {
+                        schema.Shipments.InvoiceType,
+                        schema.Shipments.InvoiceNbr
+                    };
+                    var invoice = context.SO301000Submit(commands)[0];
+                    string invoiceType = invoice.Shipments.InvoiceType.Value.ToString();
+                    string invoiceNbr = invoice.Shipments.InvoiceNbr.Value.ToString();
+
+                    Console.WriteLine("Creating Invoice...");
+                    Console.Write(invoiceType);
+                    Console.WriteLine(" : " + invoiceNbr);
+                    Console.WriteLine("Releasing Invoice...");
+                    ReleaseSOInvoice(invoiceNbr, invoiceType);
+                    Console.WriteLine("Creating Payment...");
+                    CreateReleasePayment(invoiceType, invoiceNbr);
+                    Console.Read();
+                }
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                EventLog.WriteEntry("Acumatica Web Service", ex.Message);
+                Console.Read();
+            }
+            finally
+            {
+                if (loginSuccess)
+                    context.Logout();
+            }
+        }
+
+        void ReleaseSOInvoice(string invoiceNbr, string invoiceType)
+        {
+            TEST.Screen context = new TEST.Screen();
+            bool loginSucess = false;
+
+            try
+            {
+                context.CookieContainer = new System.Net.CookieContainer();
+                context.Url = "http://localhost/AcumaticaERP/Soap/APITEST.asmx";
+                context.Timeout = 10000;
+                LoginResult result = context.Login("admin", "123");
+
+                SO303000Content schema = context.SO303000GetSchema();
+                var commands = new Command[]
+                {
+                    new Value
+                    {
+                        Value = invoiceType,
+                        LinkedCommand = schema.InvoiceSummary.Type
+                    },
+                    new Value
+                    {
+                        Value = invoiceNbr,
+                        LinkedCommand = schema.InvoiceSummary.ReferenceNbr
+                    },
+                    schema.Actions.ReleaseAction
+                };
+                context.SO303000Submit(commands);
+
+                var status = context.SO303000GetProcessStatus();
+                while (status.Status == ProcessStatus.InProcess)
+                {
+                    status = context.SO303000GetProcessStatus();
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                Console.Read();
+            }
+            finally
+            {
+                if (loginSucess)
+                    context.Logout();
+            }
+        }
+
+        void CreateReleasePayment(string invoiceType, string invoiceNbr)
+        {
+            TEST.Screen context = new Screen();
+            bool isLoginSuccess = false;
+
+            try
+            {
+                context.CookieContainer = new System.Net.CookieContainer();
+                context.Url = "http://localhost/AcumaticaERP/Soap/APITEST.asmx";
+                context.Login("admin", "123");
+
+                AR302000Content schema = context.AR302000GetSchema();
+                var commands = new List<Command>();
+                commands.Add(
+                    new Value
+                    {
+                        Value = "Payment",
+                        LinkedCommand = schema.PaymentSummary.Type
+                    });
+                commands.Add(schema.Actions.Insert);
+                commands.Add(
+                    new Value
+                    {
+                        Value = "TEST2",
+                        LinkedCommand = schema.PaymentSummary.Customer
+                    });
+                commands.Add(
+                    new Value
+                    {
+                        Value = "CASH",
+                        LinkedCommand = schema.PaymentSummary.PaymentMethod
+                    });
+                commands.Add(
+                    new Value
+                    {
+                        Value = "0941231",
+                        LinkedCommand = schema.PaymentSummary.PaymentRef
+                    });
+                commands.Add(
+                    new Value
+                    {
+                        Value = "False",
+                        LinkedCommand = schema.PaymentSummary.Hold,
+                        Commit = true
+                    });
+
+                //add invoice
+                commands.Add(schema.DocumentsToApply.ServiceCommands.NewRow);
+                commands.Add(
+                    new Value
+                    {
+                        Value = invoiceNbr,
+                        LinkedCommand = schema.DocumentsToApply.ReferenceNbr,
+                        Commit = true
+                    });
+                commands.Add(schema.PaymentSummary.AppliedToDocuments);
+                var payment = context.AR302000Submit(commands.ToArray());
+                string AppliedDoc = payment[0].PaymentSummary.AppliedToDocuments.Value;
+
+                commands = new List<Command>();
+                commands.Add(
+                    new Value
+                    {
+                        Value = AppliedDoc,
+                        LinkedCommand = schema.PaymentSummary.PaymentAmount
+                    });
+                commands.Add(schema.PaymentSummary.Type);
+                commands.Add(schema.PaymentSummary.ReferenceNbr);
+                commands.Add(schema.Actions.Save);
+                commands.Add(schema.Actions.Release);
+                payment = context.AR302000Submit(commands.ToArray());
+
+                Console.WriteLine("Payment Type: " + payment[0].PaymentSummary.Type.Value.ToString());
+                Console.WriteLine("Payment Ref.: " + payment[0].PaymentSummary.ReferenceNbr.Value.ToString());
+                Console.WriteLine("Payment Released");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                Console.Read();
+            }
+            finally
+            {
+                if (isLoginSuccess)
+                    context.Logout();
+            }
+        }
 
         #endregion
 
