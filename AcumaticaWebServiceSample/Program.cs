@@ -23,13 +23,14 @@ namespace AcumaticaWebServiceSample
             Console.WriteLine("3. Create Sales Invoice");
             Console.WriteLine("4. Create Invoice to Payments");
             Console.WriteLine("5. Get List of all stock items.");
+            Console.WriteLine("6. Get specific item via barcode.");
             
             Console.Write("Enter option: ");
             int.TryParse(Console.ReadLine(), out option);
             switch (option)
             {
                 case 1:
-                    string custId, custName, email, address1, address2, city;
+                    string custId, custName, email, address1, address2, city, barcode;
                     Console.Write("Customer ID: ");
                     custId = Console.ReadLine();
                     Console.Write("Customer Name: ");
@@ -78,6 +79,16 @@ namespace AcumaticaWebServiceSample
                     Console.WriteLine("Getting information...");
                     Console.WriteLine("================================");
                     GetAllStockItem();
+                    Console.WriteLine(System.Environment.NewLine);
+                    Main();
+                    break;
+                case 6:
+                    barcode = "";
+                    Console.Write("Barcode: ");
+                    barcode = Console.ReadLine();
+                    Console.WriteLine("Getting information...");
+                    Console.WriteLine("================================");
+                    findStockItem(barcode);
                     Console.WriteLine(System.Environment.NewLine);
                     Main();
                     break;
@@ -757,6 +768,88 @@ namespace AcumaticaWebServiceSample
                         Console.Write("\t");
                     }
                     Console.WriteLine();
+                }
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            finally
+            {
+                if (loginSuccess)
+                    context.Logout();
+            }
+        }
+
+        static void findStockItem(string barcode)
+        {
+            TEST.Screen context = new Screen();
+            bool loginSuccess = false;
+
+            try
+            {
+                context.CookieContainer = new System.Net.CookieContainer(); //stores cookie session
+                context.EnableDecompression = true;
+                context.Timeout = 100000000;
+                context.Url = "http://localhost/AcumaticaERP/Soap/TESTAPI.asmx";
+                LoginResult result = context.Login("admin", "123");
+
+                //If login is successful
+                loginSuccess = true;
+
+                IN202500Content stockItemsSchema = context.IN202500GetSchema();
+
+                var commands = new Command[]
+                {
+                    stockItemsSchema.StockItemSummary.ServiceCommands.EveryInventoryID,
+                    stockItemsSchema.StockItemSummary.InventoryID,
+                    stockItemsSchema.StockItemSummary.Description,
+                    stockItemsSchema.GeneralSettingsItemDefaults.ItemClass,
+                    stockItemsSchema.GeneralSettingsUnitOfMeasureBaseUnit.BaseUnit
+                    //,
+                    //new Field
+                    //{
+                    //    ObjectName = stockItemsSchema.StockItemSummary.InventoryID.ObjectName, FieldName = "LastModifiedDateTime"
+                    //}
+                };
+
+                var filter = new Filter[]
+                {
+                    new Filter
+                    {
+                        Field = stockItemsSchema.CrossReference.AlternateID,
+                        Condition = FilterCondition.Equals,
+                        Value = "Barcode",
+                        Operator = FilterOperator.Or
+                    },
+                    new Filter
+                    {
+                        OpenBrackets = 1,
+                        Field = stockItemsSchema.CrossReference.AlternateID,
+                        Condition = FilterCondition.Equals,
+                        Value = "Global",
+                        Operator = FilterOperator.And,
+                    },
+                    new Filter
+                    {
+                    Field = stockItemsSchema.CrossReference.AlternateID,
+                    Condition = FilterCondition.Equals,
+                    Value = barcode
+                    }
+                };
+
+                string[][] stockItemList = context.IN202500Export(commands, null, 0, true, false);
+
+                for (int i = 0; i < stockItemList.Length; i++)
+                {
+                    for (int x = 0; x < stockItemList[i].Length; x++)
+                    {
+                        Console.Write(stockItemList[i][x] + ": ");
+                        Console.Write(stockItemList[i + 1][x]);
+                        Console.WriteLine();
+                    }
+                    break;
                 }
 
             }
