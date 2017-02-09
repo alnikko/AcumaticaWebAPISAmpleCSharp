@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="AcumaticaWebServiceSample_TEST_Screen" Type="(Web Service URL)" Scope="Application">
-      <Value Profile="(Default)">http://localhost/AcumaticaERP/Soap/APITEST.asmx</Value>
+      <Value Profile="(Default)">http://localhost/AcumaticaERP/Soap/TESTAPI.asmx</Value>
     </Setting>
   </Settings>
 </SettingsFile>

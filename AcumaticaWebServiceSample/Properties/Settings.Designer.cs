@@ -26,7 +26,7 @@ namespace AcumaticaWebServiceSample.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://localhost/AcumaticaERP/Soap/APITEST.asmx")]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://localhost/AcumaticaERP/Soap/TESTAPI.asmx")]
         public string AcumaticaWebServiceSample_TEST_Screen {
             get {
                 return ((string)(this["AcumaticaWebServiceSample_TEST_Screen"]));

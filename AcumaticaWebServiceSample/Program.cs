@@ -22,6 +22,7 @@ namespace AcumaticaWebServiceSample
             Console.WriteLine("2. Get Customer Info");
             Console.WriteLine("3. Create Sales Invoice");
             Console.WriteLine("4. Create Invoice to Payments");
+            Console.WriteLine("5. Get List of all stock items.");
             
             Console.Write("Enter option: ");
             int.TryParse(Console.ReadLine(), out option);
@@ -74,7 +75,11 @@ namespace AcumaticaWebServiceSample
                     foo.CreateSalesInvoiceToPayment();
                     break;
                 case 5:
-                    Environment.Exit(0);
+                    Console.WriteLine("Getting information...");
+                    Console.WriteLine("================================");
+                    GetAllStockItem();
+                    Console.WriteLine(System.Environment.NewLine);
+                    Main();
                     break;
                 case 0:
                     Console.WriteLine("Value entered not in options.");
@@ -134,8 +139,8 @@ namespace AcumaticaWebServiceSample
                 context.CookieContainer = new System.Net.CookieContainer(); //stores cookie session
                 context.EnableDecompression = true;
                 context.Timeout = 100000000;
-                context.Url = "http://localhost/AcumaticaERP/Soap/APITEST.asmx";
-                LoginResult result = context.Login("admin", "123");
+                context.Url = "http://localhost/AcumaticaERP/Soap/TESTAPI.asmx";
+                LoginResult result = context.Login("admin@SKYFIINTERNETSOLUTIONS", "Password@123");
 
                 loginSuccess = true;
 
@@ -202,7 +207,7 @@ namespace AcumaticaWebServiceSample
                 context.CookieContainer = new System.Net.CookieContainer(); //stores cookie session
                 context.EnableDecompression = true;
                 context.Timeout = 100000000;
-                context.Url = "http://localhost/AcumaticaERP/Soap/APITEST.asmx";
+                context.Url = "http://localhost/AcumaticaERP/Soap/TESTAPI.asmx";
                 LoginResult result = context.Login("admin", "123");
 
                 AR303000Content custSchema = context.AR303000GetSchema();
@@ -265,7 +270,7 @@ namespace AcumaticaWebServiceSample
                 context.CookieContainer = new System.Net.CookieContainer(); //stores cookie session
                 context.EnableDecompression = true;
                 context.Timeout = 100000000;
-                context.Url = "http://localhost/AcumaticaERP/Soap/APITEST.asmx";
+                context.Url = "http://localhost/AcumaticaERP/Soap/TESTAPI.asmx";
                 LoginResult result = context.Login("admin", "123");
 
                 //If login is successful
@@ -288,7 +293,7 @@ namespace AcumaticaWebServiceSample
                     },
                     new Value
                     {
-                        Value = "TEST2",
+                        Value = "TEST",
                         LinkedCommand = schema.OrderSummary.Customer
                     },
                     new Value
@@ -387,13 +392,13 @@ namespace AcumaticaWebServiceSample
         {
             TEST.Screen context = new Screen();
             bool loginSuccess = false;
-
+            string yesNo, invoiceType, invoiceNbr;
             try
             {
                 context.CookieContainer = new System.Net.CookieContainer(); //stores cookie session
                 context.EnableDecompression = true;
                 context.Timeout = 100000000;
-                context.Url = "http://localhost/AcumaticaERP/Soap/APITEST.asmx";
+                context.Url = "http://localhost/AcumaticaERP/Soap/TESTAPI.asmx";
                 LoginResult result = context.Login("admin", "123");
 
                 //If login is successful
@@ -416,7 +421,7 @@ namespace AcumaticaWebServiceSample
                     },
                     new Value
                     {
-                        Value = "TEST2",
+                        Value = "TEST",
                         LinkedCommand = schema.OrderSummary.Customer
                     },
                     new Value
@@ -431,7 +436,7 @@ namespace AcumaticaWebServiceSample
                     },
                     new Value
                     {
-                        Value = "095135124",
+                        Value = "095135123",
                         LinkedCommand = schema.OrderSummary.ExternalReference
                     },
 
@@ -507,19 +512,33 @@ namespace AcumaticaWebServiceSample
                         schema.Shipments.InvoiceNbr
                     };
                     var invoice = context.SO301000Submit(commands)[0];
-                    string invoiceType = invoice.Shipments.InvoiceType.Value.ToString();
-                    string invoiceNbr = invoice.Shipments.InvoiceNbr.Value.ToString();
+                    invoiceType = invoice.Shipments.InvoiceType.Value.ToString();
+                    invoiceNbr = invoice.Shipments.InvoiceNbr.Value.ToString();
 
                     Console.WriteLine("Creating Invoice...");
                     Console.Write(invoiceType);
                     Console.WriteLine(" : " + invoiceNbr);
                     Console.WriteLine("Releasing Invoice...");
-                    ReleaseSOInvoice(invoiceNbr, invoiceType);
-                    Console.WriteLine("Creating Payment...");
-                    CreateReleasePayment(invoiceType, invoiceNbr);
-                    Console.Read();
+                    //ReleaseSOInvoice(invoiceNbr, invoiceType);
+                    
+                    // Create Payment
+                    Console.WriteLine("Auto Create Payment?");
+                    Console.Write("Create Payment? (y/n)");
+                    yesNo = Console.ReadLine();
+                    if (yesNo == "y")
+                    {
+                        Console.WriteLine("Creating Payment...");
+                        CreateReleasePayment(invoiceType, invoiceNbr);
+                        Console.WriteLine("Payment Released");
+                        Console.Write(" Want to Void Payment? (y/n)");
+                        yesNo = Console.ReadLine();
+                        if (yesNo == "y")
+                        {
+                            Console.WriteLine("Voiding Payment...");
+                            
+                        }
+                    }
                 }
-
             }
             catch (Exception ex)
             {
@@ -534,52 +553,52 @@ namespace AcumaticaWebServiceSample
             }
         }
 
-        void ReleaseSOInvoice(string invoiceNbr, string invoiceType)
-        {
-            TEST.Screen context = new TEST.Screen();
-            bool loginSucess = false;
+        //void ReleaseSOInvoice(string invoiceNbr, string invoiceType)
+        //{
+        //    TEST.Screen context = new TEST.Screen();
+        //    bool loginSucess = false;
 
-            try
-            {
-                context.CookieContainer = new System.Net.CookieContainer();
-                context.Url = "http://localhost/AcumaticaERP/Soap/APITEST.asmx";
-                context.Timeout = 10000;
-                LoginResult result = context.Login("admin", "123");
+        //    try
+        //    {
+        //        context.CookieContainer = new System.Net.CookieContainer();
+        //        context.Url = "http://localhost/AcumaticaERP/Soap/TESTAPI.asmx";
+        //        context.Timeout = 10000;
+        //        LoginResult result = context.Login("admin", "123");
 
-                SO303000Content schema = context.SO303000GetSchema();
-                var commands = new Command[]
-                {
-                    new Value
-                    {
-                        Value = invoiceType,
-                        LinkedCommand = schema.InvoiceSummary.Type
-                    },
-                    new Value
-                    {
-                        Value = invoiceNbr,
-                        LinkedCommand = schema.InvoiceSummary.ReferenceNbr
-                    },
-                    schema.Actions.ReleaseAction
-                };
-                context.SO303000Submit(commands);
+        //        SO303000Content schema = context.SO303000GetSchema();
+        //        var commands = new Command[]
+        //        {
+        //            new Value
+        //            {
+        //                Value = invoiceType,
+        //                LinkedCommand = schema.InvoiceSummary.Type
+        //            },
+        //            new Value
+        //            {
+        //                Value = invoiceNbr,
+        //                LinkedCommand = schema.InvoiceSummary.ReferenceNbr
+        //            },
+        //            schema.Actions.ReleaseAction
+        //        };
+        //        context.SO303000Submit(commands);
 
-                var status = context.SO303000GetProcessStatus();
-                while (status.Status == ProcessStatus.InProcess)
-                {
-                    status = context.SO303000GetProcessStatus();
-                }
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-                Console.Read();
-            }
-            finally
-            {
-                if (loginSucess)
-                    context.Logout();
-            }
-        }
+        //        var status = context.SO303000GetProcessStatus();
+        //        while (status.Status == ProcessStatus.InProcess)
+        //        {
+        //            status = context.SO303000GetProcessStatus();
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        Console.WriteLine(ex.Message);
+        //        Console.Read();
+        //    }
+        //    finally
+        //    {
+        //        if (loginSucess)
+        //            context.Logout();
+        //    }
+        //}
 
         void CreateReleasePayment(string invoiceType, string invoiceNbr)
         {
@@ -589,7 +608,7 @@ namespace AcumaticaWebServiceSample
             try
             {
                 context.CookieContainer = new System.Net.CookieContainer();
-                context.Url = "http://localhost/AcumaticaERP/Soap/APITEST.asmx";
+                context.Url = "http://localhost/AcumaticaERP/Soap/TESTAPI.asmx";
                 context.Login("admin", "123");
 
                 AR302000Content schema = context.AR302000GetSchema();
@@ -604,7 +623,7 @@ namespace AcumaticaWebServiceSample
                 commands.Add(
                     new Value
                     {
-                        Value = "TEST2",
+                        Value = "TEST",
                         LinkedCommand = schema.PaymentSummary.Customer
                     });
                 commands.Add(
@@ -655,7 +674,6 @@ namespace AcumaticaWebServiceSample
 
                 Console.WriteLine("Payment Type: " + payment[0].PaymentSummary.Type.Value.ToString());
                 Console.WriteLine("Payment Ref.: " + payment[0].PaymentSummary.ReferenceNbr.Value.ToString());
-                Console.WriteLine("Payment Released");
             }
             catch (Exception ex)
             {
@@ -665,6 +683,90 @@ namespace AcumaticaWebServiceSample
             finally
             {
                 if (isLoginSuccess)
+                    context.Logout();
+            }
+        }
+
+        void VoidPayment(string refNbr)
+        {
+            TEST.Screen context = new Screen();
+            bool loginSuccess = false;
+
+            try
+            {
+                context.CookieContainer = new System.Net.CookieContainer(); //stores cookie session
+                context.EnableDecompression = true;
+                context.Timeout = 100000000;
+                context.Url = "http://localhost/AcumaticaERP/Soap/TESTAPI.asmx";
+                LoginResult result = context.Login("admin", "123");
+
+                //If login is successful
+                loginSuccess = true;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            finally
+            {
+                if (loginSuccess)
+                    context.Logout();
+            }
+        }
+
+        static void GetAllStockItem()
+        {
+            TEST.Screen context = new Screen();
+            bool loginSuccess = false;
+
+            try
+            {
+                context.CookieContainer = new System.Net.CookieContainer(); //stores cookie session
+                context.EnableDecompression = true;
+                context.Timeout = 100000000;
+                context.Url = "http://localhost/AcumaticaERP/Soap/TESTAPI.asmx";
+                LoginResult result = context.Login("admin", "123");
+
+                //If login is successful
+                loginSuccess = true;
+
+                IN202500Content stockItemsSchema = context.IN202500GetSchema();
+
+                var commands = new Command[]
+                {
+                    stockItemsSchema.StockItemSummary.ServiceCommands.EveryInventoryID,
+                    stockItemsSchema.StockItemSummary.InventoryID,
+                    stockItemsSchema.StockItemSummary.Description,
+                    //stockItemsSchema.GeneralSettingsItemDefaults.ItemClass,
+                    //stockItemsSchema.GeneralSettingsUnitOfMeasureBaseUnit.BaseUnit
+                    //,
+                    //new Field
+                    //{
+                    //    ObjectName = stockItemsSchema.StockItemSummary.InventoryID.ObjectName, FieldName = "LastModifiedDateTime"
+                    //}
+                };
+
+                string[][] stockItemList = context.IN202500Export(commands, null, 0, true, false);
+                Console.WriteLine("Inventory ID \t Description");
+                for (int i = 0; i < stockItemList.Length; i++)
+                {
+                    for (int x = 0; x < stockItemList[i].Length; x++)
+                    {
+                        //Console.Write(stockItemList[i][x] + ": ");
+                        Console.Write(stockItemList[i + 1][x]);
+                        Console.Write("\t");
+                    }
+                    Console.WriteLine();
+                }
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            finally
+            {
+                if (loginSuccess)
                     context.Logout();
             }
         }
