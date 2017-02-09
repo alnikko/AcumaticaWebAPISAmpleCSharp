@@ -818,7 +818,7 @@ namespace AcumaticaWebServiceSample
                 {
                     new Filter
                     {
-                        Field = stockItemsSchema.CrossReference.AlternateID,
+                        Field = stockItemsSchema.CrossReference.AlternateType,
                         Condition = FilterCondition.Equals,
                         Value = "Barcode",
                         Operator = FilterOperator.Or
@@ -826,7 +826,7 @@ namespace AcumaticaWebServiceSample
                     new Filter
                     {
                         OpenBrackets = 1,
-                        Field = stockItemsSchema.CrossReference.AlternateID,
+                        Field = stockItemsSchema.CrossReference.AlternateType,
                         Condition = FilterCondition.Equals,
                         Value = "Global",
                         Operator = FilterOperator.And,
